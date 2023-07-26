@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "src/uj",
+        "src/psbc",
+        "src/dio",
+        "src/ifrn"
+    ],
+    "java.dependency.packagePresentation": "flat"
+}

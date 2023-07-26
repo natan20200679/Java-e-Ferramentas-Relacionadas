@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="shortcut icon" href="imagens/icon.png" type="image/gif"/>
+        <link rel="stylesheet" href="styles/menustyle.css"/>
+        <title>Curso de Java Web - Controle de Pessoas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <style>
+            .main iframe {
+                border: none;
+                position: absolute;
+                margin-top: 2px;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    
+    <!---ESTRUTURA DO MENU--->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Início<i style="color:white"></i></a>
+        <div class="topnav" id="myTopnav">
+            <!---ADMINISTRAÇÃO--->
+            <div class="dropdown">
+                <button class="dropbtn">Pessoas<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="cadastrarpessoa.jsp" target="janela_prog">Cadastrar</a>
+                    <a href="consultarpessoa.jsp" target="janela_prog">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!<!-- IFRAME ONDE ABREM AS TELAS DO SISTEMA -->
+    <div class="main">
+        <!<!-- Logomarca no centro da tela -->
+        <iframe name="janela_prog" element.mozRequestFullScreen()></iframe>
+    </div>
+</html>
