@@ -5,13 +5,16 @@
 
 package psbc;
 
-@AnnotationInformacao (
-		autor = "Marcio Schoenfelder",
-		aulaEADNumero = 2,
-		website = "https://www.proway.com.br"
-		)
+@Informacao (
+        autor = "Marcio Schoenfelder",
+        aulaEADNumero = 2,
+        website = "https://www.proway.com.br"
+)
 
 public class AnnotationTeste {
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        
+    }
+
 }

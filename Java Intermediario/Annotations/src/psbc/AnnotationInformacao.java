@@ -5,9 +5,10 @@
 
 package psbc;
 
-@interface AnnotationInformacao {
+@interface Informacao {
 
     String autor();
-	int    aulaEADNumero();
-	String website() default "https://www.proway.com.br";
+    int aulaEADNumero();
+    String website() default "https://www.proway.com.br";
+
 }
