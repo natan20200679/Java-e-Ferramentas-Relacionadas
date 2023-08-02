@@ -1,7 +1,6 @@
 # Linguagem Java e Ferramentas Relacionadas (API's, Bibliotecas, Frameworks, Gerenciadores de Projetos,...)
-- Exemplos práticos envolvendo situações do dia a dia, características e propriedades nativas da linguagem Java -> Java Basico; Java Basico 
-  (Desafios); Java Intermediario (Desafios)
-- Exemplos práticos envolvendo situações do dia a dia, utilizando-se linguagem Java e Framework JUnit -> Junit
+- Exemplos práticos envolvendo situações do dia a dia, características e propriedades nativas da linguagem Java -> Java Básico; Problemas Diversos
+- Exemplos práticos envolvendo situações do dia a dia, utilizando-se Linguagem Java e Framework JUnit -> Junit
 - Exemplo prático envolvendo situação do dia a dia, utilizando-se linguagem Java, framework Spring (Spring Boot, Spring Web), framework 
   Selenium e gerenciador de projetos Maven -> Selenium
 - Exemplo prático envolvendo situação do dia a dia, utilizando-se framework Spring (Spring Boot, Spring Data JPA, Spring Web), gerenciador
@@ -38,13 +37,13 @@ uj -> universidade java (http://www.universidadejava.com.br/java/)
 ## JDBC e JPA
 ### Cities API
 
-#### Requirements
+#### Requerimentos
 
 * Linux
 * Git
-* Java 8
+* Java 8 ou Superior
 * Docker
-* IntelliJ Community
+* IDE
 * Heroku CLI
 * Travis CLI
 
@@ -92,7 +91,7 @@ select earth_distance(
 
 * [https://start.spring.io/](https://start.spring.io/)
 
-+ Java 8
++ Java 8 ou Superior
 + Gradle Project
 + Jar
 + Spring Web
