@@ -27,6 +27,8 @@
   em disco H2, banco de dados PostgreSQL, API JPA, ferramenta de análise de código PMD, e gerenciador de projetos Gradle -> PMI e InMemory H2
   -> JPA
 
+Obs.: Alguns projetos Java possuem sinalização de erros ao serem carregados numa IDE, como por exemplo os que envolvem Spring (Java Avançado), porém esses projetos estão com uma estrutura organizacional para servir de base na construção dos mesmos projetos, porém com funcionamento sem erros (isto será feito assim que possível).
+
 ## Legenda das Abreviações nos Nomes dos Pacotes
 
 dio -> digital innovation one (https://web.dio.me/home)
