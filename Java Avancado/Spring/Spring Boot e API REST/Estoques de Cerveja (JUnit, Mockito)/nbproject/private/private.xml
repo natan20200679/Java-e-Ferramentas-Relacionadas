@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/entity/Beer.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/dto/BeerDTO.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/dto/QuantityDTO.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/test/dio/beerstock/builder/BeerDTOBuilder.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/Application.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/test/dio/beerstock/controller/BeerControllerTest.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/service/BeerService.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/exception/BeerStockExceededException.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/repository/BeerRepository.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/controller/BeerControllerDocs.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/test/dio/BeerstockApplicationTests.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/enums/BeerType.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/test/dio/beerstock/service/BeerServiceTest.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/exception/BeerAlreadyRegisteredException.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/exception/BeerNotFoundException.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/mapper/BeerMapper.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/test/dio/beerstock/utils/JsonConvertionUtils.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/controller/BeerController.java</file>
+            <file>file:/home/natan/Área%20de%20Trabalho/java-e-ferramentas-relacionadas/Java%20Avancado/Spring/Spring%20Boot%20e%20API%20REST/Estoques%20de%20Cerveja%20(JUnit,%20Mockito)/src/dio/beerstock/config/SwaggerConfig.java</file>
+        </group>
+    </open-files>
+</project-private>
