@@ -10,12 +10,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.CadastrarUsuarioPage;
 
-public class CadastrarUsuarioPageTest {
+import pages.CadastrarUsuarioPagina;
+
+public class CadastrarUsuarioPaginaTeste {
 
     private WebDriver driver;
-    private CadastrarUsuarioPage cadastrarUsuarioPage;
+    private CadastrarUsuarioPagina cadastrarUsuarioPage;
 
     @Before
     public void inicializa() {
@@ -24,7 +25,7 @@ public class CadastrarUsuarioPageTest {
                 "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
-        cadastrarUsuarioPage = new CadastrarUsuarioPage(driver);
+        cadastrarUsuarioPage = new CadastrarUsuarioPagina(driver);
 
     }
 
@@ -35,7 +36,8 @@ public class CadastrarUsuarioPageTest {
 
         cadastrarUsuarioPage.cadastrarusuario();
         
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By
+                .cssSelector("a[title='Orders'] span")));
         
         WebElement validaTexto = driver.findElement(By.cssSelector("a[title='Orders'] span"));
         

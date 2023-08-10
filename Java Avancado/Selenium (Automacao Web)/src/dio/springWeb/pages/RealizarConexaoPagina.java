@@ -1,14 +1,15 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+
 import utils.Utils;
 
-public class RealizarLoginPage {
+public class RealizarConexaoPagina {
 
     private WebDriver driver;
     private Utils util;
 
-    public RealizarLoginPage(WebDriver driver) {
+    public RealizarConexaoPagina(WebDriver driver) {
 
         this.driver = driver;
         

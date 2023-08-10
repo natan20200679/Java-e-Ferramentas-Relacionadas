@@ -10,12 +10,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.RealizarLoginPage;
 
-public class RealizarLoginPageTest {
+import pages.RealizarConexaoPagina;
+
+public class RealizarConexaoPaginaTeste {
 
     private WebDriver driver;
-    private RealizarLoginPage realizarLoginPage;
+    private RealizarConexaoPagina realizarLoginPage;
 
     @Before
     public void inicializa() {
@@ -24,7 +25,7 @@ public class RealizarLoginPageTest {
                 "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
-        realizarLoginPage = new RealizarLoginPage(driver);
+        realizarLoginPage = new RealizarConexaoPagina(driver);
     
     }
 
@@ -35,7 +36,8 @@ public class RealizarLoginPageTest {
 
         realizarLoginPage.RealizarLogin();
     
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By
+                .cssSelector("a[title='Orders'] span")));
         
         WebElement validaTexto = driver.findElement(By.cssSelector("a[title='Orders'] span"));
         

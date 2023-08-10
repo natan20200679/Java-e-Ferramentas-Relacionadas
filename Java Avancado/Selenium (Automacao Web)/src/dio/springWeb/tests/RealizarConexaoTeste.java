@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class RealizarLoginTest {
+public class RealizarConexaoTeste {
 
     private ChromeDriver driver;
 
@@ -28,13 +28,15 @@ public class RealizarLoginTest {
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
         driver.get("http://automationpractice.com/index.php");
-        driver.findElement(By.cssSelector
-        ("#header > div.nav > div > div > nav > div.header_user_info > a")).click();
+        driver.findElement(By
+                .cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a"))
+                .click();
         driver.findElement(By.id("email")).sendKeys("everisbootcamp@qabeginner.com");
         driver.findElement(By.id("passwd")).sendKeys("QA@everis213");
         driver.findElement(By.name("SubmitLogin")).click();
         
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By
+                .cssSelector("a[title='Orders'] span")));
 
     }
 
