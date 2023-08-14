@@ -4,11 +4,11 @@
  */
 
 /*
- * Escreva um algoritmo que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe se está apta ou não para 
- * cumprir o serviço militar obrigatório. Informe os totais 
- */
+Escreva um algoritmo que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe se 
+está apta ou não para cumprir o serviço militar obrigatório. Informe os totais
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -44,6 +44,7 @@ public class E21 {
                 case "f":
                     quant_sexo_f ++;
                     break;
+           
             }
 
             System.out.print("Informe a idade: ");
@@ -55,22 +56,27 @@ public class E21 {
             if (idade >= 18 && saude >= 4) {
                 
                 System.out.println("Pessoa Apta.");
+            
                 quant_apta ++;
 
             } else {
 
                 System.out.println("Pessoa Inalpta.");
+                
                 quant_inapta ++;
+            
             }
 
             i ++;
+        
         }
 
         System.out.println("\nPessoas do Sexo Masculino: " + quant_sexo_m);
         System.out.println("Pessoas do Sexo Feminino: " + quant_sexo_f);
         System.out.println("Pessoas Aptas: " + quant_apta);
         System.out.println("pessoas Inaptas: " + quant_inapta);
-
         leitor.close();
-    }
+    
+     }
+
 }

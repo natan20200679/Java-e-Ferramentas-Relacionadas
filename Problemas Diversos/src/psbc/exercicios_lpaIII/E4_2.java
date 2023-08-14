@@ -4,10 +4,9 @@
  */
 
  /*
- * Obs.: Esta solução abrange uma forma diferente de trabalhar com o valor da comissão do vendedor 
+Obs.: Esta solução abrange uma forma diferente de trabalhar com o valor da comissão do vendedor 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -31,7 +30,8 @@ public class E4_2 {
         System.out.println("Nome: " + vendedor);
         System.out.printf("Salário Fixo: %.2f %n", salario_fixo);
         System.out.printf("Salário Total: %.2f %n", salario_total);
-
         leitor.close();
+    
     }
+
 }

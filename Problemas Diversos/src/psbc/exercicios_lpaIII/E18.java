@@ -4,11 +4,11 @@
  */
 
 /*
- * Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando “maior de idade” e “menor de idade”
- * para cada pessoa. Considere a idade a partir de 18 anos como maior de idade
- */
+Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando “maior de idade” e 
+“menor de idade” para cada pessoa. Considere a idade a partir de 18 anos como maior de idade
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -32,11 +32,15 @@ public class E18 {
             } else {
 
                 System.out.println("Pessoa maior de idade.");
+
             }
 
             i++;
+
         }
 
         leitor.close();
+
     }
+
 }

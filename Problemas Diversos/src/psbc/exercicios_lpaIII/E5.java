@@ -4,10 +4,10 @@
  */
 
  /*
- * Escreva um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. No final, 
- * informar o nome do aluno e a sua média (aritmética) 
+Escreva um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no 
+semestre. No final, informar o nome do aluno e a sua média (aritmética) 
  */
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -33,8 +33,8 @@ public class E5 {
 
         System.out.println("Nome: " + aluno);
         System.out.printf("Média: %.1f", media);
-
         leitor.close();
 
     }
+
 }

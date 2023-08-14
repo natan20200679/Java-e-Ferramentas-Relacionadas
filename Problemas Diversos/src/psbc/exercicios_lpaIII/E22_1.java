@@ -4,12 +4,12 @@
  */
 
 /*
- * Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como resultado se houve lucro,
- * prejuízo ou empate para cada produto. Informe o valor de custo de cada produto, o valor de venda de cada produto, a 
- * média de preço de custo e do preço de venda 
- */
+Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como 
+resultado se houve lucro, prejuízo ou empate para cada produto. Informe o valor de custo de cada 
+produto, o valor de venda de cada produto, a média de preço de custo e do preço de venda 
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -54,13 +54,19 @@ public class E22_1 {
                 } else {
 
                     System.out.println("Lucro");
+
                 }
+
             }
 
-            System.out.println(nomeProduto + ", preco de custo - " + precoCusto + ", preco de venda - " + precoVenda);
+            System.out.println(nomeProduto + ", preco de custo - " + precoCusto + ", preco de " + ""
+                    + "venda - " + precoVenda);
+        
         }
 
         System.out.println("A media do preco de custo e de: " + (totalCusto / i));
         System.out.println("A media do preco de venda e de: " + (totalVenda / i));
+    
     }
+
 }

@@ -3,11 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Faça um algoritmo que receba dois números e exiba o resultado da sua soma
+ /*
+Faça um algoritmo que receba dois números e exiba o resultado da sua soma
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -30,4 +29,5 @@ public class E1_1 {
         leitor.close();
 
     }
+
 }

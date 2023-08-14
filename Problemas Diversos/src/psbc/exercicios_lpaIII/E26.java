@@ -3,18 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Faça um algoritmo que leia um número de 1 a 5 e escreva por extenso. Caso o usuário digite um número que não esteja 
- * neste intervalo, exibir a seguinte mensagem: número inválido 
+ /*
+Faça um algoritmo que leia um número de 1 a 5 e escreva por extenso. Caso o usuário digite um 
+número que não esteja neste intervalo, exibir a seguinte mensagem: número inválido 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
 public class E26 {
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
 
@@ -22,7 +21,7 @@ public class E26 {
         int numero = leitor.nextInt();
 
         switch (numero) {
-            
+
             case 1:
                 System.out.println("\n" + numero + " -> Um");
                 break;
@@ -45,9 +44,11 @@ public class E26 {
 
             default:
                 System.out.println("\n" + numero + " -> Número inválido");
+
         }
 
         leitor.close();
 
     }
+
 }

@@ -3,12 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de custo
- * receberá um acréscimo de acordo com um percentual informado pelo usuário 
+ /*
+Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que 
+o preço de custo receberá um acréscimo de acordo com um percentual informado pelo usuário 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -27,7 +26,8 @@ public class E11 {
         double valor_venda = custo + ((lucro / 100d) * custo);
 
         System.out.printf("Valor da Venda: R$ %.2f \n", valor_venda);
-
         leitor.close();
+    
     }
+
 }

@@ -4,12 +4,12 @@
  */
 
 /*
- * Escreva um algoritmo que leia o nome e as três notas obtidas por um aluno durante o semestre. Calcular a sua média 
- * (aritmética), informar o nome e sua menção aprovado (media >= 7), Reprovado (media <= 5) e Recuperação (media entre 
- * 5.1 a 6.9) 
- */
+Escreva um algoritmo que leia o nome e as três notas obtidas por um aluno durante o semestre. 
+Calcular a sua média (aritmética), informar o nome e sua menção aprovado (media >= 7), 
+Reprovado (media <= 5) e Recuperação (media entre 5.1 a 6.9) 
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -49,8 +49,11 @@ public class E16 {
             
             System.out.printf("Média: %.1f", media);
             System.out.print("\nSituação: Aprovado\n");
+
         }
 
         leitor.close();
+
     }
+
 }

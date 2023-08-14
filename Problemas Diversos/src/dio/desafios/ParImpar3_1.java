@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package desafios;
+package dio.desafios;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -15,6 +15,7 @@ public class ParImpar3_1 {
     public static void main(String[] args) throws Exception {
 
         Scanner leitor = new Scanner(System.in);
+        
         int N = leitor.nextInt();
 
         List<Integer> pares = new LinkedList<>();
@@ -31,17 +32,21 @@ public class ParImpar3_1 {
             } else {
 
                 impares.add(X);
+        
             }
 
         }
 
         Collections.sort(pares);
+        
         for (int i : pares) System.out.println(i);
 
         Collections.sort(impares, Collections.reverseOrder());
+        
         for (int i : impares) System.out.println(i);
 
         leitor.close();
 
     }
+
 }

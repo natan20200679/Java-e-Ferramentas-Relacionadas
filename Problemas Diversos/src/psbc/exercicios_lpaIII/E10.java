@@ -1,14 +1,8 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+A Loja Mamão com Açúcar está vendendo seus produtos em 5(cinco) prestações sem juros. Faça um 
+algoritmo que receba um valor de uma compra e mostre o valor das prestações
  */
-
-/*
- * A Loja Mamão com Açúcar está vendendo seus produtos em 5(cinco) prestações sem juros. Faça um algoritmo que receba
- * um valor de uma compra e mostre o valor das prestações
- */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -25,7 +19,8 @@ public class E10 {
 
         System.out.printf("Valor Total da Compra: R$ %.2f \n", valor);
         System.out.printf("Valor das Prestações: R$ %.2f \n", prestacao);
-
         leitor.close();
+    
     }
+
 }

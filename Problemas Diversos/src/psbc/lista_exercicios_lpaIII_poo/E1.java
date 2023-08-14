@@ -5,8 +5,8 @@
 
 /* 
 Crie uma classe para representar uma Pessoa com os atributos privados de nome, data de nascimento e
-altura. Crie os métodos públicos necessários para getters e setters e também um método para imprimir
-todos dados de uma pessoa. Crie um método para calcular a idade da pessoa 
+altura. Crie os métodos públicos necessários para getters e setters e também um método para 
+imprimir todos dados de uma pessoa. Crie um método para calcular a idade da pessoa 
 */
 
 package psbc.lista_exercicios_lpaIII_poo;
@@ -22,5 +22,7 @@ public class E1 {
 
         System.out.println("Nome: " + pessoa.getNome());
         System.out.println("Idade: " + pessoa.idade(2000, 2022));
+    
     }
+
 }

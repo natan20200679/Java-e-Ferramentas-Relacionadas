@@ -2,58 +2,58 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-/*
-Faça um Programa que leia 20 números inteiros (entre 0 e 100) armazene-os num vetor.
-Ao final mostre os números e seus sucessores.
-*/
-
-package desafios;
+package dio.desafios;
 
 import java.util.Random;
 
 public class NumerosAleatorios2 {
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-        //classe para gerar números aleatórios
+        // Classe para gerar números aleatórios
         Random random = new Random();
 
-        //array com 20 posições
+        // Array com 20 posições
         int[] numeros = new int[20];
 
-        //para: variável i = numero, até i menor que o tamanho do array, acrescentamos 1 ao valor de i a cada loop.
+        // Para: variável i = numero, até i menor que o tamanho do array, acrescentamos 1 ao valor 
+        // de i a cada loop.
         for (int i = 0; i < numeros.length; i++) {
 
-            //pegando um número aleatório entre 0 e 100.
+            // Pegando um número aleatório entre 0 e 100.
             int numero = random.nextInt(100);
 
-            //atribuindo esse valor ao elemento na respectiva posição do array numeros.
+            // Atribuindo esse valor ao elemento na respectiva posição do array numeros.
             numeros[i] = numero;
+        
         }
 
-        //frase ilustrativa
+        // Frase ilustrativa
         System.out.print("Numeros: ");
 
-        //loop for-each
-        //para cada numero dentro do array de números
+        // Loop for-each
+        // Para cada numero dentro do array de números
         for (int numero : numeros) {
 
-            //imprima o número
+            // Imprima o número
             System.out.print(numero + " ");
+        
         }
 
-        //separar os vetores
+        // Separar os vetores
         System.out.println("\n-----------------");
 
-        //frase ilustrativa
+        // Frase ilustrativa
         System.out.print("Sucessores: ");
 
-        //para cada numero dentro do array de números
+        // Para cada numero dentro do array de números
         for (int numero : numeros) {
 
-            //adicione o valor 1 ao número e imprima esse novo valor
+            // Adicione o valor 1 ao número e imprima esse novo valor
             System.out.print((numero + 1) + " ");
+        
         }
+    
     }
+
 }

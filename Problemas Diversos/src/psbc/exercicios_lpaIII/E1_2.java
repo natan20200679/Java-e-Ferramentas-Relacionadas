@@ -4,11 +4,11 @@
  */
 
 /*
- * Obs.: Esta solução utiliza função (método), e a utlização de um tipo de variável diferente, bem como uma forma
- * diferente de inserir esse tipo usado, apenas para ilustração de aplicabilidade 
- */
+Obs.: Esta solução utiliza função (método), e a utlização de um tipo de variável diferente, bem 
+como uma forma diferente de inserir esse tipo usado, apenas para ilustração de aplicabilidade 
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -34,5 +34,7 @@ public class E1_2 {
     private static double soma(double a, double b) {
 
         return a + b;
+
     }
+
 }

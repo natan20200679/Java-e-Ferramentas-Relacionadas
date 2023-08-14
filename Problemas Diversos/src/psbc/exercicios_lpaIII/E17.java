@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Leia 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) e 150 (inclusive) 
+ /*
+Leia 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) e 
+150 (inclusive) 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -28,6 +28,7 @@ public class E17 {
             if (numero >= 10 && numero <= 150) {
 
                 quant++;
+
             }
 
             i++;
@@ -35,7 +36,8 @@ public class E17 {
         }
 
         System.out.println("Quantidade de números na faixa [10, 150]: " + quant);
-
         leitor.close();
+    
     }
+
 }

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -34,6 +34,7 @@ public class E20_2 {
 
                 System.out.printf("\nValor do Desconto: R$ %.2f \n", desconto1);
                 System.out.printf("Valor Total: R$ %.2f \n", valor1);
+
                 quant1++;
                 quant3++;
 
@@ -41,6 +42,7 @@ public class E20_2 {
 
                 System.out.printf("\nValor do Desconto: R$ %.2f\n", desconto2);
                 System.out.printf("Valor Total: R$ %.2f \n", valor2);
+
                 quant3++;
 
             }
@@ -62,5 +64,7 @@ public class E20_2 {
             leitor.close();
             
         }
+
     }
+
 }

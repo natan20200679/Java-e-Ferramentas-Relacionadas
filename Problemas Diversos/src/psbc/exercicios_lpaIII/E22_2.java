@@ -2,8 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -44,6 +43,7 @@ public class E22_2 {
             custos += preco_custo;
             vendas += preco_venda;
             i++;
+
         }
 
         int media_custos = custos / 2;
@@ -51,7 +51,8 @@ public class E22_2 {
 
         System.out.println("Média do Custo: R$ " + media_custos);
         System.out.println("Média de Venda: R$ " + media_vendas);
-
         leitor.close();
+    
     }
+
 }

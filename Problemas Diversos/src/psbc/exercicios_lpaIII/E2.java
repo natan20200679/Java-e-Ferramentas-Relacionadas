@@ -4,11 +4,11 @@
  */
 
 /*
- * Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão dos dois 
- * números lidos
- */
+Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a 
+divisão dos dois números lidos
+*/
 
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
@@ -17,6 +17,7 @@ public class E2 {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
+
         int a, b, soma, subtracao, multiplicacao, divisao;
 
         System.out.println("Digite o primeiro valor");
@@ -28,11 +29,9 @@ public class E2 {
         soma = a + b;
 
         System.out.println("\nA soma dos valores digitados é: " + soma);
-
         subtracao = a - b;
 
         System.out.println("A subtração dos valores digitados é: " + subtracao);
-
         multiplicacao = a * b;
 
         System.out.println("A multiplicação dos valores digitados é: " + multiplicacao);
@@ -40,8 +39,8 @@ public class E2 {
         divisao = a / b;
 
         System.out.println("A divisão dos valores digitados é: " + divisao);
-
         scan.close();
 
     }
+
 }

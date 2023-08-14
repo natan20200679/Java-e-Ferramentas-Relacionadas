@@ -3,18 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Faça um algoritmo que receba o número do mês e mostre o mês correspondente. Valide mês inválido 
+ /*
+Faça um algoritmo que receba o número do mês e mostre o mês correspondente. Valide mês inválido 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.Scanner;
 
 public class E29 {
 
     public static void main(String[] args) {
-        
+
         Scanner entradaDados = new Scanner(System.in);
 
         System.out.print("\nInforme o número do mês: ");
@@ -41,7 +40,7 @@ public class E29 {
             case 5:
                 System.out.println(numMes + " -> Corresponde à Maio");
                 break;
-        
+
             case 6:
                 System.out.println(numMes + " -> Corresponde à Junho");
                 break;
@@ -73,8 +72,11 @@ public class E29 {
             default:
                 System.out.println("Mês Inválido!");
                 break;
+        
         }
 
         entradaDados.close();
+    
     }
+
 }

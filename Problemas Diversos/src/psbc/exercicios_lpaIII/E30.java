@@ -3,11 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
- * Escreva um algoritmo que leia três valores inteiros distintos e os escreva em ordem crescente
+ /*
+Escreva um algoritmo que leia três valores inteiros distintos e os escreva em ordem crescente
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,14 +30,16 @@ public class E30 {
         int valor3 = entradaDados.nextInt();
 
         List<Integer> numeros = new ArrayList<>();
+
         numeros.add(valor1);
         numeros.add(valor2);
         numeros.add(valor3);
+
         Set<Integer> ordemCresc = new TreeSet<>(numeros);
 
         System.out.println("Valores Informados em ordem crescente: " + ordemCresc);
-
         entradaDados.close();
 
     }
+
 }

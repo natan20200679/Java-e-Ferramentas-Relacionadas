@@ -4,11 +4,10 @@
  */
 
  /*
- * Escreva um algoritmo para determinar o consumo médio de um automóvel sendo fornecida a distância total percorrida 
- * pelo automóvel e o total de combustível gasto 
+Escreva um algoritmo para determinar o consumo médio de um automóvel sendo fornecida a distância 
+total percorrida pelo automóvel e o total de combustível gasto 
  */
-
-package exercicios_lpaIII;
+package psbc.exercicios_lpaIII;
 
 public class E3 {
 
@@ -19,5 +18,7 @@ public class E3 {
 
         System.out.println("Distância Percorrida: " + d + " Km, " + "Volume Consumido: " + v + " L");
         System.out.println("Consumo médio do automóvel: " + c + " Km / L");
+
     }
+
 }
