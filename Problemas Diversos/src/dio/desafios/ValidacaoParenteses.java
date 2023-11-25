@@ -34,29 +34,23 @@ public class ValidacaoParenteses {
 
     public static boolean ehValido(String s) {
 
+        int count = 0;
+
         for (int i = 0; i < s.length(); i++) {
 
-            if (s.charAt(i) == '(') {
+            char bracket = s.charAt(i);
 
-                if (s.charAt(i + 1) == ')') {
+            if (bracket == '(' || bracket == '[' || bracket == '{') {
 
-                    return true;
+                count++;
 
-                }
+            } else if (bracket == ')' || bracket == ']' || bracket == '}') {
 
-            } else if (s.charAt(i) == '[') {
+                count--;
 
-                if (s.charAt(i + 1) == ']') {
+                if (count < 0) {
 
-                    return true;
-
-                }
-
-            } else if (s.charAt(i) == '{') {
-
-                if (s.charAt(i + 1) == '}') {
-
-                    return true;
+                    return false;
 
                 }
 
@@ -64,8 +58,37 @@ public class ValidacaoParenteses {
 
         }
 
-        return false;
+        return count == 0;
 
+        /*
+        Solução alternativa para este método
+         */
+        
+//        Stack<Character> pilha = new Stack<>();
+//
+//        for (char c : s.toCharArray()) {
+//            
+//            if (c == '(') {
+//                
+//                pilha.push(')');
+//            
+//            } else if (c == '{') {
+//            
+//                pilha.push('}');
+//            
+//            } else if (c == '[') {
+//            
+//                pilha.push(']');
+//            
+//            } else if (pilha.isEmpty() || pilha.pop() != c) {
+//            
+//                return false;
+//            
+//            }
+//            
+//        }
+//        
+//        return pilha.isEmpty();
     }
 
 }
