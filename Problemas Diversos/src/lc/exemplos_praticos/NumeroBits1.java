@@ -24,7 +24,7 @@ public class NumeroBits1 {
 
         reader.close();
 
-        // todo: 18/11/2023 Outra alternativa, envolvendo leitura e impressão de dados (Linhas 31 à 41)
+//        Outra alternativa, envolvendo leitura e impressão de dados (Linhas 31 à 41):
 
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
