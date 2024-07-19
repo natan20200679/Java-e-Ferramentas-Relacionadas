@@ -4,11 +4,10 @@
  */
 
  /*
-Dada uma matriz inteira nums classificada em ordem não decrescente, remova as duplicatas no local
+Dada uma matriz inteira numsclassificada em ordem não decrescente, remova as duplicatas no local 
 de forma que cada elemento exclusivo apareça apenas uma vez. A ordem relativa dos elementos deve 
 ser mantida a mesma. Em seguida, retorne o número de elementos únicos em nums .
  */
-
 package lc.exemplos_praticos;
 
 import java.util.Arrays;

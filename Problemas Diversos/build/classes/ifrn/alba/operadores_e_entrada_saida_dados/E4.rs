@@ -1,1 +1,0 @@
-alba.operadores_e_entrada_saida_dados.E4

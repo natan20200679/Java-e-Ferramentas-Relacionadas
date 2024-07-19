@@ -1,0 +1,7 @@
+{
+    "java.project.explorer.showNonJavaResources": true,
+    "files.autoSave": "onWindowChange",
+    "java.project.sourcePaths": [
+        "Fluxos2"
+    ]
+}

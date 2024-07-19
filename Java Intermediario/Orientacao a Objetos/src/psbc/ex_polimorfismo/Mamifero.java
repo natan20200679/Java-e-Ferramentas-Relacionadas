@@ -5,8 +5,8 @@
 
 package psbc.ex_polimorfismo;
 
-
 abstract class Mamifero {
 
-	public abstract double cotaDiariaLeite();
+    public abstract double cotaDiariaLeite();
+
 }

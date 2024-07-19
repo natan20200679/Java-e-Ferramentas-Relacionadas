@@ -33,7 +33,7 @@ public class Tabuada {
 
         for (int i = 1; i <= 10; i++) {
 
-            System.out.println(valor_tab + "X" + "=" + (valor_tab * i));
+            System.out.println(valor_tab + " X " + i + " = " + (valor_tab * i));
 
         }
 

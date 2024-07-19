@@ -22,13 +22,13 @@ public class Palindromo {
 
             if (s.charAt(i) != s.charAt(n-i-1)) {
 
-                return "não é Palíndromo";
+                return " não é Palíndromo";
 
             }
 
         }
 
-        return "é palíndromo";
+        return " é palíndromo";
 
     }
 

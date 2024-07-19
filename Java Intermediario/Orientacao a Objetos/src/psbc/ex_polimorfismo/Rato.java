@@ -8,6 +8,9 @@ package psbc.ex_polimorfismo;
 public class Rato extends Mamifero {
 
     public double cotaDiariaLeite() {
-			return 0.5;
-		}
+        
+        return 0.5;
+    
+    }
+
 }

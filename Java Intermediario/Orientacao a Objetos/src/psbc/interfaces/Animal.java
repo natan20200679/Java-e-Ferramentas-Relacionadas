@@ -8,5 +8,6 @@ package psbc.interfaces;
 public interface Animal {
 
     public void animalSom();
-	public void animalComer();
+    public void animalComer();
+
 }

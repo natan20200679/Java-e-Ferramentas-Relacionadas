@@ -8,7 +8,9 @@ package psbc.ex_polimorfismo;
 public class Elefante extends Mamifero {
 
     public double cotaDiariaLeite() {
-		return 30.0;
-	}
+        
+        return 30.0;
+    
+    }
 
 }
