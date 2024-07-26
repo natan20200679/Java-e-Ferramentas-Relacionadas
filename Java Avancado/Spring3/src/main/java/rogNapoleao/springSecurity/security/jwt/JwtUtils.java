@@ -14,6 +14,7 @@ import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
+@SuppressWarnings("deprecation")
 @Component
 public class JwtUtils {
 

@@ -52,7 +52,6 @@ public class UsuarioService {
         verificador.setDataExpiracao(Instant.now().plusMillis(900000));
         usuarioVerificadorRepository.save(verificador);
 
-        //TODO - Enviar um email para verificar a conta
         emailService.enviarEmailTexto(usuario.getEmail(),
                 "Novo usuário cadastrado",
                 "Você está recebendo um email de cadastro o número para validação é " + verificador.getUuid());

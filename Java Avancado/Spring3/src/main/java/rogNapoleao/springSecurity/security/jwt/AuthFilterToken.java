@@ -6,9 +6,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
-//import org.springframework.security.web.authentication.preauth.websphere.WebSpherePreAuthenticatedWebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 import rogNapoleao.springSecurity.service.UserDetailServiceImpl;
@@ -27,8 +25,8 @@ public class AuthFilterToken extends OncePerRequestFilter{
     private UserDetailServiceImpl userDetailService;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
-                                    FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(@SuppressWarnings("null") HttpServletRequest request, @SuppressWarnings("null") HttpServletResponse response,
+                                    @SuppressWarnings("null") FilterChain filterChain) throws ServletException, IOException {
         try {
             String jwt = getToken(request);
             if(jwt != null && jwtUtil.validateJwtToken(jwt)) {
