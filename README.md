@@ -31,11 +31,18 @@ Obs.: Alguns projetos Java possuem sinalização de erros ao serem carregados nu
 
 ## Legenda dos Nomes dos Pacotes Java Contidos Neste Repositório
 
+beginSecure -> begin Secure (https://www.youtube.com/watch?v=jBeu8BDvM48)
+devSuperior -> dev Superior (https://www.youtube.com/watch?v=D4frmIHAxEY)
 dio -> digital innovation one (https://web.dio.me/home)
+escolaDev -> escola Dev (https://www.youtube.com/@escoladev/videos)
+fKipper -> fernanda Kipper (https://www.youtube.com/watch?v=tJCyNV1G0P4)
+gitbook_glysns -> gitbook gleyson sampaio (https://glysns.gitbook.io/spring-framework/spring-security/untitled)
 hr -> hackerhank (https://www.hackerrank.com/)
 jtp -> javatpoint (https://www.javatpoint.com/)
+mv -> maven (https://maven.apache.org/guides/getting-started/)
 psbc -> programa start by capgemini (bootcamp) (http://capgeminischool.brazilsouth.cloudapp.azure.com/login/index.php#section-3)
 rj -> rinaldo júnior (instrutor java) (https://www.youtube.com/@rinaldodev)
+rogNapoleao -> rogério Napoleão (https://www.youtube.com/@rogerionj/videos)
 tp -> tutorialspoint (https://www.tutorialspoint.com/index.htm)
 uj -> universidade java (http://www.universidadejava.com.br/java/)
 
