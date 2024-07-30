@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "projeto.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'projeto.jwtSecret'"
+  },
+  {
+    "name": "projeto.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'projeto.jwtExpirationMs'"
+  },
+  {
+    "name": "Spring3.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring3.jwtSecret'"
+  },
+  {
+    "name": "Spring3.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring3.jwtExpirationMs'"
+  },
+  {
+    "name": "Spring3.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring3.jwtExpirationMs'"
+  },
+  {
+    "name": "Spring3.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring3.jwtExpirationMs'"
+  },
+  {
+    "name": "Spring3.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring3.jwtSecret'"
+  }
+]}
