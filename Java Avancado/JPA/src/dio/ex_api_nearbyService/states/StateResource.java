@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StateResource {
 
   private static Logger log = LoggerFactory.getLogger(StateResource.class);
+  
   private final StateRepository repository;
 
   public StateResource(final StateRepository repository) {

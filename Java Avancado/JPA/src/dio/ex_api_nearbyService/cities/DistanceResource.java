@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DistanceResource {
 
     private static Logger log = LoggerFactory.getLogger(DistanceResource.class);
+    
     private final DistanceService service;
 
     public DistanceResource(DistanceService service) {

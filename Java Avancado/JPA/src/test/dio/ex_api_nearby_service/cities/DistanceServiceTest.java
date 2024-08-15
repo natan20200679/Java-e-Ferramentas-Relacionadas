@@ -9,7 +9,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.data.Offset.offset;
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.BDDMockito.given;
-
 import com.github.andrelugomes.cities.entities.City;
 import com.github.andrelugomes.cities.repositories.CityRepository;
 import java.util.Arrays;

@@ -40,11 +40,11 @@ public class State {
 
   private Integer ibge;
 
-  // 1st
-  // @Column(name = "pais")
-  // private Integer countryId;
+  /* 1st */
+//   @Column(name = "pais")
+//   private Integer countryId;
 
-  // 2nd - @ManyToOne
+  /* 2nd - @ManyToOne */
   @ManyToOne
   @JoinColumn(name = "pais", referencedColumnName = "id")
   private Country country;
@@ -54,9 +54,7 @@ public class State {
   @Column(name = "ddd", columnDefinition = "jsonb")
   private List<Integer> ddd;
 
-  public State() {
-      
-  }
+  public State() {}
 
   /**
    *
@@ -70,7 +68,7 @@ public class State {
   
   public State(Long id, String name, String uf, Integer ibge, Country country, List<Integer> ddd) {
     
-      this.id = id;
+    this.id = id;
     this.name = name;
     this.uf = uf;
     this.ibge = ibge;

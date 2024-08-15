@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NearbyResource {
 
     private static Logger log = LoggerFactory.getLogger(NearbyResource.class);
+    
     private final DistanceService service;
 
     public NearbyResource(DistanceService service) {

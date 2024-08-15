@@ -48,20 +48,22 @@ public class PointType implements UserType {
   public Object nullSafeGet(ResultSet rs, String[] names, SharedSessionContractImplementor session,
                             Object owner) throws HibernateException, SQLException {
   
-  // 1st
-  // Object object = rs.getObject(names[0]);
-  // Double[] points = StringLocationUtils.transform(object.toString());
-  
-  // return new Point(points[0], points[1]);
+    /* 1st */
+    // Object object = rs.getObject(names[0]);
+    // Double[] points = StringLocationUtils.transform(object.toString());
+    
+    // return new Point(points[0], points[1]);
 
-  // 2nd
-  // PGpoint value = (PGpoint) rs.getObject(names[0]);
-  // return new Point(value.x, value.y);*/
+    /* 2nd */
+    // PGpoint value = (PGpoint) rs.getObject(names[0]);
 
-  // 3rd
-  // Object object = rs.getObject(names[0]);
-  // PGpoint point = new PGpoint(object.toString());
-    return new Point(point.x, point.y);
+    // return new Point(value.x, value.y);*/
+
+    /* 3rd */ 
+    // Object object = rs.getObject(names[0]);
+    // PGpoint point = new PGpoint(object.toString());
+
+    // return new Point(point.x, point.y);
   
   }
 

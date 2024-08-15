@@ -22,14 +22,13 @@ public class Aluno {
     @ManyToOne(fetch = FetchType.LAZY)
     private Estado estado;
 
-    public Aluno() {
-
-    }
+    public Aluno() {}
 
     public Aluno(String nome, int idade) {
 
         this.nome = nome;
         this.idade = idade;
+    
     }
 
     public Aluno(String nome, int idade, Estado estado) {
@@ -37,11 +36,13 @@ public class Aluno {
         this.nome = nome;
         this.idade = idade;
         this.estado = estado;
+    
     }
 
     public int getId() {
 
         return id;
+   
     }
 
     public void setId(int id) {
@@ -52,26 +53,31 @@ public class Aluno {
     public String getNome() {
 
         return nome;
+    
     }
 
     public void setNome(String nome) {
 
         this.nome = nome;
+   
     }
 
     public int getIdade() {
 
         return idade;
+    
     }
 
     public void setIdade(int idade) {
 
         this.idade = idade;
+   
     }
 
     public Estado getEstado() {
 
         return estado;
+  
     }
 
     public void setEstado(Estado estado) {
@@ -81,6 +87,7 @@ public class Aluno {
 
     @Override
     public String toString() {
+       
         return "Aluno{"
                 + "id=" + id
                 + ", nome='" + nome + '\''

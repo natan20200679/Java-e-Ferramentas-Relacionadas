@@ -13,7 +13,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import com.github.andrelugomes.countries.entities.Country;
 import com.github.andrelugomes.states.entities.State;
 import com.github.andrelugomes.states.repositories.StateRepository;
@@ -48,7 +47,5 @@ class StateResourceTest {
         .andExpect(content().contentType("application/json;charset=UTF-8"))
         .andExpect(jsonPath("$.content.[0].name", is("São Paulo")))
         .andExpect(jsonPath("$.content.[0].uf", is("SP")));
-  
   }
-
 }

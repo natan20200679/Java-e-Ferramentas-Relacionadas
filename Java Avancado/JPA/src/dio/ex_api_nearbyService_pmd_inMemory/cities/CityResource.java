@@ -24,15 +24,15 @@ public class CityResource {
 
     }
 
-//    1st
+   /* 1st */
 //    @GetMapping
 //    public List<City> cities() {
-//
+
 //        return repository.findAll();
-//
+
 //    }
 
-    // 2nd - Pageable
+    /* 2nd - Pageable */
     @GetMapping
     public Page<City> cities(final Pageable page) {
         

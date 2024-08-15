@@ -8,7 +8,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.data.Offset.offset;
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.BDDMockito.given;
-
 import dio.ex_api_nearbyService_pmd_inMemory.cities.City;
 import dio.ex_api_nearbyService_pmd_inMemory.cities.CityRepository;
 import dio.ex_api_nearbyService_pmd_inMemory.cities.DistanceService;
@@ -85,7 +84,5 @@ class DistanceServiceTest {
         Double distance = service.distanceUsingPoints(4929L, 5254L, EarthRadius.METERS);
 
         assertThat(distance).isEqualTo(12426.810463475855);
-    
     }
-
 }

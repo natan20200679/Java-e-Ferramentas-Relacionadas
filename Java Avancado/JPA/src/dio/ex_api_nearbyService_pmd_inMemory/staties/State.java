@@ -23,8 +23,10 @@ import org.hibernate.annotations.TypeDefs;
 @Entity(name = "State")
 @Table(name = "estado")
 @TypeDefs({
+
     @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 })
+
 public class State {
 
   @Id
@@ -37,11 +39,11 @@ public class State {
 
   private Integer ibge;
 
-  /* 1st
-  @Column(name = "pais")
-  private Integer countryId;*/
+  /* 1st */
+  // @Column(name = "pais")
+  // private Integer countryId;
 
-  // 2nd - @ManyToOne
+  /* 2nd - @ManyToOne */
   @ManyToOne
   @JoinColumn(name = "pais", referencedColumnName = "id")
   private Country country;
@@ -51,34 +53,45 @@ public class State {
   @Column(name = "ddd", columnDefinition = "jsonb")
   private List<Integer> ddd;
 
-  public State() {
-  }
+  public State() {}
 
   public Long getId() {
-    return id;
+    
+      return id;
   }
 
   public String getName() {
+    
     return name;
+  
   }
 
   public String getUf() {
+  
     return uf;
+  
   }
 
   public Integer getIbge() {
+  
     return ibge;
+  
   }
 
   public List<Integer> getDdd() {
+  
     return ddd;
+  
   }
 
   public Country getCountry() {
+  
     return country;
+  
   }
 
   /*public Integer getCountryId() {
       return countryId;
   }*/
+
 }

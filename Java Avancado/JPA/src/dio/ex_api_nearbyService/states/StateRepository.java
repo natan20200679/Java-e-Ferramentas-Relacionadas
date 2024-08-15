@@ -7,6 +7,4 @@ package dio.ex_api_nearbyService.states;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface StateRepository extends JpaRepository<State, Long> {
-
-}
+public interface StateRepository extends JpaRepository<State, Long> {}

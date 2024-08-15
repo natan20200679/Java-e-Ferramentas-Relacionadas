@@ -9,7 +9,6 @@ import static java.lang.Math.cos;
 import static java.lang.Math.sin;
 import static java.lang.Math.sqrt;
 import static java.lang.Math.toRadians;
-
 import com.github.andrelugomes.cities.entities.City;
 import com.github.andrelugomes.cities.repositories.CityRepository;
 import com.github.andrelugomes.utils.StringLocationUtils;
@@ -24,6 +23,7 @@ import org.springframework.stereotype.Service;
 public class DistanceService {
 
     private final CityRepository cityRepository;
+   
     Logger log = LoggerFactory.getLogger(DistanceService.class);
 
     public DistanceService(final CityRepository cityRepository) {

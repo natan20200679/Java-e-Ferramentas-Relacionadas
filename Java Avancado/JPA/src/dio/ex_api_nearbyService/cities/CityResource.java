@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CityResource {
 
     private static Logger log = LoggerFactory.getLogger(CityResource.class);
+    
     private final CityRepository repository;
 
     public CityResource(final CityRepository repository) {

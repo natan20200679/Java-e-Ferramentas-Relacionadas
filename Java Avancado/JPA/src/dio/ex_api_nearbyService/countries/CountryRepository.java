@@ -8,6 +8,4 @@ package dio.ex_api_nearbyService.countries;
 import com.github.andrelugomes.countries.entities.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CountryRepository extends JpaRepository<Country, Long> {
-    
-}
+public interface CountryRepository extends JpaRepository<Country, Long> {}

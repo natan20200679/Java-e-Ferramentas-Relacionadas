@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CountryResource {
 
   private static Logger log = LoggerFactory.getLogger(CityResource.class);
+  
   private final CountryRepository repository;
 
   public CountryResource(final CountryRepository repository) {

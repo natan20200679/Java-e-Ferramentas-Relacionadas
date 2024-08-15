@@ -20,7 +20,5 @@ class StringLocationUtilsTest {
 
     assertEquals(123.0, transform[0], "Not equal");
     assertEquals(321, transform[1], "Not equal");
- 
   }
-
 }
