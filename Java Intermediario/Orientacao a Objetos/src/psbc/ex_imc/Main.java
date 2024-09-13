@@ -56,14 +56,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Criação do objeto
+        /* Criação do objeto */
+
         Pessoa objetoPessoa = new Pessoa();
 
-        // Mudando as informações do objeto
+        /* Mudando as informações do objeto */
+
         objetoPessoa.peso = 67.3f;
         objetoPessoa.altura = 1.67f;
 
-        // Solicitando que a pessoa calcule seu IMC
+        /* Solicitando que a pessoa calcule seu IMC */
+
         float imcPessoa = objetoPessoa.calcularIMC();
 
         System.out.println("O IMC da pessoa é: " + imcPessoa);

@@ -3,9 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
-Singleton "preguiçoso".
-*/
+/* Singleton "preguiçoso" */
 
 package dio.singleton;
 
@@ -13,9 +11,7 @@ public class SingletonLazy {
 
     private static SingletonLazy instancia;
 
-    private SingletonLazy() {
-    
-    }
+    private SingletonLazy() {}
 
     public static SingletonLazy getInstancia() {
     

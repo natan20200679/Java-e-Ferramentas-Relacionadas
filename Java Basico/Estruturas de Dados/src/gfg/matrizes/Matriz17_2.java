@@ -1,6 +1,6 @@
 /*
- * Método que consiste na troca dos elementos presentes na matriz arr até que a matriz auxiliar
- * "indice_arr" não seja igual a variável de iteração "i".
+Método que consiste na troca dos elementos presentes na matriz arr até que a matriz auxiliar "indice_arr" 
+não seja igual a variável de iteração "i".
  */
 
 package gfg.matrizes;

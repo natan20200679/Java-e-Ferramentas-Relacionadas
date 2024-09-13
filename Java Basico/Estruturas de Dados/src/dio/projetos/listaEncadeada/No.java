@@ -53,7 +53,7 @@ public class No<T> {
     
         String str = "No{" + conteudo + "}";
 
-        if(proximoNo != null){
+        if (proximoNo != null) {
     
             str += "->" + proximoNo.toString();
     

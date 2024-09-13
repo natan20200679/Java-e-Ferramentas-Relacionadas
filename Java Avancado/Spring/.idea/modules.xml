@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/API's/API's.iml" filepath="$PROJECT_DIR$/API's/API's.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Beans/Beans.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Beans/Beans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Estoques de Cerveja (JUnit, Mockito)/Estoques de Cerveja (JUnit, Mockito).iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Estoques de Cerveja (JUnit, Mockito)/Estoques de Cerveja (JUnit, Mockito).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Gestao de Pessoas/Gestao de Pessoas.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Gestao de Pessoas/Gestao de Pessoas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Gestao de Pessoas (Swagger)/Gestao de Pessoas (Swagger).iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Gestao de Pessoas (Swagger)/Gestao de Pessoas (Swagger).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Injecao de Dependencia/Injecao de Dependencia.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Injecao de Dependencia/Injecao de Dependencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Inversao de Controle/Inversao de Controle.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Inversao de Controle/Inversao de Controle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Padroes de Projeto Spring/Padroes de Projeto Spring.iml" filepath="$PROJECT_DIR$/Padroes de Projeto Spring/Padroes de Projeto Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 1/Projeto Feign 1.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 1/Projeto Feign 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 2/Projeto Feign 2.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 2/Projeto Feign 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 1/src/Projeto Feign 3.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Feign/Projeto Feign 1/src/Projeto Feign 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Spring Boot Tests/Spring Boot Tests.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Spring Boot Tests/Spring Boot Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot e API REST/Spring Boot Web/Spring Boot Web.iml" filepath="$PROJECT_DIR$/Spring Boot e API REST/Spring Boot Web/Spring Boot Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Swagger/Swagger.iml" filepath="$PROJECT_DIR$/Swagger/Swagger.iml" />
+    </modules>
+  </component>
+</project>

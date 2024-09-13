@@ -4,10 +4,9 @@
  */
 
 /*
-Faça um programa que receba a temperatura média dos 6 primeiros meses do ano e armazene-as
-em uma lista. Após isto, calcule a média semestral das temperaturas e mostre todas as
-temperaturas acima desta média, e em que mês elas ocorreram (mostrar o mês por extenso:
-(1 – Janeiro, 2 – Fevereiro e etc).
+Faça um programa que receba a temperatura média dos 6 primeiros meses do ano e armazene-as em uma lista. 
+Após isto, calcule a média semestral das temperaturas e mostre todas as temperaturas acima desta média, e 
+em que mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro e etc).
  */
 
 package dio_jtp_psbc_tp.list;
@@ -53,7 +52,7 @@ public class Arraylist_2 {
                     case 0:
 
                         System.out.println((indice + 1) + " - Janeiro: " + temp + "°C");
-
+                    
                         break;
                     
                     case 1:
@@ -96,82 +95,85 @@ public class Arraylist_2 {
 
 }
 
-/*
-Outro método:
+/* Outro método: */
 
-public static void main(String[] args) {
+// public static void main(String[] args) {
 
-    Scanner scan = new Scanner(System.in);
-    List<Double> temperaturasSemestral = new ArrayList<Double>();
-    double soma = 0.0;
+//     Scanner scan = new Scanner(System.in);
+//     List<Double> temperaturasSemestral = new ArrayList<Double>();
+//     double soma = 0.0;
 
-    for (int i = 1; i <= 6; i++) {
-        System.out.print("Qual a temperatura do mês " + i + ": ");
-        double temp = scan.nextDouble();
-        temperaturasSemestral.add(temp);
-        soma += temp;
-    }
+//     for (int i = 1; i <= 6; i++) {
 
-    double mediaTemperaturasSemenstral = soma/temperaturasSemestral.size();
+//         System.out.print("Qual a temperatura do mês " + i + ": ");
+        
+//         double temp = scan.nextDouble();
+        
+//         temperaturasSemestral.add(temp);
+        
+//         soma += temp;
+    
+//     }
 
-    System.out.println("Temperaturas Semestral: " + temperaturasSemestral);
-    System.out.println("Média temperaturas Semestral: " + mediaTemperaturasSemenstral + "oC");
+//     double mediaTemperaturasSemenstral = soma/temperaturasSemestral.size();
 
-    System.out.println("----------");
+//     System.out.println("Temperaturas Semestral: " + temperaturasSemestral);
+//     System.out.println("Média temperaturas Semestral: " + mediaTemperaturasSemenstral + "oC");
 
-    for (Double temp : temperaturasSemestral) {
+//     System.out.println("----------");
 
-        if(temp > mediaTemperaturasSemenstral) {
+//     for (Double temp : temperaturasSemestral) {
 
-            int index = temperaturasSemestral.indexOf(temp);
+//         if (temp > mediaTemperaturasSemenstral) {
 
-            switch (index) {
+//             int index = temperaturasSemestral.indexOf(temp);
 
-                case 0:
+//             switch (index) {
 
-                    System.out.println((index + 1) + " - JANEIRO: " + temp + " oC");
+//                 case 0:
 
-                    break;
+//                     System.out.println((index + 1) + " - JANEIRO: " + temp + " oC");
 
-                case 1:
+//                     break;
 
-                    System.out.println((index + 1) + " - FEVEREIRO: " + temp+ " oC");
+//                 case 1:
 
-                    break;
+//                     System.out.println((index + 1) + " - FEVEREIRO: " + temp+ " oC");
 
-                case 2:
+//                     break;
 
-                    System.out.println((index + 1) + " - MARÇO: " + temp+ " oC");
+//                 case 2:
 
-                    break;
+//                     System.out.println((index + 1) + " - MARÇO: " + temp+ " oC");
 
-                case 3:
+//                     break;
 
-                    System.out.println((index + 1) + " - ABRIL: " + temp+ " oC");
+//                 case 3:
 
-                    break;
+//                     System.out.println((index + 1) + " - ABRIL: " + temp+ " oC");
 
-                case 4:
+//                     break;
 
-                    System.out.println((index + 1) + " - MAIO: " + temp+ " oC");
+//                 case 4:
 
-                    break;
+//                     System.out.println((index + 1) + " - MAIO: " + temp+ " oC");
 
-                case 5:
+//                     break;
 
-                    System.out.println((index + 1) + " - JUNHO: " + temp+ " oC");
+//                 case 5:
 
-                    break;
+//                     System.out.println((index + 1) + " - JUNHO: " + temp+ " oC");
 
-                default:
+//                     break;
 
-                    break;
+//                 default:
 
-                }
+//                     break;
 
-            }
+//                 }
 
-        }
+//             }
 
-    }
- */
+//         }
+
+//     }

@@ -34,7 +34,6 @@ public class CountryResource {
   public Page<Country> countries(final Pageable page) {
   
       log.info("countries, {}", page);
-    
       return repository.findAll(page);
   
   }

@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package gfg;
 
 import java.io.*;
@@ -39,5 +40,7 @@ class Ex_3_1 {
         System.out.println("Deserialization ended");
         System.out.println("Ex_3 object data");
         System.out.println(d2.i + "\t" + d2.j);
+
     }
+
 }

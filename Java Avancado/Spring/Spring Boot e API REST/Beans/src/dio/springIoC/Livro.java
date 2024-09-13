@@ -49,7 +49,6 @@ public class Livro {
     public void exibir() {
 
         System.out.println(this.nome + " - " + this.codigo);
-
         autorLivro.exibirAutor();
 
     }

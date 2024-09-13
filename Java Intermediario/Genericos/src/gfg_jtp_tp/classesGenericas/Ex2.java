@@ -2,8 +2,11 @@ package gfg_jtp_tp.classesGenericas;
 
 public class Ex2<T, U> {
 
-    T obj1;  // An object of type T
-    U obj2;  // An object of type U
+    /* An object of type T */
+    T obj1;
+
+    /* An object of type U */
+    U obj2;
 
     Ex2(T obj1, U obj2) {
 
@@ -15,8 +18,10 @@ public class Ex2<T, U> {
     public static void main(String[] args) {
 
         Ex2 <String, Integer> obj = new Ex2<>("GfG", 15);
+
         System.out.println(obj.obj1);
         System.out.println(obj.obj2);
         
     }
+
 }

@@ -9,13 +9,15 @@ import java.util.Date;
 
 public class Funcionario {
 
-    // Atributos (Estão privados para garantir o encapsulamento das informações de casa objeto)
+    /* Atributos (Estão privados para garantir o encapsulamento das informações de cada objeto) */
+
     private String nome;
     private Date dataNascimento;
     private String cpf;
     private Double salario;
 
-    // Construtor
+    /* Construtor */
+
     public Funcionario(String nome, Date dataNascimento, String cpf, Double salario) {
         
         this.nome = nome;
@@ -25,7 +27,8 @@ public class Funcionario {
     
     }
 
-    // Getters e Setters
+    /* Getters e Setters */
+
     public String getNome() {
         
         return nome;

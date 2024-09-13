@@ -6,10 +6,10 @@ public class Matriz2 {
 
     public static void main(String[] args) {
         
-        //declarando o array
+        /* Declarando o array */
         String[] paises = new String[5];
 
-        // inicializando o array
+        /* Inicializando o array */
         paises[0] = "Brasil";
         paises[1] = "Alemanha";
         paises[2] = "Itália";
@@ -22,7 +22,7 @@ public class Matriz2 {
         
         }
         
-        // inserindo dados no array
+        /* Inserindo dados no array */
         int[] numeros = new int[10];
 
         for (int i = 0; i < numeros.length; i++) {
@@ -31,7 +31,7 @@ public class Matriz2 {
         
         }
         
-        // listando os valores do array com um ForEach
+        /* Listando os valores do array com um ForEach */
         System.out.println("Após a entrada de dados");
         
         for (int listaNumeros : numeros) {
@@ -40,12 +40,12 @@ public class Matriz2 {
         
         }
         
-        // calculando os valores para armazenar no array
+        /* Calculando os valores para armazenar no array */
         numeros[8] = numeros[7] + 4;
         
         System.out.println("\nApós a alteração do valor na posição 8");
         
-        // listando os valores do array com um ForEach
+        /* Listando os valores do array com um ForEach */
         for (int listaNumeros : numeros) {
         
             System.out.print(listaNumeros + " ");

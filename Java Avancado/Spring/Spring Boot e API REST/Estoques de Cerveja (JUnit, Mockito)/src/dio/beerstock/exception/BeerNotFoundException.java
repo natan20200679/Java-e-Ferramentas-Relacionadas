@@ -8,8 +8,7 @@ public class BeerNotFoundException extends Exception {
 
     public BeerNotFoundException(String beerName) {
 
-        super(String.format("Beer with name %s not found in the system.", 
-                beerName));
+        super(String.format("Beer with name %s not found in the system.", beerName));
 
     }
 

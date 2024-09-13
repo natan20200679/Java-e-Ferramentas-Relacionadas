@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import one.digitalinnovation.gof.model.Cliente;
 import one.digitalinnovation.gof.service.impl.ClientServiceImpl;
 
@@ -46,8 +45,7 @@ public class ClientRestController {
     @PostMapping
     public ResponseEntity<Cliente> inserir(@RequestBody Cliente cliente) {
     
-        clienteService.inserir(cliente);
-        
+        clienteService.inserir(cliente);       
         return ResponseEntity.ok(cliente);
     
     }
@@ -56,7 +54,6 @@ public class ClientRestController {
     public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody Cliente cliente) {
     
         clienteService.atualizar(id, cliente);
-        
         return ResponseEntity.ok(cliente);
     
     }
@@ -65,7 +62,6 @@ public class ClientRestController {
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
     
         clienteService.deletar(id);
-        
         return ResponseEntity.ok().build();
     
     }

@@ -97,7 +97,7 @@ public class Fila<T> {
                 
                 stringRetorno += "[No{objeto=" + noAuxiliar.getObject() + "}]--->";
                 
-                if(noAuxiliar.getRefNo() != null) {
+                if (noAuxiliar.getRefNo() != null) {
                     
                     noAuxiliar = noAuxiliar.getRefNo();
                 

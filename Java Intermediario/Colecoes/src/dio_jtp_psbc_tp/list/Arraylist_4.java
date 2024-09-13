@@ -54,6 +54,7 @@ public class Arraylist_4 {
         System.out.println(nomes);
 
         nomes.set(2,"Roberto");
+
         System.out.println(nomes);
 
         System.out.println("\n-- Retorno do nome da posição 1 --");
@@ -64,7 +65,8 @@ public class Arraylist_4 {
         System.out.println(nomes);
         System.out.println(nomes.remove(4));
 
-        // A saída abaixo será False, pois foi o elemento de índice 4 removido
+        /* A saída abaixo será False, pois foi o elemento de índice 4 removido */
+        
         System.out.println("\n-- Remoção do nome João --");
         System.out.println(nomes);
         System.out.println(nomes.remove("joão"));
@@ -79,13 +81,17 @@ public class Arraylist_4 {
                 "destes ítens " + "na primeira" + " criada --");
                 
         System.out.println(nomes);
+        
         List<String> nomes2 = new ArrayList<>();
+        
         Collections.addAll(nomes,"Ismael","Rodrigo");
         System.out.println(nomes);
 
         System.out.println("\n-- Ordenação dos ítens por ordem alfabética --");
         System.out.println(nomes);
+        
         Set<String> nomes3 = new TreeSet<>(nomes);
+        
         System.out.println(nomes3);
 
         System.out.println("\n-- Verificação de lista vazia --");

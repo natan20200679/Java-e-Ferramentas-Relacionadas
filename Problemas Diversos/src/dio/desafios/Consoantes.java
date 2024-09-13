@@ -7,7 +7,7 @@
 Faça um programa que leia um vetor de 6 caracteres, e diga quantas consoantes foram lidas.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -17,7 +17,6 @@ public class Consoantes {
 
         Scanner scan = new Scanner(System.in);
         String[] consoantes = new String[6];
-
         int quantConsoantes = 0;
         int count = 0;
 
@@ -45,7 +44,9 @@ public class Consoantes {
 
         System.out.println("Consoantes: ");
 
-        for (String consoante : consoantes) { // Uso do For Each
+        /* Uso do For Each */
+        
+        for (String consoante : consoantes) { 
 
             if (consoante != null) {
 

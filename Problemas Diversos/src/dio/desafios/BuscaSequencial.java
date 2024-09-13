@@ -30,7 +30,7 @@ A saída será a a posição do elemento no array, caso o valor não se encontre
 frase "Numero __ nao encontrado!"
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.*;
 
@@ -39,7 +39,6 @@ public class BuscaSequencial {
      public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
-
         int[] elementos = {64, 137, -16, 43, 67, 81, -90, 212, 10, 75}; 
         int numero = leitor.nextInt();
         

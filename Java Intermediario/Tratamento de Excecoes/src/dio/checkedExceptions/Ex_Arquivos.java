@@ -8,7 +8,8 @@ package dio.checkedExceptions;
 import javax.swing.*;
 import java.io.*;
 
-//Imprimir um arquivo no console.
+/* Imprimir um arquivo no console. */
+
 public class Ex_Arquivos {
 
     public static void main(String[] args) throws Exception {
@@ -22,12 +23,13 @@ public class Ex_Arquivos {
         } catch (FileNotFoundException e) {
 
             JOptionPane.showMessageDialog(null,
-                    "Revise o nome do arquivo que você deseja imprimir! " + e.getCause());
+                    "Revise o nome do arquivo que você deseja imprimir! "
+                            + e.getCause());
             e.printStackTrace();
 
         } catch (IOException e) {
 
-            //e.printStackTrace();
+            // e.printStackTrace();
             JOptionPane.showMessageDialog(null,
                     "Ocorreu um erro inesperado! Entre em contato com o suporte! " + e.getCause());
 

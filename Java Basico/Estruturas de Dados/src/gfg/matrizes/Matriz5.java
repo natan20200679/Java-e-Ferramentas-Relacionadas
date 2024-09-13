@@ -1,7 +1,6 @@
 /*
- * Dada a matriz m = {1, 3, 2, 4, 7, 6, 9, 10} de inteiros, separe números pares e ímpares na matriz, 
- * de modo que todos os números pares devem estar presentes primeiro e, em seguida, os números 
- * ímpares.
+Dada a matriz m = {1, 3, 2, 4, 7, 6, 9, 10} de inteiros, separe números pares e ímpares na matriz, de modo 
+que todos os números pares devem estar presentes primeiro e, em seguida, os números ímpares.
  */
 
 package gfg.matrizes;
@@ -35,7 +34,6 @@ public class Matriz5 {
             if (m[i] % 2 != 0) {
         
                 mr[indice] = m[i];
-        
                 indice++;
         
             }

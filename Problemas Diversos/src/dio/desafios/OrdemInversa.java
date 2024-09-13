@@ -7,7 +7,7 @@
 Crie um vetor de 6 números inteiros e mostre-os na ordem inversa.
 */
 
-package dio.desafios;
+package desafios;
 
 public class OrdemInversa {
 
@@ -19,7 +19,7 @@ public class OrdemInversa {
         
         int count = 0;
 
-        while (count <= vetor.length - 1) { // (count < (vetor.lenght)) opcional
+        while (count <= vetor.length - 1) { /* (count < (vetor.lenght)) opcional */ 
             
             System.out.println(vetor[count] + " ");
             

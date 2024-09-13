@@ -3,10 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
-Nota: Foi escolhido "1" no nome desta classe para evitar conflito com o uso da 
-Interface Comparator
-*/
+/* Nota: Foi escolhido "1" no nome desta classe para evitar conflito com o uso da Interface Comparator */
 
 package hr;
 
@@ -32,7 +29,7 @@ class Player {
     String name;
     int score;
 
-    Player(String name, int score){
+    Player(String name, int score) {
 
         this.name = name;
         this.score = score;
@@ -59,12 +56,12 @@ public class Comparator1 {
         scan.close();
         Arrays.sort(player, checker);
 
-        for(int i = 0; i < player.length; i++){
+        for (int i = 0; i < player.length; i++) {
 
-            System.out.printf("%s %s\n", player[i].name, player[i]
-                    .score);
+            System.out.printf("%s %s\n", player[i].name, player[i].score);
 
         }
+    
     }
     
 }

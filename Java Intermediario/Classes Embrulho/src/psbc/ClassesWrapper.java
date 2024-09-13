@@ -9,9 +9,12 @@ public class ClassesWrapper {
 
     public static void main(String[] args) {
 
-        // Um tipo primitivo não tem como transformá-lo em objeto a não ser utilizando as classes 
-        // Wrapper
-        // Autoboxing - exemplos
+        /* 
+        Um tipo primitivo não tem como transformá-lo em objeto a não ser utilizando as classes Wrapper
+         
+        Autoboxing - exemplos 
+        */
+        
         Boolean bolWrapped = true;       
         System.out.println(bolWrapped.getClass());
 

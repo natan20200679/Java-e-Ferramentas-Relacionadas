@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 
-// Habilita o Feign na aplicação
+/* Habilita o Feign na aplicação */ 
 @EnableFeignClients
 public class Application {
 

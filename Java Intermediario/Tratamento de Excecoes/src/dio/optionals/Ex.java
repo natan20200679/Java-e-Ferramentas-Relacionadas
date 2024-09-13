@@ -3,14 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/**
- * Crie um optional de um determinado tipo de dado (R)
- * Crie com estado vazio, estado presente, e com null (R)
- * Se presente, exiba o valor no console. Se vazio, exiba 'Optional vazio' no console (R)
- * Se vazio, lance uma exceção IlegalStateException (R)
- * Se presente, transforme o valor e exiba no console (R)
- * Se presente, pegue o valor do optional e atribua em uma variável (R)
- * Se presente, filtre o optional com uma determinada regra de negócio
+/*
+Crie um optional de um determinado tipo de dado (R)
+Crie com estado vazio, estado presente, e com null (R)
+Se presente, exiba o valor no console. Se vazio, exiba 'Optional vazio' no console (R)
+Se vazio, lance uma exceção IlegalStateException (R)
+Se presente, transforme o valor e exiba no console (R)
+Se presente, pegue o valor do optional e atribua em uma variável (R)
+Se presente, filtre o optional com uma determinada regra de negócio (R)
  */
 
 package dio.optionals;
@@ -30,7 +30,9 @@ public class Ex {
         
             Integer valor = estadoExcecao.get();
             
-            System.out.println("a. " + estadoExcecao);
+            System.out.println(estadoExcecao);
+
+            if (valor != 1) System.out.println("Optional diferente de 1");
         
         }
 
@@ -39,21 +41,17 @@ public class Ex {
         Optional<Integer> estadoNull = Optional.ofNullable(null);
         
         estadoNull.ifPresentOrElse(System.out::println, () -> System.out.println("null"));
-        
-        System.out.println("b. " + estadoNull);
+        System.out.println(estadoNull);
 
         Optional<Integer> estadoEmpty = Optional.empty();
         
         estadoEmpty.ifPresentOrElse(System.out::println, () -> System.out.println("empty = 0"));
-        
-        System.out.println("c. " + estadoEmpty);
+        System.out.println(estadoEmpty);
 
         Optional<Integer> estadoNullErro = Optional.of(null);
         
-        estadoNullErro.ifPresentOrElse(System.out::println, () -> System.out.println
-        ("erro = Estado 0"));
-        
-        System.out.println("d. " + estadoNullErro);
+        estadoNullErro.ifPresentOrElse(System.out::println, () -> System.out.println("erro = Estado 0"));
+        System.out.println(estadoNullErro);
 
     }
 

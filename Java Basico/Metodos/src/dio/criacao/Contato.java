@@ -14,15 +14,14 @@ public class Contato {
     public Contato(String nome, String telefone, String email) {
 
         super();
+        
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
 
     }
 
-    public Contato() {
-        
-    }
+    public Contato() {}
 
     public String getNome() {
 
@@ -70,4 +69,5 @@ public class Contato {
                 + '}';
 
     }
+
 }

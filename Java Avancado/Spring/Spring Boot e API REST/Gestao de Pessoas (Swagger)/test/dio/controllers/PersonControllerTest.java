@@ -5,9 +5,7 @@ import com.digitalinnovatione.personapi.dto.request.PersonDTO;
 import com.digitalinnovatione.personapi.dto.response.MessageResponseDTO;
 import com.digitalinnovatione.personapi.exception.PersonNotFoundException;
 import com.digitalinnovatione.personapi.service.PersonService;
-
 import lombok.var;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,13 +16,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
-
 import java.util.Collections;
 import java.util.List;
-
 import static com.digitalinnovatione.personapi.utils.PersonUtils.asJsonString;
 import static com.digitalinnovatione.personapi.utils.PersonUtils.createFakeDTO;
-
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
@@ -38,6 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class PersonControllerTest {
 
     private static final String PEOPLE_API_URL_PATH = "/api/v1/people";
+    
     private MockMvc mockMvc;
     private PersonController personController;
 

@@ -28,7 +28,7 @@ número inteiro, indicando o menor número de movimentos necessários para a dam
 de destino.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -38,8 +38,12 @@ public class Dama {
 
         Scanner sc = new Scanner(System.in);
 
-        int x1, y1, x2, y2; // Se estiver na mesma linha ou mesma coluna ou mesma diagonal, 
-        // gasta 1 movimento. Se estiver em qualquer outra posição, a rainha gastará 2 movimentos!
+        /* 
+        Se estiver na mesma linha ou mesma coluna ou mesma diagonal, gasta 1 movimento. Se estiver em 
+        qualquer outra posição, a rainha gastará 2 movimentos! 
+        */
+        
+        int x1, y1, x2, y2;
 
         while (true) {
 
@@ -50,15 +54,21 @@ public class Dama {
 
             if (x1 == 0 && y1 == 0 && x2 == 0 && y2 == 0) {
                 
-                break; // Condição de parada
+                /* Condição de parada */
+
+                break;
             
             }
             
-            if (x1 == x2 && y1 == y2) { // Imutabilidade de posição 		
+            /* Imutabilidade de posição  */
+            
+            if (x1 == x2 && y1 == y2) {		
                
                 System.out.println("0");
             
-            } else if (x1 == x2 || y1 == y2) { // Movimento em linha ou coluna	
+            /* Movimento em linha ou coluna */
+            
+            } else if (x1 == x2 || y1 == y2) {	
                 
                 System.out.println("1");
             

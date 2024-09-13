@@ -7,9 +7,7 @@ package dio;
 
 public class EnviarEmails {
 
-    public EnviarEmails(String tipo, String endereco, String senha) {
-
-    }
+    public EnviarEmails(String tipo, String endereco, String senha) {}
 
     public static EnviarEmails obterDadosEmail() {
 

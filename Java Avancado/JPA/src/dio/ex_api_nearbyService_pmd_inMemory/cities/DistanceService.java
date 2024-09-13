@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package dio.ex_api_nearbyService_pmd_inMemory.cities;
 
 import static java.lang.Math.atan2;
@@ -63,8 +64,7 @@ public class DistanceService {
      */
     public Double distanceByPointsInMiles(final Long city1, final Long city2) {
         
-        log.info("nativePostgresInMiles({}, {})", city1, city2);
-        
+        log.info("nativePostgresInMiles({}, {})", city1, city2);       
         return cityRepository.distanceByPoints(city1, city2);
     
     }

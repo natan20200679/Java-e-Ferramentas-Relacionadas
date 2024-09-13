@@ -1,5 +1,5 @@
 /*
- * Método que consiste em encontrar o sufixo máximo.
+Método que consiste em encontrar o sufixo máximo.
  */
 
 package gfg.matrizes;

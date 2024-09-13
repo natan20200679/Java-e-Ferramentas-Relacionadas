@@ -9,9 +9,7 @@ public class CepApi {
 
     private static final CepApi instancia = new CepApi();
 
-    private CepApi() {
-        
-    }
+    private CepApi() {}
 
     public static CepApi getInstancia() {
         

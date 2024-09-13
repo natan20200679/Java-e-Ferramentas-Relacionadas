@@ -2,21 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package psbc.construtores_enumerador;
 
-import src.psbc.construtores_enumerador.Aluno.STATUS;
+import psbc.construtores_enumerador.Aluno.STATUS;
 
 public class Construtor {
 
     public static void main(String[] args) {
 
-        // passando os dados através do construtor com sobrecarga
+        /* passando os dados através do construtor com sobrecarga */
+
         Aluno alu = new Aluno(8, 8, 8);
 
-        // calculando a média
+        /* calculando a média */
+
         double mediaAlunoFinal = alu.calcularMediaAluno();
 
-        // definindo situação do aluno
+        /* definindo situação do aluno */
+
         if (mediaAlunoFinal < 6) {
 
             alu.situacaoAluno = STATUS.REPROVADO;
@@ -27,7 +31,8 @@ public class Construtor {
 
         }
 
-        // Imprimindo situação do aluno
+        /* Imprimindo situação do aluno */
+
         System.out.println("A média do aluno é : " + alu.calcularMediaAluno() + " e o aluno está " + 
                 alu.situacaoAluno);
 

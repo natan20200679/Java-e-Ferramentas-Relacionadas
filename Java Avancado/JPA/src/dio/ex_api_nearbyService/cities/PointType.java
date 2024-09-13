@@ -45,8 +45,8 @@ public class PointType implements UserType {
   }
 
   @Override
-  public Object nullSafeGet(ResultSet rs, String[] names, SharedSessionContractImplementor session,
-                            Object owner) throws HibernateException, SQLException {
+  public Object nullSafeGet(ResultSet rs, String[] names, SharedSessionContractImplementor session, Object owner) throws 
+  HibernateException, SQLException {
   
     /* 1st */
     // Object object = rs.getObject(names[0]);
@@ -68,11 +68,8 @@ public class PointType implements UserType {
   }
 
   @Override
-  public void nullSafeSet(PreparedStatement st, Object value, int index,
-                          SharedSessionContractImplementor session)
-      throws HibernateException, SQLException {
-
-  }
+  public void nullSafeSet(PreparedStatement st, Object value, int index, SharedSessionContractImplementor session) throws 
+  HibernateException, SQLException {}
 
   @Override
   public Object deepCopy(Object value) throws HibernateException {

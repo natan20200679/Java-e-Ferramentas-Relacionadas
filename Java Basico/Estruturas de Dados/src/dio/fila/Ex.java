@@ -9,14 +9,14 @@ public class Ex {
 
         System.out.println("\n-- Adicione os nomes Juliana, Pedro, Carlos, Larissa e João --");
 
-        Queue<String> filaBanco = new LinkedList<>();
-    
+        Queue<String> filaBanco = new LinkedList<>(); 
+        
         filaBanco.add("Juliana");
         filaBanco.add("Pedro");
         filaBanco.add("Carlos");
         filaBanco.add("Larissa");
         filaBanco.add("João");
-    
+        
         System.out.println(filaBanco);
 
         System.out.println("\n-- Navegue na fila exibindo cada nome no console --");
@@ -32,7 +32,7 @@ public class Ex {
         System.out.println(filaBanco);
         System.out.println(filaBanco.peek());
 
-        // Outra opção
+        /* Outra opção */
         // System.out.println(filaBanco.element());
 
         System.out.println("\n-- Retorne o primeiro ítem da fila, removendo-o --");

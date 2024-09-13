@@ -1,5 +1,3 @@
-package hr;
-
 public class genericMethods {
 
     public static void main(String[] args) {
@@ -16,4 +14,5 @@ public class genericMethods {
 
         for(T element: array) System.out.println(element);
     }
+
 }

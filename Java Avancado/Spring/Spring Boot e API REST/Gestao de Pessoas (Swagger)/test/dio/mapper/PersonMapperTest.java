@@ -5,11 +5,9 @@ import com.digitalinnovatione.personapi.dto.request.PhoneDTO;
 import com.digitalinnovatione.personapi.entity.Person;
 import com.digitalinnovatione.personapi.entity.Phone;
 import com.digitalinnovatione.personapi.utils.PersonUtils;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest

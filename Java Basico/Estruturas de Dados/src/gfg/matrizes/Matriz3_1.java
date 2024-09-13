@@ -1,7 +1,6 @@
 /*
- * Método que consiste em usar 0 como um elemento de pivô, e sempre que virmos um elemento diferente 
- * de zero, o trocaremos pelo elemento de pivô. Assim, todo o elemento diferente de zero virá no 
- * início.
+Método que consiste em usar 0 como um elemento de pivô, e sempre que virmos um elemento diferente de zero, 
+o trocaremos pelo elemento de pivô. Assim, todo o elemento diferente de zero virá no início.
  */
 
 package gfg.matrizes;

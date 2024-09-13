@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package gfg;
 
 import java.io.*;
@@ -41,7 +42,8 @@ class Ex_2_1 {
         Ex_2 object = new Ex_2("ab", 20, 2, 1000);
         String filename = "shubham.txt";
 
-        // Serialização
+        /* Serialização */
+
         try {
 
             FileOutputStream file = new FileOutputStream(filename);
@@ -50,11 +52,11 @@ class Ex_2_1 {
             out.writeObject(object);
             out.close();
             file.close();
-            System.out.println("Object has been serialized\n"
-                    + "Data before Deserialization.");
+            System.out.println("Object has been serialized\n" + "Data before Deserialization.");
             printdata(object);
 
-            // Valor da variável estática modificado
+            /* Valor da variável estática modificado */
+
             object.b = 2000;
             
             object.age = 40;
@@ -67,7 +69,8 @@ class Ex_2_1 {
 
         object = null;
 
-        // Desserialização
+        /* Desserialização */
+
         try {
 
             FileInputStream file = new FileInputStream(filename);
@@ -77,11 +80,11 @@ class Ex_2_1 {
 
             in.close();
             file.close();
-            System.out.println("Object has been deserialized\n"
-                    + "Data after Deserialization.");
+            System.out.println("Object has been deserialized\n" + "Data after Deserialization.");
             printdata(object);
 
             // System.out.println("z = " + object1.z);
+
         } catch (IOException ex) {
             
             System.out.println("IOException is caught");
@@ -91,5 +94,7 @@ class Ex_2_1 {
             System.out.println("ClassNotFoundException" + " is caught");
         
         }
+
     }
+
 }

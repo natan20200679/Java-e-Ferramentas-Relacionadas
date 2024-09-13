@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
-Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou 
-"Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si.
+/*
+Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao 
+Multiplos", indicando se os valores lidos são múltiplos entre si.
 
 Entrada:
 
@@ -15,7 +15,8 @@ Saída:
 
 A saída deve conter uma das mensagens conforme descrito acima.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -25,8 +26,6 @@ public class Multiplos {
     public static void main(String[] args) throws IOException {
 
         Scanner leitor = new Scanner(System.in);
-        
-        // Continue a solucao
         int A = leitor.nextInt();
         int B = leitor.nextInt();
 

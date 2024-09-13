@@ -1,6 +1,4 @@
-/*
- * Método que consiste no uso dos dois ponteiros "i" e "j".
- */
+/* Método que consiste no uso dos dois ponteiros "i" e "j". */
 
 package gfg.matrizes;
 
@@ -26,13 +24,9 @@ public class Matriz16_1 {
     
         while (true) {
     
-            while (i < n - 1 && arr[++i] >= 0) {
+            while (i < n - 1 && arr[++i] >= 0) {}
     
-            }
-    
-            while (j > 0 && arr[--j] < 0) {
-    
-            }          
+            while (j > 0 && arr[--j] < 0) {}          
     
             if (i >= j) {
     

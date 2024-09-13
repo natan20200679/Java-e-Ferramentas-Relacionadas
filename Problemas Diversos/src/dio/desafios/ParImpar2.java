@@ -3,12 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
-Leia um valor inteiro N. Este valor será a quantidade de valores que serão lidos em seguida. Para 
-cada valor lido, mostre uma mensagem em inglês dizendo se este valor lido é par (EVEN), ímpar (ODD), 
-positivo (POSITIVE) ou negativo (NEGATIVE). No caso do valor ser igual a zero (0), embora a 
-descrição correta seja (EVEN NULL), pois por definição zero é par, seu programa deverá imprimir 
-apenas NULL.
+/*
+Leia um valor inteiro N. Este valor será a quantidade de valores que serão lidos em seguida. Para cada 
+valor lido, mostre uma mensagem em inglês dizendo se este valor lido é par (EVEN), ímpar (ODD), 
+positivo (POSITIVE) ou negativo (NEGATIVE). No caso do valor ser igual a zero (0), embora a descrição 
+correta seja (EVEN NULL), pois por definição zero é par, seu programa deverá imprimir apenas NULL.
 
 Entrada:
 
@@ -21,7 +20,8 @@ Para cada caso, imprima uma mensagem correspondente, de acordo com o exemplo aba
 letras deverão ser maiúsculas e sempre deverá haver um espaço entre duas palavras impressas na 
 mesma linha.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -31,7 +31,6 @@ public class ParImpar2 {
     public static void main(String[] args) throws IOException {
 
         Scanner leitor = new Scanner(System.in);
-        
         int N = leitor.nextInt();
 
         for (int i = 0; i < N; i++) {

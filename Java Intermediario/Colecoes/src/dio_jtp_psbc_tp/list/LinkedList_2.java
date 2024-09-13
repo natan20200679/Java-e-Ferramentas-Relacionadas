@@ -20,7 +20,7 @@ public class LinkedList_2 {
 
         Iterator<String> itr = al.iterator();
 
-        while(itr.hasNext()) {
+        while (itr.hasNext()) {
 
             System.out.println(itr.next());
 

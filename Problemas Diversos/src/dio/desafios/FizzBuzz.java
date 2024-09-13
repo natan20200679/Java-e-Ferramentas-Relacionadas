@@ -22,7 +22,7 @@ Retorne a palavra correta de acordo com o seu múltiplo. Caso o valor não seja 
 exiba o número.
  */
 
-package dio.desafios;
+package desafios;
 
 import java.util.*;
 
@@ -31,7 +31,6 @@ public class FizzBuzz {
     public static void main(String[] args) {
 
         Scanner number = new Scanner(System.in);
-
         int num = number.nextInt();
 
         if (num % 3 == 0 && num % 5 == 0) {

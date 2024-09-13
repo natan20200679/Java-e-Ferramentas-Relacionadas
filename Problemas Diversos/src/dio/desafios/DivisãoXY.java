@@ -5,8 +5,8 @@
 
 /*
 Você terá o desafio de escrever um algoritmo que leia 2 números e imprima o resultado da divisão do 
-primeiro pelo segundo. Caso não for possível, mostre a mensagem “divisao impossivel” para os 
-valores em questão.
+primeiro pelo segundo. Caso não for possível, mostre a mensagem “divisao impossivel” para os valores em 
+questão.
 
 Entrada:
 
@@ -19,7 +19,7 @@ Para cada caso mostre o resultado da divisão com um dígito após o ponto decim
 impossivel” caso não seja possível efetuar o cálculo.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -28,9 +28,7 @@ public class DivisãoXY {
 
     public static void main(String[] args) throws IOException {
 
-        // Complete os espaços com sua solução
-        Scanner leitor = new Scanner(System.in);
-        
+        Scanner leitor = new Scanner(System.in);    
         int N = leitor.nextInt();
 
         for (int i = 0; i < N; i++) {

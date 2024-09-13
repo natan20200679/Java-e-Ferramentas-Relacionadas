@@ -2,10 +2,7 @@ package psbc.login;
 
 public class LoginScreen extends javax.swing.JFrame {
 
-    /* 
-    Creates new form LoginScreen 
-    */
-
+    /* Creates new form LoginScreen */
     public LoginScreen() {
         
         initComponents();

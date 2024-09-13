@@ -16,7 +16,7 @@ Saída:
 Será  impresso o somatório de N até 0
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.*;
 

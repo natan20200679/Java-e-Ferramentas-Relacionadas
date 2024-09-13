@@ -21,7 +21,7 @@ Imprima o tempo necessário para a moto Y ficar com a quantidade K de quilômetr
 da mensagem " minutos".
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -33,7 +33,6 @@ public class Distancia {
 
         Scanner input = new Scanner(System.in);
         minutos = input.nextInt();
-
         int K = (minutos) * 2;
 
         System.out.printf(K + " minutos"); // Digite aqui o calculo dos minutos

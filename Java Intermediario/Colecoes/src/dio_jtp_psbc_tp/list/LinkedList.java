@@ -28,4 +28,5 @@ class LinkedList {
         System.out.println("Mostre a primeira nota da nova lista removendo-o: " + notas2.remove(0) 
                 + " " + notas2);
     }
+
 }

@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package dio.ex_api_nearbyService_pmd_inMemory.cities;
 
 import com.github.andrelugomes.cities.entities.City;

@@ -8,17 +8,21 @@ public class ComandosEntradaSaida {
 
         // 2 - Instanciar e criar um objeto Scanner
         Scanner leitor = new Scanner(System.in);
+
         int n = leitor.nextInt();
         float f = leitor.nextFloat();
         double d = leitor.nextDouble();
-        String s = leitor.next(); // Lê apenas uma palavra, não é permitido o uso do caractere 
-        // espaço
-        String ss = leitor.nextLine(); // Leitura de texto com mais de uma palavra
+
+        // Lê apenas uma palavra, não é permitido o uso do caractere espaço
+        String s = leitor.next(); 
+
+        // Leitura de texto com mais de uma palavra
+        String ss = leitor.nextLine(); 
 
         /*
-         * Como o método next retorna um texto precisamos pegar o caractere da primeira posição da
-         * palavra para isso usamos o método charAt() na posição zero
-         */
+        Como o método next retorna um texto precisamos pegar o caractere da primeira posição da palavra 
+        para isso usamos o método charAt() na posição zero
+        */
 
         char c = leitor.next().charAt(0);
         String texto = "Esse texto será impresso no console";

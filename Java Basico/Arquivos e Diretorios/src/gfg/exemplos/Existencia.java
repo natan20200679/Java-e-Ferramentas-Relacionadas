@@ -28,8 +28,7 @@ public class Existencia {
             else System.out.println("Arquivo 'license-pt-br.rtf' não é um diretório.");
 
             System.out.println("Tamanho do arquivo: " + arquivo.length() + " bytes");
-        }
-        else System.out.println("\nArquivo 'license-pt-br.rtf' não existe.");
+        
+        } else System.out.println("\nArquivo 'license-pt-br.rtf' não existe.");
     }
-
 }

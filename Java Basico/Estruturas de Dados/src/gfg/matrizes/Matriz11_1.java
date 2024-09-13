@@ -1,6 +1,4 @@
-/*
- * Método que consiste no uso de classificação.
- */
+/* Método que consiste no uso de classificação. */
 
 package gfg.matrizes;
 
@@ -30,11 +28,12 @@ public class Matriz11_1 {
                               
         }
 
-        // Para imprimir a matriz resultante, que terá uma amplitude menor do que a matriz base 
-        // (sem preenchimento automático de zeros pelo compilador por ser matriz de inteiros e 
-        // estática), desconsideram-se as instruções relacionadas à criação de uma nova matriz (arr2), 
-        // e considera-se a instrução System.out.print(arr[i] + " "), sendo o caracter entre as aspas 
-        // à escolha do usuário.
+        /* 
+        Para imprimir a matriz resultante, que terá uma amplitude menor do que a matriz base (sem 
+        preenchimento automático de zeros pelo compilador por ser matriz de inteiros e estática), 
+        desconsideram-se as instruções relacionadas à criação de uma nova matriz (arr2), e considera-se a 
+        instrução System.out.print(arr[i] + " "), sendo o caracter entre as aspas à escolha do usuário. 
+        */
 
         System.out.println("Matriz após eliminação dos elementos duplicados = " + 
         Arrays.toString(arr2) + "\n");   

@@ -1,9 +1,7 @@
 {
-    "java.project.sourcePaths": [
-        "src/uj",
-        "src/psbc",
-        "src/dio",
-        "src/ifrn"
-    ],
-    "java.dependency.packagePresentation": "flat"
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
 }

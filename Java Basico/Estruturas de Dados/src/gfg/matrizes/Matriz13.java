@@ -1,7 +1,6 @@
 /*
- * Escreva um programa para imprimir todos os líderes da matriz arr[] = {16, 17, 4, 3, 5, 2}. Um 
- * elemento é um líder se for maior do que todos os elementos do lado direito. E o elemento mais à 
- * direita é sempre um líder.
+Escreva um programa para imprimir todos os líderes da matriz arr[] = {16, 17, 4, 3, 5, 2}. Um elemento é um 
+líder se for maior do que todos os elementos do lado direito. E o elemento mais à direita é sempre um líder.
  */
 
 package gfg.matrizes;

@@ -1,6 +1,6 @@
 /*
- * Dada a matriz arr = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0} de números aleatórios, empurre todos os 
- * zeros de uma determinada matriz para o final da matriz
+Dada a matriz arr = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0} de números aleatórios, empurre todos os zeros de uma 
+determinada matriz para o final da matriz
  */
 
 package gfg.matrizes;

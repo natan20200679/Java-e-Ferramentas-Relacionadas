@@ -10,6 +10,7 @@ public class Programa {
         final var game = "PUBG";
 
         // Game = "WoW";
+        
         System.out.println(casualGamer.play(game));
         
     }

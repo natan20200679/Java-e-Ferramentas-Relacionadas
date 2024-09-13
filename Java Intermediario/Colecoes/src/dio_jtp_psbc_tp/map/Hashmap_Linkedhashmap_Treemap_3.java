@@ -4,8 +4,8 @@
  */
 
 /*
-Dadas as seguintes informações sobre meus livros favoritos e seus autores, crie um dicionário e ordene este dicionário
-exibindo (Nome Autor - Nome Livro):
+Dadas as seguintes informações sobre meus livros favoritos e seus autores, crie um dicionário e ordene este 
+dicionário exibindo (Nome Autor - Nome Livro):
 
 Autor = Hawking, Stephen - Livro = nome: Uma Breve História do Tempo. páginas: 256
 Autor = Duhigg, Charles - Livro = nome: O Poder do Hábito, paginas: 408
@@ -21,37 +21,49 @@ public class Hashmap_Linkedhashmap_Treemap_3 {
     public static void main(String[] args) {
 
         System.out.println("\n--\tOrdem aleatória\t--");
+        
         Map<String, Livro> meusLivros = new HashMap<>() {{
             put(" Hawking, Stephen", new Livro("Uma Breve História do Tempo", 256));
             put(" Duhigg, Charles", new Livro("O Poder do Hábito", 408));
             put(" Harari, Yuval Noah", new Livro("21 Lições Para o Século 21", 432));
         }};
-        for (Map.Entry<String, Livro> livro : meusLivros.entrySet())
+        
+        for (Map.Entry<String, Livro> livro : meusLivros.entrySet()) 
             System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
 
         System.out.println("\n--\tOrdem Inserção\t--");
+        
         Map<String, Livro> meusLivros1 = new LinkedHashMap<>() {{
             put(" Hawking, Stephen", new Livro("Uma Breve História do Tempo", 256));
             put(" Duhigg, Charles", new Livro("O Poder do Hábito", 408));
             put(" Harari, Yuval Noah", new Livro("21 Lições Para o Século 21", 432));
         }};
+        
         for (Map.Entry<String, Livro> livro : meusLivros1.entrySet())
             System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
 
         System.out.println("\n--\tOrdem alfabética autores\t--");
+        
         Map<String, Livro> meusLivros2 = new TreeMap<>(meusLivros1);
+        
         for (Map.Entry<String, Livro> livro : meusLivros2.entrySet())
             System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
 
         System.out.println("\n--\tOrdem alfabética nomes dos livros\t--");
+        
         Set<Map.Entry<String, Livro>> meusLivros3 = new TreeSet<>(new ComparatorNome());
+        
         meusLivros3.addAll(meusLivros.entrySet());
+        
         for (Map.Entry<String, Livro> livro : meusLivros3)
             System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
 
         System.out.println("\n--\tOrdem número de páginas\t--");
+        
         Set<Map.Entry<String, Livro>> meusLivros4 = new TreeSet<>(new ComparatorPaginas());
+        
         meusLivros4.addAll(meusLivros.entrySet());
+        
         for (Map.Entry<String, Livro> livro: meusLivros4)
             System.out.println(livro.getKey() + " - " + livro.getValue().getPaginas());
     

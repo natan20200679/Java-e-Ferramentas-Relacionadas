@@ -25,6 +25,7 @@ import org.hibernate.annotations.TypeDefs;
 @TypeDefs({
 
     @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
+
 })
 
 public class State {
@@ -36,7 +37,6 @@ public class State {
   private String name;
 
   private String uf;
-
   private Integer ibge;
 
   /* 1st */
@@ -58,6 +58,7 @@ public class State {
   public Long getId() {
     
       return id;
+  
   }
 
   public String getName() {
@@ -90,8 +91,10 @@ public class State {
   
   }
 
-  /*public Integer getCountryId() {
-      return countryId;
-  }*/
+  // public Integer getCountryId() {
+    
+  //   return countryId;
+
+  // }
 
 }

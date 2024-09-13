@@ -6,12 +6,11 @@
 /*
 O fatorial de um número inteiro positivo N é o produto de todos os inteiros positivos menores ou 
 iguais a n. Fazemos um fatorial desajeitado usando os inteiros em ordem decrescente, trocando as 
-operações de multiplicação por uma rotação fixa de operações cuja ordem é: multiplicar '*', 
-dividir '/', adicionar '+' e subtrair '-'. Por exemplo, desacnteitado(10) = 
-10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1. Lembre-se que no fatorial desajeitado as operações ainda 
-são aplicadas usando a ordem usual de operações aritméticas. Além disso, a divisão neste caso 
-sempre resulta em um número inteiro, por exemplo, 90 / 8 = 11. Dado um inteiro N, retorne o 
-fatorial desacnteitado de n.
+operações de multiplicação por uma rotação fixa de operações cuja ordem é: multiplicar '*', dividir '/', 
+adicionar '+' e subtrair '-'. Por exemplo, desacnteitado(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1. 
+Lembre-se que no fatorial desajeitado as operações ainda são aplicadas usando a ordem usual de 
+operações aritméticas. Além disso, a divisão neste caso sempre resulta em um número inteiro, por 
+exemplo, 90 / 8 = 11. Dado um inteiro N, retorne o fatorial desacnteitado de n.
 
 Entrada:
 
@@ -22,15 +21,20 @@ Saída:
 A saída consiste em retornar o valor do seu fatorial desacnteitado de N.
 */
 
-package dio.desafios;
+package desafios;
+
+import java.util.Scanner;
 
 public class FatorialDesajeitado {
 
     public static void main(String[] args) {
         
-        int n = new java.util.Scanner(System.in).nextInt();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
 
         System.out.println(FatorialDesajeitado.calcular(n));
+
+        scan.close();
         
     }
 
@@ -67,7 +71,7 @@ public class FatorialDesajeitado {
         }
 
         return res + ((n <= 4) ? tmp : -tmp);
-
+   
     }
 
 }

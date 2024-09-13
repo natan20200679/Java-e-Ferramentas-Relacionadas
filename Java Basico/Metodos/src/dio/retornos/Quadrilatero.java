@@ -20,9 +20,11 @@ public class Quadrilatero {
     
     }
 
-    // @author ${natan} -> Exemplo abaixo envolve modificador de acesso mais restrito (default),
-    // onde apenas este pacote acessa o método abaixo, que é um exemplo de Método de Instância, 
-    // diferente dos outros métodos desta classe que são Métodos Estáticos
+    /**
+     * @author ${natan} -> Exemplo abaixo envolve modificador de acesso mais restrito (default),onde apenas 
+     * este pacote acessa o método abaixo, que é um exemplo de Método de Instância, diferente dos outros 
+     * métodos desta classe que são Métodos Estáticos
+     */
 
     int codeQuadr(int code) {
         

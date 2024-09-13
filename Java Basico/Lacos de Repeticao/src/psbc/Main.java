@@ -84,23 +84,30 @@ public class Main {
 
             System.out.println("Digite o nome do usuário");
 
-            nome = leitor.next(); // @authot ${natan} -> Ao trocar "nextLine()" por "next()", 
-            // otimizei o programa de tal forma a evitar que a partir da 2ª iteração as solicitações 
-            // "nome" e "idade" sejam executadas de uma vez pelo "println()"  
-
+            /**
+             * @author ${natan}
+             * 
+             * Ao trocar "nextLine()" por "next()", otimizei o programa de tal forma a evitar que a partir 
+             * da 2ª iteração as solicitações "nome" e "idade" sejam executadas de uma vez pelo "println()"  
+             */ 
+            
+            nome = leitor.next(); 
             System.out.println("Digite a idade do usuário");
 
             idade = leitor.nextByte();
-
             System.out.println(nome + " têm " + idade + " anos!");
 
             desejaRepetir = leitor.nextBoolean();
 
         }
 
-        // @author ${natan} -> Exemplo anterior usando Do While
+        /**
+         * @author ${natan}
+         * 
+         * Exemplo anterior usando Do While 
+         */  
         
-        do {
+         do {
 
             System.out.println("\nEstrutura Do While\n");
             System.out.println("Digite o nome do usuário");
@@ -124,4 +131,5 @@ public class Main {
         }
 
     }
+
 }

@@ -1,7 +1,6 @@
 package dio.beerstock.builder;
 
 import lombok.Builder;
-
 import one.digitalinnovation.beerstock.dto.BeerDTO;
 import one.digitalinnovation.beerstock.enums.BeerType;
 

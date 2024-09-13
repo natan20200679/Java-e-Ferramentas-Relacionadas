@@ -37,7 +37,7 @@ try {
 Feito isso, crie uma classe para testar a inicialização de um objeto do tipo Login e que utilize o 
 método fazerLogin, com informações digitadas pelo usuário.
  */
-package uj.excecoes;
+package excecoes;
 
 public class E3 {
 

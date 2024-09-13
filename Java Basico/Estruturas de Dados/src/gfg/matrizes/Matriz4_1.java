@@ -1,6 +1,6 @@
 /*
- * Método que consiste em atravessar a matriz do primeiro elemento até n-1 e trocar o elemento pelo 
- * próximo se a condição não for satisfeita.
+Método que consiste em atravessar a matriz do primeiro elemento até n-1 e trocar o elemento pelo próximo se 
+a condição não for satisfeita.
  */
 
 package gfg.matrizes;

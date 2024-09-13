@@ -11,18 +11,16 @@ public class Pessoa {
     private String nomePessoa;
     private String email;
 
-    public Pessoa() {
+    public Pessoa() {}
 
-    }
+    // public Pessoa(String nomePessoa, String email) {
 
-    public Pessoa(String nomePessoa, String email) {
+    //     super();
 
-        super();
+    //     this.nomePessoa = nomePessoa;
+    //     this.email = email;
 
-        this.nomePessoa = nomePessoa;
-        this.email = email;
-
-    }
+    // }
 
     public Pessoa(int idPessoa, String nomePessoa, String email) {
 
@@ -37,8 +35,7 @@ public class Pessoa {
     @Override
     public String toString() {
 
-        return "Pessoa [idPessoa=" + idPessoa + ", nomePessoa=" + nomePessoa + ", "
-                + "email=" + email + "]";
+        return "Pessoa [idPessoa=" + idPessoa + ", nomePessoa=" + nomePessoa + ", " + "email=" + email + "]";
 
     }
 

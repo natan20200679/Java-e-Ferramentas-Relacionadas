@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
+/*
 Faça um programa que leia um conjunto de 2 valores, sendo o primeiro representando o nome do aluno
 e o segundo representando a sua idade. Pare o programa inserindo o valor 0 no campo nome.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.util.Scanner;
 

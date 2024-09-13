@@ -8,7 +8,7 @@ public class ListaEncadeada1_1 {
 
     No topo;
 
-    // Criando um novo Nó
+    /* Criando um novo Nó */
     class No {
         
         int dado;
@@ -23,7 +23,7 @@ public class ListaEncadeada1_1 {
     
     }
 
-    // Função para adicionar um novo Nó
+    /* Função para adicionar um novo Nó */
     public void empurraNo(int dado) {
    
         No novoNo = new No(dado);
@@ -32,7 +32,7 @@ public class ListaEncadeada1_1 {
    
     }
 
-    // Mostrando os elementos na lista
+    /* Mostrando os elementos na lista */
     public void imprimeNo() {
         
         No temp = topo;
@@ -49,7 +49,7 @@ public class ListaEncadeada1_1 {
     
     }
 
-    // Encontrando o tamanho da lista
+    /* Encontrando o tamanho da lista */
     public int acessTam() {
         
         int tamanho = 0;
@@ -67,7 +67,7 @@ public class ListaEncadeada1_1 {
     
     }
 
-    // Imprimindo o elemento médio da lista
+    /* Imprimindo o elemento médio da lista */
     public void imprimeMeio() {
         
         if (topo != null) {
@@ -78,8 +78,7 @@ public class ListaEncadeada1_1 {
          
             while (meiodletamanho != 0) {
          
-                temp = temp.proximo;
-         
+                temp = temp.proximo;      
                 meiodletamanho--;
          
             }

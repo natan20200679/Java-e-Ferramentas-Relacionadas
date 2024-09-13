@@ -14,18 +14,25 @@ public class Hashset_2 {
     public static void main(String[] args) {
 
         System.out.println("\n-- Adicione 5 números inteiros: 3,88,20,44,3 --");
+        
         Set<Integer> numeros = new HashSet<>();
+        
         numeros.add(3);
         numeros.add(88);
         numeros.add(20);
         numeros.add(44);
         numeros.add(3);
+        
         System.out.println(numeros);
 
         System.out.println("\n-- Navegue no Set exibindo cada número no console --");
+        
         Iterator<Integer> iterator = numeros.iterator();
+        
         for (Integer numero:numeros) {
+        
             System.out.println(numero);
+        
         }
 
         System.out.println("\n-- Remova o primeiro ítem do Set --");

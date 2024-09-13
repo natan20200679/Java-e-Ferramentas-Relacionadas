@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package tp;
 
 import java.net.*;
@@ -16,22 +17,18 @@ public class ClienteSoquete {
 
         try {
 
-            System.out.println("Connecting to " + serverName + " on port "
-                    + port);
+            System.out.println("Connecting to " + serverName + " on port " + port);
 
             Socket client = new Socket(serverName, port);
 
-            System.out.println("Just connected to "
-                    + client.getRemoteSocketAddress());
+            System.out.println("Just connected to " + client.getRemoteSocketAddress());
 
             OutputStream outToServer = client.getOutputStream();
-
             DataOutputStream out = new DataOutputStream(outToServer);
 
             out.writeUTF("Hello from " + client.getLocalSocketAddress());
 
             InputStream inFromServer = client.getInputStream();
-
             DataInputStream in = new DataInputStream(inFromServer);
 
             System.out.println("Server says " + in.readUTF());
@@ -42,5 +39,7 @@ public class ClienteSoquete {
             e.printStackTrace();
 
         }
+
     }
+
 }

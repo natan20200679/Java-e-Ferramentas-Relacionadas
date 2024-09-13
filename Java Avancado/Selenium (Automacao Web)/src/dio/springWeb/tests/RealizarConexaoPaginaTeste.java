@@ -21,8 +21,7 @@ public class RealizarConexaoPaginaTeste {
     @Before
     public void inicializa() {
 
-        System.setProperty("webdriver.chrome.driver", 
-                "src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
         realizarLoginPage = new RealizarConexaoPagina(driver);
@@ -36,8 +35,7 @@ public class RealizarConexaoPaginaTeste {
 
         realizarLoginPage.RealizarLogin();
     
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
-                .cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
         
         WebElement validaTexto = driver.findElement(By.cssSelector("a[title='Orders'] span"));
         

@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package gfg;
 
 import java.io.*;
@@ -27,7 +28,8 @@ class Test {
         Ex_1 object = new Ex_1(1, "geeksforgeeks");
         String filename = "file.ser";
 
-        // Serialização
+        /* Serialização */
+
         try {
             
             FileOutputStream file = new FileOutputStream(filename);
@@ -47,7 +49,8 @@ class Test {
 
         Ex_1 object1 = null;
 
-        // Desserialização
+        /* Desserialização */
+
         try {
             
             FileInputStream file = new FileInputStream(filename);
@@ -72,4 +75,5 @@ class Test {
         }
 
     }
+
 }

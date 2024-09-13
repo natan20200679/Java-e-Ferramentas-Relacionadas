@@ -1,16 +1,13 @@
 package dio.dto.request;
 
 import java.util.List;
-
 import lombok.Data;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-
 import org.hibernate.validator.constraints.br.CPF;
 
 @Data

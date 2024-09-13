@@ -1,6 +1,6 @@
 /*
- * Dada a matriz de inteiros arr = {12, 35, 1, 10, 34, 1}, nossa tarefa é escrever um programa que 
- * encontre eficientemente o segundo maior elemento presente na matriz. 
+Dada a matriz de inteiros arr = {12, 35, 1, 10, 34, 1}, nossa tarefa é escrever um programa que encontre 
+eficientemente o segundo maior elemento presente na matriz. 
  */
 
 package gfg.matrizes;

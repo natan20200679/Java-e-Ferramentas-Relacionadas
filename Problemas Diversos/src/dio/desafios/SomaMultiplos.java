@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
+/*
 Dado um número A e o seu limite N, encontre a soma de todos os múltiplos A até o seu limite N.
 
 Entrada:
@@ -14,7 +14,8 @@ Saída:
 
 A saída deverá retornar o valor da soma de todos os múltiplos A até o seu limite N.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.util.Scanner;
 
@@ -23,7 +24,6 @@ public class SomaMultiplos {
     public static void main(String[] args) {
         
         int A, N, soma = 0;
-
         Scanner input = new Scanner(System.in);
         A = input.nextInt();
         N = input.nextInt();

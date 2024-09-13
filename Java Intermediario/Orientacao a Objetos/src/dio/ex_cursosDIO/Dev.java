@@ -20,7 +20,6 @@ public class Dev {
     public void inscreverBootcamp (Bootcamp bootcamp) {
 
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
-        
         bootcamp.getDevsInscritos().add(this);
     
     }
@@ -45,6 +44,7 @@ public class Dev {
     public double calcularTotalXP () {
 
         return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXP).sum();
+
     }
 
     public String getNome() {
@@ -92,9 +92,9 @@ public class Dev {
         
         Dev dev = (Dev) o;
         
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, 
-                dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, 
-                        dev.conteudosConcluidos);
+        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos,
+                dev.conteudosInscritos) && Objects.equals(conteudosConcluidos,
+                dev.conteudosConcluidos);
     
     }
 

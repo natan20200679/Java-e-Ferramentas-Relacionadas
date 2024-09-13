@@ -15,6 +15,7 @@ public class If {
             System.out.println("A condição é falsa");
 
         }
+        
         if (condicao) {      
 
             System.out.println("Uma única linha...");

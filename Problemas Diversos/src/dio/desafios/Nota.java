@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
+/*
 Faça um programa que peça uma nota entre 0 e 10. Mostre uma mensagem caso o valor seja inválido e 
 continue pedindo até que o usuário informe um valor válido.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.util.Scanner;
 

@@ -11,7 +11,8 @@ ArithmeticException -> quando ocorrer uma divisão por zero.
 
 InputMismatchException -> quando o valor informado não é numerico.
  */
-package uj.excecoes;
+
+package excecoes;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
+/*
 Dado um array inteiro nums, mova todos os inteiros pares no início do array seguido por todos os 
 inteiros ímpares. Retorne um array que satisfaça essa condição.
 
@@ -17,7 +17,7 @@ Saída:
 A saída deverá retornar todos os valores pares para o começo do array, seguido pelos ímpares
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 

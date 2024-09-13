@@ -2,7 +2,6 @@ package dio.mapper;
 
 import com.digitalinnovatione.personapi.dto.request.PersonDTO;
 import com.digitalinnovatione.personapi.entity.Person;
-
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

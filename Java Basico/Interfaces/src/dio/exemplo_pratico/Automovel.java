@@ -9,6 +9,8 @@ public interface Automovel {
     /*
     As linhas abaixo foram adicionadas por mim.
     */
+
     abstract String marca();
     abstract Double valor();
+
 }

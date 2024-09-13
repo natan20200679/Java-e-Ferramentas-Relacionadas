@@ -5,6 +5,4 @@
 
 package test;
 
-public @interface Test {
-    
-}
+public @interface Test {}

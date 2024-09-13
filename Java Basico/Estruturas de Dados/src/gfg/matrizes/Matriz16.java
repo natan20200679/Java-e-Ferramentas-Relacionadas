@@ -1,8 +1,8 @@
 /*
- * A matriz arr = [-1, 2, -3, 4, 5, 6, -7, 8, 9] contém números positivos e negativos em ordem 
- * aleatória. Reorganize os elementos da matriz para que os números positivos e negativos sejam 
- * colocados alternativamente. Nota: O processo de partição altera a ordem relativa dos elementos. A 
- * ordem de aparecimento dos elementos não é mantida com essa abordagem.
+A matriz arr = [-1, 2, -3, 4, 5, 6, -7, 8, 9] contém números positivos e negativos em ordem aleatória. 
+Reorganize os elementos da matriz para que os números positivos e negativos sejam colocados alternativamente. 
+Nota: O processo de partição altera a ordem relativa dos elementos. A ordem de aparecimento dos elementos 
+não é mantida com essa abordagem.
  */
 
 package gfg.matrizes;
@@ -25,8 +25,7 @@ public class Matriz16 {
         
                 i++;
         
-                temp = arr[i];
-        
+                temp = arr[i];        
                 arr[i] = arr[j];
                 arr[j] = temp;
         
@@ -40,8 +39,7 @@ public class Matriz16 {
         
             temp = arr[neg];
             arr[neg] = arr[pos];
-            arr[pos] = temp;
-        
+            arr[pos] = temp;        
             pos++;
             neg += 2;
         

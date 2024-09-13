@@ -93,6 +93,7 @@ public class ListaEncadeada<T> {
                 if (referenciaAux.getProximoNo() != null) {
                     
                     referenciaAux = referenciaAux.getProximoNo();
+                
                 } else {
                    
                     break;
@@ -134,7 +135,6 @@ public class ListaEncadeada<T> {
     public String toString() {
     
         String strRetorno = "";
-    
         No<T> noAuxiliar = referenciaEntrada;
     
         for (int i = 0; i < this.size(); i++) {

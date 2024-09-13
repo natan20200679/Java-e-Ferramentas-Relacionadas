@@ -4,11 +4,11 @@ public class Programa {
 
     public static void main(String[] args) {
 
-        //final TipoVeiculo tipoVeiculo = new TipoVeiculo();
+        // final TipoVeiculo tipoVeiculo = new TipoVeiculo();
         System.out.println(TipoVeiculo.TERRESTRE);
         System.out.println(TipoVeiculo.AQUATICO);
 
-        //System.out.println(TipoVeiculo.valueOf("aero"));
+        // System.out.println(TipoVeiculo.valueOf("aero"));
         System.out.println(TipoVeiculo.valueOf("AEREO"));
 
         for (TipoVeiculo tipo : TipoVeiculo.values()) {  

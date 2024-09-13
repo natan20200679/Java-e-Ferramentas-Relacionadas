@@ -34,23 +34,33 @@ public class Arraylist_3 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Telefonou para vítima? ");
+        
         String resposta = scanner.next();
+        
         respostas.add(resposta.toLowerCase());
         
         System.out.print("Esteve no local do crime? ");
+        
         resposta = scanner.next();
+        
         respostas.add(resposta.toLowerCase());
         
         System.out.print("Mora perto da vítima? ");
+        
         resposta = scanner.next();
+        
         respostas.add(resposta.toLowerCase());
 
         System.out.print("Devia para vítima? ");
+        
         resposta = scanner.next();
+        
         respostas.add(resposta.toLowerCase());
 
         System.out.print("Já trabalhou com a vítima? ");
+        
         resposta = scanner.next();
+        
         respostas.add(resposta.toLowerCase());
 
         System.out.println(respostas);

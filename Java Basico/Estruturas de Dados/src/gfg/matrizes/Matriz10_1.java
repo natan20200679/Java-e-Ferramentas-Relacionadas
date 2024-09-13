@@ -1,6 +1,4 @@
-/*
- * Método que consiste no uso de classificação.
- */
+/* Método que consiste no uso de classificação. */
 
 package gfg.matrizes;
 

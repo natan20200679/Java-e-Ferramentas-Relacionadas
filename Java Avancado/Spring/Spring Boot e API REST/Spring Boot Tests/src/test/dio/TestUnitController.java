@@ -1,9 +1,7 @@
 package test.dio;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
-
 import com.dio.springboottest.controller.TestController;
 
 public class TestUnitController {

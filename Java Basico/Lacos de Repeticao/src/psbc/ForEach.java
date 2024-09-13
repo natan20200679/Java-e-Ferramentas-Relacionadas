@@ -22,12 +22,21 @@ public class ForEach {
             System.out.println("Nr : " + obj);
         }
 
-        // @author ${natan} -> Exemplo com matriz
+        /**
+         * @author ${natan}
+         * 
+         * Exemplo com matriz
+         */
+        
         int[][] matrizNumeros = {{1, 2}, {3, 4}, {5, 6}, {7, 8}, {9, 10}};
+        
         System.out.println("Varrendo a matriz usando o For Each");
         System.out.println("Linha, Coluna:");
+        
         for (int[] i : matrizNumeros) {
+        
             System.out.println(Arrays.toString(i));
+        
         }
         
     }

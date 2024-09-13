@@ -27,6 +27,7 @@ public class Carro {
     @Override
     
     public boolean equals(Object o) {
+
         if (this == o) return true;
     
         if (o == null || getClass() != o.getClass()) return false;
@@ -39,7 +40,6 @@ public class Carro {
 
     @Override
     public int hashCode() {
-
         
         return Objects.hash(marca);
     

@@ -20,8 +20,7 @@ public class Main {
         System.out.println(no1);
         System.out.println(no1.getProximoNo());
         System.out.println(no2);
-
-        
+   
         System.out.println("-------------------");
         
         System.out.println(no1);

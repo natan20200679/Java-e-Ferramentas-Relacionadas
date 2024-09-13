@@ -23,8 +23,11 @@ public class Ex2 {
 
         System.out.println("----------");
 
-        // Transformando a Funçao Lambda em Blocos para permitir compreensao detalhada do seu 
-        // comportamento. "peek" permite melhor acompanhamento dos resultados do debug        
+        /*
+        Transformando a Funçao Lambda em Blocos para permitir compreensao detalhada do seu comportamento.
+        "peek" permite melhor acompanhamento dos resultados do debug
+        */
+
         list.stream().peek(n -> System.out.println(n + "Ímpares")).filter(n -> n % 3 == 0)
                 .map((n) -> {
                 StringBuilder builder = new StringBuilder();

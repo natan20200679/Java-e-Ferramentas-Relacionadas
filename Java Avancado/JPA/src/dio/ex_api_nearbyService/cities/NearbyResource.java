@@ -30,11 +30,10 @@ public class NearbyResource {
     }
 
     @GetMapping
-    public List<City> nearby(@RequestParam(name = "city_id") final Long cityId, @RequestParam(name = "radius")
-            final Double radius) {
+    public List<City> nearby(@RequestParam(name = "city_id") final Long cityId, @RequestParam(name = "radius") 
+    final Double radius) {
         
-        log.info("nearby, city_id={}, radius={}", cityId, radius);
-        
+        log.info("nearby, city_id={}, radius={}", cityId, radius);    
         return service.nearby(cityId, radius);
     
     }

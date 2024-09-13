@@ -1,6 +1,6 @@
 /*
- * Reorganizar a matriz m = {1, 3, 2, 2, 5} de tal forma que os posicionamentos pares sejam maiores  
- * que os ímpares.
+Reorganizar a matriz m = {1, 3, 2, 2, 5} de tal forma que os posicionamentos pares sejam maiores que os 
+ímpares.
  */
 
 package gfg.matrizes;

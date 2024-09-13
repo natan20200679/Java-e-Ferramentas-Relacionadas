@@ -14,7 +14,9 @@ public class Hashmap_2 {
         
         System.out.println("\n-- Adicione 26 estados brasileiros no Map, onde a sigla será a chave "
                 + "e o nome do estado" + " o valor-- ");
+       
         Map<String,String> estados = new HashMap<>();
+        
         estados.put("AC","Acre");
         estados.put("RO","Rondônia");
         estados.put("RR","Roraima");
@@ -41,6 +43,7 @@ public class Hashmap_2 {
         estados.put("PA","Pará");
         estados.put("TO","Tocantins");
         estados.put("AP","Amapá");
+        
         System.out.println(estados);
 
         System.out.println("\n-- Remova o estado de Minas Gerais --");
@@ -58,13 +61,17 @@ public class Hashmap_2 {
         estados.remove("Mato Grosso do Sul");
         System.out.println(estados);
 
-        System.out.println("\n-- Navegue em todos os registros do Map, mostrando no console no seguinte formato: " +
-                "NOME (SIGLA) --");
+        System.out.println("\n-- Navegue em todos os registros do Map, mostrando no console no seguinte 
+        formato: " + "NOME (SIGLA) --");
+        
         for (String key: estados.keySet()) {
+        
             System.out.println(estados.get(key) + " (" + key + ")");
+        
         }
 
-        System.out.println("\n-- Verifique se o estado de Santa Catarina existe no Map buscando por sua sigla (SC) --");
+        System.out.println("\n-- Verifique se o estado de Santa Catarina existe no Map buscando por sua 
+        sigla (SC) --");
         System.out.println(estados.containsKey("SC"));
 
         System.out.println("\n-- Verifique se o estado de Maranhão existe no Map buscando por seu nome --");

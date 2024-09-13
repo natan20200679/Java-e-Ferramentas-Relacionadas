@@ -14,8 +14,8 @@ public class ExecutionPart2 {
     public static void main(String[] args) {
 
         /*
-        OBS: Esse codigo deve executar SEM ERROS com a implementacao JPA que foi definida no 
-        "persistence.xml". Se estiver somente com o JPA baixado, o codigo NAO IRA funcionar.
+        OBS: Esse codigo deve executar SEM ERROS com a implementacao JPA que foi definida no "persistence.xml". Se estiver 
+        somente com o JPA baixado, o codigo NAO IRA funcionar.
        
         O ideal é que nessa parte (Parte 2) o codigo EXECUTE SEM ERROS, pois aqui tera uma implementacao 
         JPA sendo utilizada.
@@ -46,16 +46,13 @@ public class ExecutionPart2 {
         // System.out.println(estadoEncontrado);
         // System.out.println(alunoEncontrado);
 //
-        /* 4 - Alterar uma entidade */
-    
+        /* 4 - Alterar uma entidade */   
         // entityManager.getTransaction().begin();
-
         // alunoEncontrado.setNome("Karam");
         // alunoEncontrado.setIdade(20);
-
         // entityManager.getTransaction().commit();
 
-       /* 5 - Remover uma entidade */
+        /* 5 - Remover uma entidade */
        
     //    entityManager.getTransaction().begin();
     //    entityManager.remove(alunoEncontrado);

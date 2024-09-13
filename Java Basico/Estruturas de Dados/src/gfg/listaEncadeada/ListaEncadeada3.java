@@ -1,13 +1,12 @@
 /*
- * Dada uma lista encadeada (lincada) individualmente, descubra se a lista encadeada é circular ou 
- * não.
+Dada uma lista encadeada (lincada) individualmente, descubra se a lista encadeada é circular ou não.
  */
 
 package gfg.listaEncadeada;
 
 class ListaEncadeada3 {
 
-	// Nó da lista lincada
+	/* Nó da lista lincada */
 	static class Node {
 
 		int data;
@@ -15,26 +14,24 @@ class ListaEncadeada3 {
 	
 	}
 
-	// Esta função retorna "true" se a lista lincada é fornecida, senão retorna "false"
+	/* Esta função retorna "true" se a lista lincada é fornecida, senão retorna "false" */
 	static boolean isCircular(Node head) {
 
-		// Uma lista lincada vazia é circular
-		if (head == null)
-			return true;
+		/* Uma lista lincada vazia é circular */
+		if (head == null) return true;
 		
-		// Próximo do topo
+		/* Próximo do topo */
 		Node node = head.next;
 		
-		// Este loop deve parar em ambos os casos (1) Se circular (2) Não circular
-		while (node != null && node != head)
-			node = node.next;
+		/* Este loop deve parar em ambos os casos (1) Se circular (2) Não circular */
+		while (node != null && node != head) node = node.next;
 		
-		// Se loop parou por causa da condição circular
+		/* Se loop parou por causa da condição circular */
 		return (node == head);
 	
 	}
 
-	// Função útil para criar um novo nó.
+	/*  Função útil para criar um novo nó. */
 	static Node newNode(int data) {
 	
 		Node temp = new Node();
@@ -45,10 +42,10 @@ class ListaEncadeada3 {
 	
 	}
 
-	// Código controlador
+	/* Código controlador */
 	public static void main(String args[]) {
 		
-		// Inicia com a lista vazia
+		/* Inicia com a lista vazia */
 		Node head = newNode(1);
 		head.next = newNode(2);
 		head.next.next = newNode(3);
@@ -56,7 +53,7 @@ class ListaEncadeada3 {
 		
 		System.out.print(isCircular(head) ? "Yes\n": "No\n");
 		
-		// Fazendo lista lincada circular
+		/* Fazendo lista lincada circular */
 		head.next.next.next.next = head;
 		
 		System.out.print(isCircular(head) ? "Yes\n": "No\n");

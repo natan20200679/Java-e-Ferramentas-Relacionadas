@@ -55,10 +55,8 @@ public class Pilha {
     @Override
     public String toString () {
     
-        String stringRetorno = "--------------\n";
-    
-        stringRetorno += "    Pilha\n";
-    
+        String stringRetorno = "--------------\n";    
+        stringRetorno += "    Pilha\n";    
         No noAuxiliar = refEntradaNoPilha;
     
         while (true) {
@@ -69,9 +67,7 @@ public class Pilha {
     
                 noAuxiliar = noAuxiliar.getRefNo();
     
-            }
-    
-            else {
+            } else {
      
                 break;
      

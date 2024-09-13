@@ -15,7 +15,7 @@ public class Main {
         No no4 = new No("Conteúdo no4");
         no3.setProximoNo(no4);
 
-        // no1->no2->no3->no4->null
+        /* no1->no2->no3->no4->null */
 
         System.out.println(no1);
         System.out.println(no1.getProximoNo());

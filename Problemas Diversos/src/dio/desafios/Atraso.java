@@ -22,7 +22,7 @@ Para cada caso de teste, imprima "Atraso maximo: X" (sem aspas), X indica o atra
 minutos) de Bino no encontro com Cino.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -35,7 +35,6 @@ public class Atraso {
         while (leitor.hasNext()) {
 
             String[] relogio = leitor.nextLine().split(":");
-
             int hora = Integer.parseInt(relogio[0]);
             int min = Integer.parseInt(relogio[1]);
 

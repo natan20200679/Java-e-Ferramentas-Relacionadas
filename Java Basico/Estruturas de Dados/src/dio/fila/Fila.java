@@ -13,7 +13,9 @@ public class Fila <T> {
     public void enqueue(T object){
     
         No<T> novoNo = new No<T>(object);
+        
         novoNo.setRefNo(refNoEntradaFila);
+        
         refNoEntradaFila = novoNo;
     
     }
@@ -30,8 +32,7 @@ public class Fila <T> {
     
                     primeiroNo = primeiroNo.getRefNo();
     
-                }
-                else {
+                } else {
     
                     break;
     
@@ -61,8 +62,7 @@ public class Fila <T> {
                     noAuxiliar = primeiroNo;
                     primeiroNo = primeiroNo.getRefNo();
     
-                }
-                else {
+                } else {
     
                     noAuxiliar.setRefNo(null);
     
@@ -102,8 +102,7 @@ public class Fila <T> {
                    
                     noAuxiliar = noAuxiliar.getRefNo();
                 
-                }
-                else {
+                } else {
                 
                     stringRetorno += "null";
                 
@@ -113,8 +112,7 @@ public class Fila <T> {
             
             }
         
-        }
-        else{
+        } else {
         
             stringRetorno = "null";
         

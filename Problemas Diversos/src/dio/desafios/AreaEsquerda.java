@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package dio.desafios;
+package desafios;
 
 /*
 Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. 
@@ -27,6 +27,7 @@ import java.util.Scanner;
 public class AreaEsquerda {
 
     private static final int MATRIX_SIZE = 12;
+    
     public static void main(String[] args) throws IOException {
         
         var scanner = new Scanner(System.in);

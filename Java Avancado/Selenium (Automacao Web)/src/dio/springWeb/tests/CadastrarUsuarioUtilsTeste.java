@@ -20,8 +20,7 @@ public class CadastrarUsuarioUtilsTeste {
     @Before
     public void inicializa() {
 
-        System.setProperty("webdriver.chrome.driver",
-                "src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
         util = new Utils(driver);
@@ -56,8 +55,7 @@ public class CadastrarUsuarioUtilsTeste {
         util.preencheCampoPorId("phone_mobile", "9999999999");
         util.clickPorId("submitAccount");
         
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
-                .cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
 
         WebElement validaTexto = driver.findElement(By.cssSelector("a[title='Orders'] span"));
         

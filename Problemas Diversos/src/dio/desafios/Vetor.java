@@ -3,10 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
-Leia um valor X. Coloque este valor na primeira posição de um vetor N[100]. Em cada posição 
-subsequente de N (1 até 99), coloque a metade do valor armazenado na posição anterior. Imprima o 
-vetor N.
+/*
+Leia um valor X. Coloque este valor na primeira posição de um vetor N[100]. Em cada posição subsequente 
+de N (1 até 99), coloque a metade do valor armazenado na posição anterior. Imprima o vetor N.
 
 Entrada:
 
@@ -14,10 +13,11 @@ A entrada contem um valor de dupla precisão com 4 casas decimais.
 
 Saída:
 
-Para cada posição do vetor N, escreva "N[i] = Y", onde i é a posição do vetor e Y é o valor 
-armazenado naquela posição. Cada valor do vetor deve ser apresentado com 4 casas decimais.
+Para cada posição do vetor N, escreva "N[i] = Y", onde i é a posição do vetor e Y é o valor armazenado 
+naquela posição. Cada valor do vetor deve ser apresentado com 4 casas decimais.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -29,9 +29,7 @@ public class Vetor {
     public static void main(String[] args) throws IOException {
 
         Scanner leitor = new Scanner(System.in);
-      
         double X = leitor.nextDouble();
-        
         BigDecimal[] N = new BigDecimal[100];
         N[0] = new BigDecimal(X);
 

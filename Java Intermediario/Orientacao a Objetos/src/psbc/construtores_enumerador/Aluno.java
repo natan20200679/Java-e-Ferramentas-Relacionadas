@@ -23,7 +23,7 @@ public class Aluno {
     
     }
 
-    // Definindo um enumerador
+    /* Definindo um enumerador */
     public enum STATUS {
         
         APROVADO,
@@ -31,12 +31,14 @@ public class Aluno {
     
     }
 
-    // Método para calcular média do aluno
+    /* Método para calcular média do aluno */
+
     public double calcularMediaAluno() {
     
         double mediaAluno = 0;
         
-        // Cálculo da media
+        /* Cálculo da media */
+
         mediaAluno = (this.nota1 + this.nota2 + this.nota3) / 3;
         
         return mediaAluno;

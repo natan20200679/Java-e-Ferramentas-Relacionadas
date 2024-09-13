@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 public class Arraylist {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         ArrayList<String> list = new ArrayList<>();
 
@@ -20,7 +20,7 @@ public class Arraylist {
 
         Iterator<String> itr = list.iterator();
 
-        while(itr.hasNext()){
+        while (itr.hasNext()) {
 
             System.out.println(itr.next());
 

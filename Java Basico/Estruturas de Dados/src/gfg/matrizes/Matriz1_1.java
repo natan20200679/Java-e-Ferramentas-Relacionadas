@@ -1,6 +1,4 @@
-/*
- * Método que consiste na utilização do método "sort()" da classe "Arrays".
- */
+/* Método que consiste na utilização do método "sort()" da classe "Arrays". */
 
 package gfg.matrizes;
 

@@ -4,14 +4,14 @@
  */
 
 /*
- Crie uma lista de um objeto complexo e execute as operações abaixo:
+Crie uma lista de um objeto complexo e execute as operações abaixo:
 
- - Adicione elementos nesta lista (R)
- - Ordende implementando a interface java.Util.Comparator no seu objeto complexo (R)
- - Ordende implementando um novo objeto com a interface java.Util.Comparable (R)
- - Ordene usando uma expressão lambda na chamada de SuaLista.sort() (R)
- - Ordene usando referências de métodos e os métodos estáticos de Comparator (R)
- - Ordene coleçoes TreeSet e TreeMap
+- Adicione elementos nesta lista (R)
+- Ordende implementando a interface java.Util.Comparator no seu objeto complexo (R)
+- Ordende implementando um novo objeto com a interface java.Util.Comparable (R)
+- Ordene usando uma expressão lambda na chamada de SuaLista.sort() (R)
+- Ordene usando referências de métodos e os métodos estáticos de Comparator (R)
+- Ordene coleçoes TreeSet e TreeMap (R)
 */
 
 package dio;
@@ -22,19 +22,47 @@ public class Comparator_Comparable {
     
     public static void main(String[] args) {
 
+        System.out.println("\n-- Ordem Natural (Inserção de Dados) --\n");
+
         List<Estudante> estudantes = new ArrayList<>();
-        estudantes.add(new Estudante("Natan",40));
-        estudantes.add(new Estudante("Chico",25));
-        estudantes.add(new Estudante("Klailton",28));
+        
+        estudantes.add(new Estudante("Natan", 40));
+        estudantes.add(new Estudante("Chico", 25));
+        estudantes.add(new Estudante("Klailton", 28));
+        System.out.println(estudantes + "\n");
+
+        System.out.println("-- Ordem por Idade (Comparator) --\n");
+
+        estudantes.sort(new Estudante2());
+        System.out.println(estudantes + "\n");
+
+        System.out.println("-- Ordem por Idade (Comparator) (Referências de Métodos) --\n");
         estudantes.sort(Comparator.comparingInt(Estudante::getIdade));
+        System.out.println(estudantes + "\n");
 
-        System.out.println("-- Ordem Natural Idade --\n" + estudantes);
+        System.out.println("-- Ordem por Idade (Comparator) (Lambda) --\n");
+        estudantes.sort((Estudante e1,Estudante e2) -> e1.getIdade() - e2.getIdade());
+        System.out.println(estudantes + "\n");
 
-        estudantes.sort(Comparator.comparingInt(Estudante::getIdade));
+        System.out.println("-- Ordem Natural (Comparable) --\n");
+        Collections.sort(estudantes);
+        System.out.println(estudantes + "\n");
 
-        System.out.println("-- Ordem Natural Idade (Referências de Métodos) --\n" 
-                + estudantes);
-        // System.out.println("-- Ordem Natural dos Estudantes (TreeSet) --\n" + );
+        System.out.println("-- Ordem Natural (TreeSet) --\n");
+
+        Set<Estudante> estudantes1 = new TreeSet<>(estudantes);
+
+        System.out.println(estudantes1 + "\n");
+
+        System.out.println("-- Ordem Natural (TreeMap) --\n");
+
+        Map<String,Integer> estudantes2 = new TreeMap<>();
+
+        estudantes2.put("Natan",40);
+        estudantes2.put("Chico",25);
+        estudantes2.put("Klailton",28);
+        System.out.println(estudantes2);
+
     }
 
     public static class Estudante implements Comparable<Estudante> {
@@ -71,6 +99,17 @@ public class Comparator_Comparable {
             return this.getIdade() - estudante.getIdade();
 
         }
+    }
+
+    public static class Estudante2 implements Comparator<Estudante> {
+
+        @Override
+        public int compare(Estudante e1, Estudante e2) {
+
+            return Integer.compare(e1.getIdade(),e2.getIdade());
+
+        }
+
     }
 
 }

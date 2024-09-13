@@ -11,9 +11,7 @@ public class Mentoria extends Conteudo {
 
     private LocalDate data;
 
-    public Mentoria() {
-        
-    }
+    public Mentoria() {}
 
     public LocalDate getData() {
 

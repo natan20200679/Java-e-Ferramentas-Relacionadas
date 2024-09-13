@@ -3,16 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
- * Informar a quantidade de aeronaves no pátio, o nr dos vôos por ordem de chegada. 
- * A ordem de decolagem é FIFO, o primeiro que entra é o primeiro que sai. 
- * Mostrar qual o primeiro vôo á decolar
+/*
+Informar a quantidade de aeronaves no pátio, o nr dos vôos por ordem de chegada. A ordem de
+decolagem é FIFO, o primeiro que entra é o primeiro que sai. Mostrar qual o primeiro vôo a
+decolar
  */
+
 package psbc.ex_aeronaves;
 
 import java.util.Scanner;
-
-import src.psbc.ex_aeronaves.Aeronaves;
 
 public class Principal {
 
@@ -25,7 +24,8 @@ public class Principal {
 
         int nrAeronaves = sc.nextInt();
 
-        // adicionando voos
+        /* Adicionando voos */
+
         for (int i = 0; i < nrAeronaves; i++) {
 
             int nrVoo = sc.nextInt();

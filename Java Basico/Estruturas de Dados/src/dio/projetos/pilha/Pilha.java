@@ -4,7 +4,7 @@ public class Pilha {
 
     No refNoEntradaPilha = null;
 
-    public void push(No novoNo){
+    public void push(No novoNo) {
 
         No refAuxiliar = refNoEntradaPilha;
         refNoEntradaPilha = novoNo;
@@ -43,11 +43,9 @@ public class Pilha {
     @Override
     public String toString() {
     
-        String stringRetorno = "------------\n";
-    
+        String stringRetorno = "------------\n";   
         stringRetorno += "   Pilha\n";
         stringRetorno += "------------\n";
-    
         No noAuxiliar = refNoEntradaPilha;
     
         while (true) {
@@ -55,7 +53,6 @@ public class Pilha {
             if (noAuxiliar != null) {
                 
                 stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";
-                
                 noAuxiliar = noAuxiliar.getRefNo();
             
             } else {

@@ -15,6 +15,7 @@ public class For {
             System.out.println("X=" + x);
             
         }
+    
     }
     
 }

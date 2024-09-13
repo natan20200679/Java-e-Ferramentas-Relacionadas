@@ -1,5 +1,3 @@
 package dio;
 
-public final class HardcoreGamer {
-    
-}
+public final class HardcoreGamer {}

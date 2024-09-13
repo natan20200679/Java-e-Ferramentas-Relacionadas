@@ -1,6 +1,6 @@
 /*
- * Dada a matriz arr[] = {10, 4, 3, 50, 23, 90} com todos os elementos distintos, encontre os três 
- * maiores elementos.
+Dada a matriz arr[] = {10, 4, 3, 50, 23, 90} com todos os elementos distintos, encontre os três maiores 
+elementos.
  */
 
 package gfg.matrizes;

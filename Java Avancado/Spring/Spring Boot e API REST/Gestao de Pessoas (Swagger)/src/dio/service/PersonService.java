@@ -6,13 +6,10 @@ import com.digitalinnovatione.personapi.repository.PersonRepository;
 import com.digitalinnovatione.personapi.entity.Person;
 import com.digitalinnovatione.personapi.mapper.PersonMapper;
 import com.digitalinnovatione.personapi.exception.PersonNotFoundException;
-
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.List;
 import java.util.stream.Collectors;
-
 import lombok.AllArgsConstructor;
 
 @Service
@@ -55,8 +52,7 @@ public class PersonService {
     
     }
 
-    public MessageResponseDTO updateById(Long id, PersonDTO personDTO) 
-            throws PersonNotFoundException {
+    public MessageResponseDTO updateById(Long id, PersonDTO personDTO) throws PersonNotFoundException {
     
         verifyIfExists(id);
 

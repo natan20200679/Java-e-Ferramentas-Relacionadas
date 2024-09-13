@@ -1,8 +1,8 @@
 /*
- * Dada a matriz arr = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1}, de elementos de comprimento N, variando 
- * de 0 a N – 1. Todos os elementos podem não estar presentes na matriz. Se o elemento não estiver 
- * presente, haverá -1 presente na matriz. Reorganize a matriz de forma que A[i] = i e, se i não 
- * estiver presente, exiba -1 nesse local.
+Dada a matriz arr = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1}, de elementos de comprimento N, variando de 0 a N – 1. 
+Todos os elementos podem não estar presentes na matriz. Se o elemento não estiver presente, haverá -1 
+presente na matriz. Reorganize a matriz de forma que A[i] = i e, se i não estiver presente, exiba -1 nesse 
+local.
  */
 
 package gfg.matrizes;

@@ -1,9 +1,9 @@
 /*
- * Dada uma lista encadeada individualmente, encontre o meio da lista encadeada. Por exemplo, se a 
- * lista encadeada fornecida for 1->2->3->4->5, a saída deve ser 3. Se houver nós pares, haverá dois 
- * nós do meio, precisamos imprimir o segundo meio elemento. Por exemplo, se a lista encadeada 
- * fornecida for 1->2->3->4->5->6, a saída deve ser 4. 
- */
+Dada uma lista encadeada individualmente, encontre o meio da lista encadeada. Por exemplo, se a lista 
+encadeada fornecida for 1->2->3->4->5, a saída deve ser 3. Se houver nós pares, haverá dois nós do meio, 
+precisamos imprimir o segundo meio elemento. Por exemplo, se a lista encadeada fornecida for 
+1->2->3->4->5->6, a saída deve ser 4. 
+*/
 
 package gfg.listaEncadeada;
 

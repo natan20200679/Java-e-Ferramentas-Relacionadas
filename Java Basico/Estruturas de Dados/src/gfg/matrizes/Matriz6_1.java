@@ -1,6 +1,4 @@
-/*
- * Método abaixo consiste no giro dos elementos um por um.
- */
+/* Método abaixo consiste no giro dos elementos um por um. */
 
 package gfg.matrizes;
 
@@ -27,8 +25,7 @@ public class Matriz6_1 {
         
             }
         
-            arr[n - 1] = ultimo;
-        
+            arr[n - 1] = ultimo;        
             p++;
         
         }

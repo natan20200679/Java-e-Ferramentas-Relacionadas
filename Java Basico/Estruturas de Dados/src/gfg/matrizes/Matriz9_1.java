@@ -1,6 +1,4 @@
-/*
- * Método que consiste na classificação cíclica.
- */
+/* Método que consiste na classificação cíclica. */
 
 package gfg.matrizes;
 

@@ -15,8 +15,7 @@ public class RealizarConexaoTeste {
     @Before
     public void inicializa() {
 
-        System.setProperty("webdriver.chrome.driver", 
-                "src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
     
@@ -28,15 +27,12 @@ public class RealizarConexaoTeste {
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
         driver.get("http://automationpractice.com/index.php");
-        driver.findElement(By
-                .cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a"))
-                .click();
+        driver.findElement(By.cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a")).click();
         driver.findElement(By.id("email")).sendKeys("everisbootcamp@qabeginner.com");
         driver.findElement(By.id("passwd")).sendKeys("QA@everis213");
         driver.findElement(By.name("SubmitLogin")).click();
         
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
-                .cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
 
     }
 

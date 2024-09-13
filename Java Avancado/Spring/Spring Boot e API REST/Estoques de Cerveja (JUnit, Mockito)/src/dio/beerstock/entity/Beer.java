@@ -3,9 +3,7 @@ package dio.beerstock.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import one.digitalinnovation.beerstock.enums.BeerType;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;

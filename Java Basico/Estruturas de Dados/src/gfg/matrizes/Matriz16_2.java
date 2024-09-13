@@ -1,7 +1,6 @@
 /*
- * Método que consiste na manutenção da ordem de aparecimento dos elementos. Obs.: A matriz usada 
- * como exemplo nesta solução pelo autor é arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}, além de 
- * envolver Orientação à Objetos. 
+Método que consiste na manutenção da ordem de aparecimento dos elementos. Obs.: A matriz usada como exemplo 
+nesta solução pelo autor é arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}, além de envolver Orientação à Objetos. 
  */
 
 package gfg.matrizes;
@@ -55,8 +54,7 @@ public class Matriz16_2 {
     
                         foraDoLugar = foraDoLugar + 2;
     
-                    }
-                    else {
+                    } else {
     
                         foraDoLugar = -1;
     
@@ -68,7 +66,7 @@ public class Matriz16_2 {
     
             if (foraDoLugar == -1) {
     
-                if (((arr[index] >= 0) && ((index & 0x01) == 0)) || ((arr[index] < 0)
+                if (((arr[index] >= 0) && ((index & 0x01) == 0)) || ((arr[index] < 0) 
                 && (index & 0x01) == 1)) {
     
                     foraDoLugar = index;

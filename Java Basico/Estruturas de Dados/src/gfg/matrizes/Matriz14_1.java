@@ -1,5 +1,5 @@
 /*
- * Método que consiste no uso da idéia de "janela deslizante".
+Método que consiste no uso da idéia de "janela deslizante".
  */
 
 package gfg.matrizes;
@@ -19,13 +19,12 @@ public class Matriz14_1 {
             while (soma_corrente > soma && inicio < i - 1) {
         
                 soma_corrente = soma_corrente - arr[inicio];
-        
                 inicio++;
         
             }
         
             if (soma_corrente == soma) {
-        
+             
                 int p = i - 1;
         
                 System.out.println("Soma encontrada entre os índices " + inicio + " e " + p);

@@ -7,7 +7,7 @@
 Faça um programa que leia 5 números e informe o maior número e a média desses números.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -18,6 +18,7 @@ public class MaiorMedia {
         Scanner scan = new Scanner(System.in);
         
         int numero;
+        
         int maior = 0;
         int soma = 0;
         int count = 0;

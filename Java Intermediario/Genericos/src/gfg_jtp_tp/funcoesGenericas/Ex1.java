@@ -15,4 +15,5 @@ public class Ex1 {
         genericDisplay(1.0);
 
     }
+
 }

@@ -57,6 +57,7 @@ public class ListaDuplamenteEncadeada<T> {
             
             novoNo.setNoPrevio(noAuxiliar.getNoPrevio());
             novoNo.getNoProximo().setNoPrevio(novoNo);
+        
         } else {
             
             novoNo.setNoPrevio(ultimoNo);
@@ -100,6 +101,7 @@ public class ListaDuplamenteEncadeada<T> {
             if (noAuxiliar != ultimoNo) {
                 
                 noAuxiliar.getNoProximo().setNoPrevio(noAuxiliar.getNoPrevio());
+        
             } else {
                 
                 ultimoNo = noAuxiliar;
@@ -136,13 +138,11 @@ public class ListaDuplamenteEncadeada<T> {
     public String toString() {
     
         String strRetorno = "";
-    
         NoDuplo<T> noAuxiliar = primeiroNo;
     
         for (int i = 0; i < size(); i++) {
             
             strRetorno += "[No{conteudo=" + noAuxiliar.getConteudo() + "}]------>";
-          
             noAuxiliar = noAuxiliar.getNoProximo();
         
         }

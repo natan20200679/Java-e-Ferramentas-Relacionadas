@@ -4,7 +4,6 @@ public class ListaDuplamenteEncadeada<T> {
 
     private NoDuplo<T> primeiroNo;
     private NoDuplo<T> ultimoNo;
-
     private int tamanhoLista = 0;
 
     public void add(T elemento) {
@@ -27,7 +26,6 @@ public class ListaDuplamenteEncadeada<T> {
         }
         
         ultimoNo = novoNo;
-        
         tamanhoLista++;
     
     }

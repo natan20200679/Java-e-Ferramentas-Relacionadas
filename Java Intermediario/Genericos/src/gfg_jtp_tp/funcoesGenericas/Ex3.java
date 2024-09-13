@@ -1,32 +1,40 @@
 package gfg_jtp_tp.funcoesGenericas;
 
-/**
- * Exemplo do site TutorialsPoint(tp)
+/*
+Exemplo do site TutorialsPoint(tp)
  */
 
 public class Ex3 {
 
     public static class MaximumTest {
 
-        // Determines the largest of three Comparable objects
+        /* Determines the largest of three Comparable objects */
 
         public static<T extends Comparable<T>> T maximum(T x, T y, T z) {
 
-            T max = x;   // assume x is initially the largest
+            /* assume x is initially the largest */
 
-            if(y.compareTo(max) > 0) {
+            T max = x;
 
-                max = y;   // y is the largest so far
+            if (y.compareTo(max) > 0) {
 
-            }
+                /* y is the largest so far */
 
-            if(z.compareTo(max) > 0) {
-
-                max = z;   // z is the largest now
+                max = y;
 
             }
 
-            return max;   // returns the largest object
+            if (z.compareTo(max) > 0) {
+
+                /* z is the largest now */
+
+                max = z;
+
+            }
+
+            /* returns the largest object */
+
+            return max;
 
         }
 
@@ -39,5 +47,7 @@ public class Ex3 {
                     "apple", "orange", maximum("pear", "apple", "orange"));
 
         }
+
     }
+
 }

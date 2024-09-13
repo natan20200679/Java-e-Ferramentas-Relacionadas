@@ -1,12 +1,10 @@
 package dio.dto.request;
 
 import com.digitalinnovatione.personapi.enums.PhoneType;
-
 import lombok.Data;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotEmpty;

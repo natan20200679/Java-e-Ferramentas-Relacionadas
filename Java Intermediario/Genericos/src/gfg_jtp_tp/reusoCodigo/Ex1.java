@@ -29,7 +29,9 @@ public class Ex1 {
 
                     swap(j, j + 1, a);
                 }
+
             }
+
         }
 
         for (T i : a) {

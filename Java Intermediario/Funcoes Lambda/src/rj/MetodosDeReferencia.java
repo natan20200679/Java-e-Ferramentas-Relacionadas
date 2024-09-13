@@ -20,7 +20,8 @@ public class MetodosDeReferencia {
 
         List<Integer> list = Arrays.asList(1,2,3,4,5,6);
 
-        // Métodos Estáticos
+        /* Métodos Estáticos */
+
         list.stream().map(n -> multipliquePorDois(n)).forEach(n -> System.out.println(n));
     
         System.out.println("----------");
@@ -29,23 +30,26 @@ public class MetodosDeReferencia {
         
         System.out.println("----------");
 
-        // Construtores
+        /* Construtores */
+
         list.stream().map(n -> new BigDecimal(n)).forEach(n -> System.out.println(n));
         list.stream().map(BigDecimal::new).forEach(System.out::println);
         
         System.out.println("----------");
 
-        // Várias Instâncias
+        /* Várias Instâncias */
+
         list.stream().map(n -> n.doubleValue()).forEach(n -> System.out.println(n));
         list.stream().map(Integer::doubleValue).forEach(System.out::println);
         
         System.out.println("----------");
 
-        // Única instãncia
+        /* Única instãncia */
+
         BigDecimal dois = new BigDecimal(2);
         
-        list.stream().map(n -> new BigDecimal(n)).map(b -> dois.multiply(b))
-                .forEach(n -> System.out.println(n));
+        list.stream().map(n -> new BigDecimal(n)).map(b -> dois.multiply(b)).forEach
+                (n -> System.out.println(n));
         list.stream().map(BigDecimal::new).map(dois::multiply).forEach(System.out::println);
 
     }

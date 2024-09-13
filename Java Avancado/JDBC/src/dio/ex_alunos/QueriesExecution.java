@@ -8,6 +8,7 @@ package dio.ex_alunos;
 import java.util.List;
 
 public class QueriesExecution {
+
     public static void main(String[] args) {
 
         AlunoDAO alunoDAO = new AlunoDAO();
@@ -38,6 +39,7 @@ public class QueriesExecution {
         alunoParaAtualizar.setEstado("RS");
 
         //alunoDAO.update(alunoParaAtualizar);
+    
     }
 
 }

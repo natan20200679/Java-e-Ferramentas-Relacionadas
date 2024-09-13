@@ -17,10 +17,7 @@ public class Test {
 
     public static void main(String[] args) {
         
-        /*
-        Teste de Padrão Criacional de projeto Singleton com 3 métodos
-        */
-        
+        /* Teste de Padrão Criacional de projeto Singleton com 3 métodos */    
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
         lazy = SingletonLazy.getInstancia();
@@ -36,10 +33,7 @@ public class Test {
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
 
-        /*
-        Teste de Padrão Comportamental de projeto Test
-        */
-        
+        /* Teste de Padrão Comportamental de projeto Test */
         Comportamento normal = new ComportamentoNormal();
         Comportamento defensivo = new ComportamentoDefensivo();
 
@@ -50,11 +44,9 @@ public class Test {
         robo.setComportamento(defensivo);
         robo.mover();
 
-        /*
-        Teste de Padrão Estrutural de projeto Facade
-        */
-        
+        /* Teste de Padrão Estrutural de projeto Facade */
         Facade facade = new Facade();
+        
         facade.migrarCliente("Venilton", "14801788");
     
     }

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-// Este exemplo envolve Funções Lambda
+/* Este exemplo envolve Funções Lambda */
 
 package dio_jtp_psbc_tp.set;
 
@@ -23,18 +23,23 @@ public class Hashset_Linkedhashset {
             add(new Serie("dark", "drama", 60));
             add(new Serie("that '70s show", "comédia", 25));
         }};
+        
         minhasSeriesOrdemAleatoria.forEach(serie -> System.out.println(serie));
 
         System.out.println("\n-- Ordem Inserção --");
+        
         Set<Serie> minhasSeriesOrdemInsercao = new LinkedHashSet<>() {{
             add(new Serie("got", "fantasia", 60));
             add(new Serie("dark", "drama", 60));
             add(new Serie("that '70s show", "comédia", 25));
         }};
+        
         minhasSeriesOrdemInsercao.forEach(serie -> System.out.println(serie));
 
         System.out.println("\n-- Ordem Nome --");
+        
         Set<Serie> minhasSeriesOrdemNome = minhasSeriesOrdemAleatoria;
+        
         minhasSeriesOrdemNome
                 .stream()
                 .sorted(Comparator.comparing(Serie::getNome))
@@ -42,7 +47,9 @@ public class Hashset_Linkedhashset {
                 .forEach(serie -> System.out.println(serie));
 
         System.out.println("\n-- Ordem Gênero --");
+        
         Set<Serie> minhasSeriesGenero = minhasSeriesOrdemAleatoria;
+        
         minhasSeriesGenero
                 .stream()
                 .sorted(Comparator.comparing(Serie::getGenero))
@@ -50,7 +57,9 @@ public class Hashset_Linkedhashset {
                 .forEach(serie -> System.out.println(serie));
 
         System.out.println("\n-- Ordem Tempo de Episódio --");
+        
         Set<Serie> minhasSeriesEpisodio = minhasSeriesOrdemAleatoria;
+        
         minhasSeriesEpisodio
                 .stream()
                 .sorted(Comparator.comparing(Serie::getTempoEpisodio))

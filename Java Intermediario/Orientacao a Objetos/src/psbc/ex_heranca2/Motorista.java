@@ -14,7 +14,8 @@ necessidade do uso da herança
 
 public class Motorista {
 
-    // Construtor do Motorista
+    /* Construtor do Motorista */
+
     public Motorista(String nome, Date dataNascimento, String cpf, Double salario) {
 
         /*

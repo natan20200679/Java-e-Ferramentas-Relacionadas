@@ -17,17 +17,19 @@ public class ListaCircular<T> {
     public void add(T conteudo){
     
         No<T> novoNo = new No<>(conteudo);
+        
         if (tamanhoLista == 0) {
             
             this.cabeca = novoNo;
             this.cauda = this.cabeca;
+        
             this.cabeca.setNoProximo(this.cauda);
         
         } else {
             
-            novoNo.setNoProximo(this.cauda);
-            
+            novoNo.setNoProximo(this.cauda);    
             this.cabeca.setNoProximo(novoNo);
+            
             this.cauda = novoNo;
         
         }
@@ -38,14 +40,19 @@ public class ListaCircular<T> {
 
     public void remove(int index) {
         
-        if (index >= this.tamanhoLista)
+        if (index >= this.tamanhoLista) {
+            
             throw new IndexOutOfBoundsException("O índice maior que o tamanho da lista");
-
+        
+        }
+        
         No<T> noAuxiliar = cauda;
         
-        if(index == 0){ // Na cauda
+        /* Na cauda */
+        if (index == 0) { 
 
             this.cauda = this.cauda.getNoProximo();
+           
             this.cabeca.setNoProximo(cauda);
         
         } else if (index == 1) {
@@ -76,8 +83,7 @@ public class ListaCircular<T> {
 
     private No<T> getNo(int index) {
         
-        if (isEmpty())
-            throw new IndexOutOfBoundsException("A lista está vazia");
+        if (isEmpty()) throw new IndexOutOfBoundsException("A lista está vazia");
 
         if (index == 0) {
             
@@ -119,7 +125,6 @@ public class ListaCircular<T> {
         for (int i = 0; i < size(); i++) {
             
             strRetorno += "[No{conteudo=" + noAuxiliar.getConteudo() +"}]--->";
-            
             noAuxiliar = noAuxiliar.getNoProximo();
         
         }

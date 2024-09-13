@@ -24,40 +24,63 @@ public class Linkedhashset_Treeset {
     public static void main(String[] args) {
 
         System.out.println("\n-- Ordem de Inserção --");
+        
         Set<LinguagemFavorita> linguagens = new LinkedHashSet<>() {{
             add(new LinguagemFavorita("Java", 1991, "InelliJ"));
             add(new LinguagemFavorita("Javascript", 1995, "VSCode"));
             add(new LinguagemFavorita("Python", 1991, "Pycharm"));
         }};
+        
         for (LinguagemFavorita linguagem : linguagens) {
+        
             System.out.println(linguagem);
+        
         }
 
         System.out.println("\n-- Ordem Natural(nome) --");
+        
         Set<LinguagemFavorita> linguagens2 = new TreeSet<>(linguagens);
+        
         for (LinguagemFavorita linguagem : linguagens2) {
+        
             System.out.println(linguagem);
+        
         }
 
         System.out.println("\n-- Ordem por IDE --");
+        
         Set<LinguagemFavorita> linguagens3 = new TreeSet<>(new ComparatorIDE());
+        
         linguagens3.addAll(linguagens);
+        
         for (LinguagemFavorita linguagem : linguagens3) {
+        
             System.out.println(linguagem);
+        
         }
 
         System.out.println("\n-- Ordem por Ano de Criação e Nome --");
+        
         Set<LinguagemFavorita> linguagens4 = new TreeSet<>(new ComparatorAnoCriacaoNome());
+        
         linguagens4.addAll(linguagens);
+        
         for (LinguagemFavorita linguagem : linguagens4) {
+        
             System.out.println(linguagem);
+        
         }
 
         System.out.println("\n-- Ordem por Nome, Ano de Criação e IDE --");
+        
         Set<LinguagemFavorita> linguagens5 = new TreeSet<>(new ComparatorNomeAnoCriacaoIDE());
+        
         linguagens5.addAll(linguagens);
+        
         for (LinguagemFavorita linguagem : linguagens5) {
+        
             System.out.println(linguagem);
+        
         }
 
     }

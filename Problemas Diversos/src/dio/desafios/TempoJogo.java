@@ -3,10 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
- /*
-Tendo como base a hora inicial e final de um jogo, calcule a duração do dele, sabendo que o mesmo 
-pode começar em um dia e terminar em outro, tendo uma duração mínima de, 60 minutos e máxima de 24 
-horas.
+/*
+Tendo como base a hora inicial e final de um jogo, calcule a duração do dele, sabendo que o mesmo pode 
+começar em um dia e terminar em outro, tendo uma duração mínima de, 60 minutos e máxima de 24 horas.
 
 Entrada:
 
@@ -16,7 +15,8 @@ Saída:
 
 Apresente a duração do jogo conforme exemplo abaixo.
  */
-package dio.desafios;
+
+package desafios;
 
 import java.util.Scanner;
 

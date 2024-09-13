@@ -1,6 +1,6 @@
 /*
- * Dada a matriz de inteiros arr = {2, 3, 5, 4, 5, 3, 4}. Todos os números ocorrem duas vezes, 
- * exceto um número que ocorre uma vez. Encontre o número.
+Dada a matriz de inteiros arr = {2, 3, 5, 4, 5, 3, 4}. Todos os números ocorrem duas vezes, exceto um número 
+que ocorre uma vez. Encontre o número.
  */
 
 package gfg.matrizes;

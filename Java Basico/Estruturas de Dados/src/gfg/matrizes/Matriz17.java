@@ -1,7 +1,7 @@
 /*
- * Dadas duas matrizes inteiras do mesmo tamanho, “arr = [50, 40, 70, 60, 90]” e 
- * “indice = [3,  0,  4,  1,  2]”, reordene os elementos em “arr”, de acordo com a matriz de índice 
- * fornecida. Não é permitido o comprimento do array "arr".
+Dadas duas matrizes inteiras do mesmo tamanho, “arr = [50, 40, 70, 60, 90]” e “indice = [3,  0,  4,  1,  2]”, 
+reordene os elementos em “arr”, de acordo com a matriz de índice fornecida. Não é permitido o comprimento do 
+array "arr".
  */
 
 package gfg.matrizes;

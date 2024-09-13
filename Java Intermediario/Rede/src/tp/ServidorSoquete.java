@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package tp;
 
 import java.net.*;
@@ -25,24 +26,21 @@ public class ServidorSoquete extends Thread {
         
             try {
             
-                System.out.println("Waiting for client on port "
-                        + serverSocket.getLocalPort() + "...");
+                System.out.println("Waiting for client on port " + serverSocket.getLocalPort()
+                        + "...");
         
                 Socket server = serverSocket.accept();
                 
-                System.out.println("Just connected to " + 
-                        server.getRemoteSocketAddress());
+                System.out.println("Just connected to " + server.getRemoteSocketAddress());
                 
-                DataInputStream in = new DataInputStream(server.
-                        getInputStream());
+                DataInputStream in = new DataInputStream(server.getInputStream());
                 
                 System.out.println(in.readUTF());
                 
-                DataOutputStream out = new DataOutputStream(server.
-                        getOutputStream());
+                DataOutputStream out = new DataOutputStream(server.getOutputStream());
                 
-                out.writeUTF("Thank you for connecting to " + server.
-                        getLocalSocketAddress() + "\nGoodbye!");
+                out.writeUTF("Thank you for connecting to " + server.getLocalSocketAddress()
+                        + "\nGoodbye!");
                 server.close();
 
             } catch (SocketTimeoutException s) {
@@ -58,7 +56,9 @@ public class ServidorSoquete extends Thread {
                 break;
             
             }
+
         }
+
     }
 
     public static void main(String[] args) {
@@ -75,5 +75,7 @@ public class ServidorSoquete extends Thread {
             e.printStackTrace();
         
         }
+
     }
+
 }

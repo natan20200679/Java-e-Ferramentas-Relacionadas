@@ -26,8 +26,8 @@ public class ExecutionPart1 {
         */
 
         /* 
-        1 - Passos iniciais para criar um gerenciador de entidades com o banco de dados especificado no 
-        arquivo "persistence.xml" 
+        1 - Passos iniciais para criar um gerenciador de entidades com o banco de dados especificado no arquivo 
+        "persistence.xml" 
         */ 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("part1-DIO");
         EntityManager entityManager = entityManagerFactory.createEntityManager();

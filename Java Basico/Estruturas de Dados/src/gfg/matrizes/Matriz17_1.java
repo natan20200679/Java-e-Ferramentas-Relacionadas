@@ -1,6 +1,4 @@
-/*
- * Método que consiste na desconsideração do uso de uma matriz auxiliar.
- */
+/* Método que consiste na desconsideração do uso de uma matriz auxiliar. */
 
 package gfg.matrizes;
 
@@ -19,8 +17,8 @@ public class Matriz17_1 {
         
             while (indice[i] != i) {               
         
-                int  alvoI  = indice[indice[i]];
-                char alvoE  = (char)arr[indice[i]];      
+                int  alvoI = indice[indice[i]];
+                char alvoE = (char)arr[indice[i]];      
         
                 arr[indice[i]] = arr[i];
                 indice[indice[i]] = indice[i];               

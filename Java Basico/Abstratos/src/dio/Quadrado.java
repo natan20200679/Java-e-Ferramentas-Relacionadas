@@ -25,7 +25,7 @@ public class Quadrado extends FormaGeometrica {
         return area;
 
     }
-
+    
     @Override
     public String toString() {
 

@@ -1,7 +1,7 @@
 /*
- * Dada a matriz arr[] = {15, 2, 4, 8, 9, 5, 10, 23}, de números inteiros não negativos, e uma soma 
- * inteira arbitrada, encontre uma submatriz que corresponda a esta soma. Nota: Pode haver 
- * mais de uma submatriz com a soma encontrada previamente, então imprima a primeira que ocorrer.
+Dada a matriz arr[] = {15, 2, 4, 8, 9, 5, 10, 23}, de números inteiros não negativos, e uma soma inteira 
+arbitrada, encontre uma submatriz que corresponda a esta soma. Nota: Pode haver mais de uma submatriz com 
+a soma encontrada previamente, então imprima a primeira que ocorrer.
  */
 
 package gfg.matrizes;
@@ -14,8 +14,10 @@ public class Matriz14 {
         
         int arr[] = {15, 2, 4, 8, 9, 5, 10, 23}; 
         
-        // O fato do valor da variável "soma" ser igual ao último elemento de arr é coincidência, já que 
-        // trata-se de valor arbitrado
+        /* 
+        O fato do valor da variável "soma" ser igual ao último elemento de arr é coincidência, já que 
+        trata-se de valor arbitrado 
+        */
         
         int soma = 23; 
 

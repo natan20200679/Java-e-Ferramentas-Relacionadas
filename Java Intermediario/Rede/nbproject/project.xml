@@ -3,7 +3,11 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<<< Updated upstream:Java Intermediario/Rede/nbproject/project.xml
             <name>Rede</name>
+========
+            <name>Anotacoes</name>
+>>>>>>>> Stashed changes:Java Intermediario/Anotacoes/nbproject/project.xml
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

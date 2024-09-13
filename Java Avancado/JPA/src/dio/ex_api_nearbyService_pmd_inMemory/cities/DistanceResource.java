@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package dio.ex_api_nearbyService_pmd_inMemory.cities;
 
 import org.slf4j.Logger;
@@ -30,7 +31,6 @@ public class DistanceResource {
             final Long city2) {
 
         log.info("byPoints");
-
         return service.distanceByPointsInMiles(city1, city2);
 
     }
@@ -40,7 +40,6 @@ public class DistanceResource {
             final Long city2) {
 
         log.info("byCube");
-
         return service.distanceByCubeInMeters(city1, city2);
 
     }
@@ -50,7 +49,6 @@ public class DistanceResource {
             final Long city2, @RequestParam final EarthRadius unit) {
 
         log.info("byMath");
-
         return service.distanceUsingMath(city1, city2, unit);
 
     }

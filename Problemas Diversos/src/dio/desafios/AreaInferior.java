@@ -19,7 +19,7 @@ Saída:
 Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto decimal.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -84,8 +84,8 @@ public class AreaInferior {
 
     private static boolean isOnDelimitedBottom(int line, int column) {
     
-        return (isOnLeftSide(column) && isOnDiagonalRight(line, column))
-                || (isOnRightSide(column) && isOnDiagonalLeft(line, column));
+        return (isOnLeftSide(column) && isOnDiagonalRight(line, column)) || (isOnRightSide(column) && 
+        isOnDiagonalLeft(line, column));
     
     }
 

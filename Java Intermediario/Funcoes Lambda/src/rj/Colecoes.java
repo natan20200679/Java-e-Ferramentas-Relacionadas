@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/**
- * Exemplos das aulas de Rinaldo Júnior (Youtube), com pequenas modificações 
+/*
+Exemplos das aulas de Rinaldo Júnior (Youtube), com pequenas modificações
  */
 
 package rj;
@@ -23,48 +23,57 @@ public class Colecoes {
         list.add(3);
         list.add(4);
 
-        // ForEach
+        /* ForEach */
+
         list.forEach(n -> System.out.println(n));
 
         System.out.println("---------");
 
-        // removeIf
+        /* removeIf */
+
         list.removeIf(n -> n % 2 == 0);
         list.forEach(n -> System.out.println(n));
 
         System.out.println("---------");
 
-        // replaceAll
+        /* replaceAll */
+
         list.replaceAll(n -> n * 5);
         list.forEach(n -> System.out.println(n));
 
         System.out.println("---------");
 
-        // Map
+        /* Map */
+
         HashMap<Integer,String> map = new HashMap<>();
+
         map.put(0,"Se");
         map.put(1,"Inscreva");
         map.put(2,"no");
         map.put(3,"canal");
 
-        // forEach
+        /* forEach */
+
         map.forEach((k,v) -> System.out.println(k + " " + v));
 
         System.out.println("---------");
 
-        // compute
+        /* compute */
+
         map.compute(1,(k,v) -> v + " agora");
         map.forEach((k,v) -> System.out.println(k + " " + v));
 
         System.out.println("---------");
 
-        // merge
+        /* merge */
+
         map.merge(3,"!",(v1,v2) -> v1 + v2);
         map.forEach((k,v) -> System.out.println(k + " " + v));
 
         System.out.println("---------");
 
-        // replaceAll
+        /* replaceAll */
+
         map.replaceAll((k,v) -> v + "!");
         map.forEach((k,v) -> System.out.println(k + " " + v));
 

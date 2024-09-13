@@ -3,9 +3,7 @@ package models;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
 import javax.annotation.processing.Generated;
-
 import lombok.Data;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -24,68 +22,68 @@ public class Forecast {
     private Integer min;
 
     @JsonProperty("date")
-    public String getDate() {
-    
-        return date;
+    public String getDate() {    
+        
+        return date;  
     
     }
 
     @JsonProperty("date")
-    public void setDate(String date) {
+    public void setDate(String date) {  
     
-        this.date = date;
-    
-    }
-
-    public Forecast withDate(String date) {
-    
-        this.date = date;
-        
-        return this;
+        this.date = date;  
     
     }
 
-    @JsonProperty("max")
-    public Integer getMax() {
+    public Forecast withDate(String date) {   
     
-        return max;
+        this.date = date;       
+    
+        return this;   
     
     }
 
     @JsonProperty("max")
-    public void setMax(Integer max) {
+    public Integer getMax() {  
+    
+        return max;   
+    
+    }
+
+    @JsonProperty("max")
+    public void setMax(Integer max) {   
     
         this.max = max;
     
     }
 
-    public Forecast withMax(Integer max) {
+    public Forecast withMax(Integer max) {   
     
         this.max = max;
-        
+    
         return this;
     
     }
 
     @JsonProperty("min")
-    public Integer getMin() {
+    public Integer getMin() {  
     
-        return min;
+        return min;  
     
     }
 
     @JsonProperty("min")
-    public void setMin(Integer min) {
+    public void setMin(Integer min) {   
     
-        this.min = min;
+        this.min = min;  
     
     }
 
-    public Forecast withMin(Integer min) {
+    public Forecast withMin(Integer min) {  
     
-        this.min = min;
-        
-        return this;
+        this.min = min;       
+    
+        return this;   
     
     }
 

@@ -4,20 +4,20 @@
  */
 
 /*
-O professor Girafales organizou a confecção de um uniforme para as turmas da escola para comemorar 
-o final do ano. Após algumas conversas, ficou decidido com os alunos que eles poderiam escolher a 
-cor do uniforme entre branco ou vermelho. Assim sendo, Girafales precisa de sua ajuda para 
-organizar as listas de quem quer o uniforme em cada uma das turmas, relacionando estas camisetas 
-pela cor, tamanho (P, M ou G) e por último pelo nome.
+O professor Girafales organizou a confecção de um uniforme para as turmas da escola para comemorar o 
+final do ano. Após algumas conversas, ficou decidido com os alunos que eles poderiam escolher a cor do 
+uniforme entre branco ou vermelho. Assim sendo, Girafales precisa de sua ajuda para organizar as listas 
+de quem quer o uniforme em cada uma das turmas, relacionando estas camisetas pela cor, tamanho (P, M ou 
+G) e por último pelo nome.
 
 Entrada:
 
-Cada caso de teste inicia com um valor N, (1 ≤ N ≤ 60) inteiro e positivo, que indica a quantidade 
-de uniformes a serem feitas para aquela turma. As próximas N*2 linhas contém informações de cada 
-um dos uniformes (serão duas linhas de informação para cada uniforme). A primeira linha irá 
-conter o nome do estudante e a segunda linha irá conter a cor do uniforme ("branco" ou "vermelho") 
-seguido por um espaço e pelo tamanho do uniforme "P" "M" ou "G". A entrada termina quando o valor 
-de N for igual a zero (0) e esta valor não deverá ser processado.
+Cada caso de teste inicia com um valor N, (1 ≤ N ≤ 60) inteiro e positivo, que indica a quantidade de 
+uniformes a serem feitas para aquela turma. As próximas N*2 linhas contém informações de cada um dos 
+uniformes (serão duas linhas de informação para cada uniforme). A primeira linha irá conter o nome do 
+estudante e a segunda linha irá conter a cor do uniforme ("branco" ou "vermelho") seguido por um espaço 
+e pelo tamanho do uniforme "P" "M" ou "G". A entrada termina quando o valor de N for igual a zero (0) e 
+esta valor não deverá ser processado.
 
 Saída:
 
@@ -25,7 +25,7 @@ Para cada caso de entrada deverão ser impressas as informações ordenadas pela
 ascendente, seguido pelos tamanhos em ordem descendente e por último por ordem ascendente de nome.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -41,9 +41,7 @@ public class Uniformes {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
         int linhas = Integer.parseInt(st.nextToken());
-        
         List<Uniforme> uniformes = new ArrayList<>();
 
         for (int i = 0; i <= linhas; i++) {
@@ -68,9 +66,8 @@ public class Uniformes {
         
         }
 
-        Comparator<Uniforme> comparator = Comparator.comparing(Uniforme::getCorUniforme)
-                .reversed().thenComparing(Uniforme::getTamUniforme).reversed()
-                .thenComparing(Uniforme::getNomeEstudante);
+        Comparator<Uniforme> comparator = Comparator.comparing(Uniforme::getCorUniforme).reversed()
+        .thenComparing(Uniforme::getTamUniforme).reversed().thenComparing(Uniforme::getNomeEstudante);
         
         uniformes.stream().sorted(comparator).forEach(System.out::println);
     

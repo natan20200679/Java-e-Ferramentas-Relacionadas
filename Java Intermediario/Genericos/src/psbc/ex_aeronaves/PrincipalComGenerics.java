@@ -4,9 +4,9 @@
  */
 
  /*
- * Informar a quantidade de aeronaves no pátio, o nr dos vôos por ordem de chegada. 
- * A ordem de decolagem é FIFO, o primeiro que entra é o primeiro que sai. 
- * Mostrar qual o primeiro vôo á decolar
+ Informar a quantidade de aeronaves no pátio, o nr dos vôos por ordem de chegada. A ordem de
+ decolagem é FIFO, o primeiro que entra é o primeiro que sai. Mostrar qual o primeiro vôo a
+ decolar
  */
 
 package psbc.ex_aeronaves;
@@ -25,7 +25,8 @@ public class PrincipalComGenerics {
         
         int nrAeronaves = sc.nextInt();
 
-        // adicionando voos
+        /* Adicionando voos */
+
         for (int i = 0; i < nrAeronaves; i++) {
         
             Integer nrVoo = sc.nextInt();

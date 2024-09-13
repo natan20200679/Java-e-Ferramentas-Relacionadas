@@ -1,6 +1,4 @@
-/*
- * Método que consiste na troca de elementos na matriz.
- */
+/* Método que consiste na troca de elementos na matriz. */
 
 package gfg.matrizes;
 

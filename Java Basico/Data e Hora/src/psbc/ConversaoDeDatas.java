@@ -11,7 +11,6 @@ public class ConversaoDeDatas {
 
 		Calendar c = Calendar.getInstance();
 		Date data = c.getTime();
-
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 		System.out.println("Data formatada: "+ sdf.format(data));

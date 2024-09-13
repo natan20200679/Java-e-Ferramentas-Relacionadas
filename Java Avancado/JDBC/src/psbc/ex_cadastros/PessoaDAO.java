@@ -57,7 +57,7 @@ public class PessoaDAO extends DAO {
 
     }
 
-// retornando um objeto
+    /* Retornando um objeto */
     public Pessoa consultarPessoaIndividual(int cod) throws Exception {
 
         open();

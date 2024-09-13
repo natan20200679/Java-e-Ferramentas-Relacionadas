@@ -1,7 +1,6 @@
 package dio.handler;
 
 import javax.annotation.Resource;
-
 import org.springframework.cglib.proxy.UndeclaredThrowableException;
 import org.springframework.context.MessageSource;
 import org.springframework.http.HttpHeaders;
@@ -47,25 +46,21 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
             UndeclaredThrowableException exception = (UndeclaredThrowableException) e;
 
-            return handleBusinessException((BusinessException) exception.getUndeclaredThrowable(), 
-                    request);
+            return handleBusinessException((BusinessException) exception.getUndeclaredThrowable(), request);
 
         } else {
 
-            String message = messageSource.getMessage("error.server", 
-                    new Object[]{e.getMessage()}, null);
+            String message = messageSource.getMessage("error.server", new Object[]{e.getMessage()}, null);
             ResponseError error = responseError(message,HttpStatus.INTERNAL_SERVER_ERROR);
             
-            return handleExceptionInternal(e, error, headers(), HttpStatus.INTERNAL_SERVER_ERROR, 
-                    request);
+            return handleExceptionInternal(e, error, headers(), HttpStatus.INTERNAL_SERVER_ERROR, request);
         
         }
     
     }
     
     @ExceptionHandler({BusinessException.class})
-    private ResponseEntity<Object> handleBusinessException(BusinessException e, 
-            WebRequest request) {
+    private ResponseEntity<Object> handleBusinessException(BusinessException e, WebRequest request) {
         
         ResponseError error = responseError(e.getMessage(),HttpStatus.CONFLICT);
         

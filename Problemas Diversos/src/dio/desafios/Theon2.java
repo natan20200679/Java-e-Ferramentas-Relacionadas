@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package dio.desafios;
+package desafios;
 
 import java.util.Scanner;
 
@@ -11,8 +11,7 @@ public class Theon2 {
 
      public static void main(String[] args) {
 
-        Scanner leitor = new Scanner(System.in);
-        
+        Scanner leitor = new Scanner(System.in);        
         int N = leitor.nextInt();
         int T, menor = Integer.MAX_VALUE, posMenor = 0;
 

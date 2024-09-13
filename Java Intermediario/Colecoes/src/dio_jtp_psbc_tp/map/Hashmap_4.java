@@ -23,7 +23,7 @@ public class Hashmap_4 {
         Set set = hm.entrySet();
         Iterator i = set.iterator();
 
-        while(i.hasNext()) {
+        while (i.hasNext()) {
 
             Map.Entry me = (Map.Entry)i.next();
 
@@ -37,7 +37,6 @@ public class Hashmap_4 {
         double balance = ((Double)hm.get("Zara")).doubleValue();
 
         hm.put("Zara", valueOf(balance + 1000));
-
         System.out.println("Zara's new balance: " + hm.get("Zara"));
 
     }

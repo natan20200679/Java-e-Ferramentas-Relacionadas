@@ -1,6 +1,4 @@
-/*
- * Método que consiste na troca dos valores do primeiro e último nós.
- */
+/* Método que consiste na troca dos valores do primeiro e último nós. */
 
 package gfg.listaEncadeada;
 
@@ -15,18 +13,18 @@ public class ListaEncadeada6_1 {
 
     static Node addToEmpty(Node head, int data) {
 
-        // Esta função é apenas para lista vazia
+        /* Esta função é apenas para lista vazia */
         if (head != null)
             return head;
         
-        // Criando um nó dinamicamente
+        /* Criando um nó dinamicamente */
         Node temp = new Node();
         
-        // Assimilando o dado
+        /* Assimilando o dado */
         temp.data = data;
         head = temp;
         
-        // Criando a ligação
+        /* Criando a ligação */
         head.next = head;
         
         return head;
@@ -50,12 +48,12 @@ public class ListaEncadeada6_1 {
     
     }
 
-    // Função para atravessar a lista
+    /*  Função para atravessar a lista */
     static void traverse(Node head) {
 
         Node p;
 
-        // Se a lista está vazia, retorne
+        /* Se a lista está vazia, retorne */
         if (head == null) {
 
             System.out.print("\nLista está vazia." + "\n");
@@ -64,10 +62,10 @@ public class ListaEncadeada6_1 {
         
         }
 
-        // Apontando para o primeiro nó da lista
+        /* Apontando para o primeiro nó da lista */
         p = head;
 
-        // Atravessando a lista
+        /* Apontando para o primeiro nó da lista */
         do {
 
             System.out.print(p.data + " ");
@@ -78,10 +76,10 @@ public class ListaEncadeada6_1 {
     
     }
 
-    // Função para trocar o primeiro e o último nó
+    /* Função para trocar o primeiro e o último nó */
     static Node exchangeNodes(Node head) {
 
-        // Se a lista é de tamanho menor do que 2
+        /* Se a lista é de tamanho menor do que 2 */
         if (head == null || head.next == null) {
 
             return head;
@@ -90,15 +88,17 @@ public class ListaEncadeada6_1 {
 
         Node tail = head;
 
-        // Encontra o ponteiro do último nó
+        /* Encontra o ponteiro do último nó */
         while (tail.next != head) {
            
             tail = tail.next;
         
         }
 
-        // Troca o primeiro e o último nó usando o topo e "p". Variável temporária para armazenar o 
-        // dado do topo
+        /* 
+        Troca o primeiro e o último nó usando o topo e "p". Variável temporária para armazenar o dado do 
+        topo 
+        */
         int temp = tail.data;
         tail.data = head.data;
         head.data = temp;
@@ -107,7 +107,7 @@ public class ListaEncadeada6_1 {
    
     }
 
-    // Programa controlador
+    /* Programa controlador */
     public static void main(String[] args) {
 
         int i;

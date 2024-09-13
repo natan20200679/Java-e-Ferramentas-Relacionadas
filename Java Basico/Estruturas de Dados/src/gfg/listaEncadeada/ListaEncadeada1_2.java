@@ -39,22 +39,22 @@ class LinkedList {
    
     }
 
-    // Inserir um novo nó na frente da lista
+    /* Inserir um novo nó na frente da lista */
     public void push(int new_dado) {
 
-        // 1 & 2: Aloca o nó & coloca no dado
+        /* 1 & 2: Aloca o nó & coloca no dado */
         No novoNo = new No(new_dado);
 
-        // 3: Faz "proximo" de "novo Nó" como topo
+        /* 3: Faz "proximo" de "novo Nó" como topo */
         novoNo.proximo = topo;
 
-        // 4: Move o topo para apontar para o novo Nó
+        /* 4: Move o topo para apontar para o novo Nó */
         topo = novoNo;
 
     }
 
     
-    // Esta função imprime conteúdos da lista lincada iniciando do nó fornecido  
+    /* Esta função imprime conteúdos da lista lincada iniciando do nó fornecido  */ 
     public void printList() {
 
         No topoNo = topo;

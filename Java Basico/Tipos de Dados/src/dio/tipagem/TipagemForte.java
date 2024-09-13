@@ -6,10 +6,13 @@ public class TipagemForte {
 
         String texto = "meu texto";
 
-        //texto = 1000; // NOK
+        /* NOK */
+        // texto = 1000;
 
         Integer numero = Integer.valueOf("1024");
-        numero = 512; //OK   
+
+        /* OK */
+        numero = 512;   
             
     }
 

@@ -4,9 +4,11 @@ public class Fila {
 
     private No refNoEntradaFila = null;
 
-    public void enqueue(Object obj) { // <----------------------------------------------
+    /* <---------------------------------------------- */
+    public void enqueue(Object obj) {
 
-        No novoNo = new No(obj); // <----------------------------------------------
+        /* <---------------------------------------------- */
+        No novoNo = new No(obj);
 
         novoNo.setRefNo(refNoEntradaFila);
 
@@ -38,7 +40,8 @@ public class Fila {
             
             }
             
-            return primeiroNo.getObject(); // <----------------------------------------------
+            /* <---------------------------------------------- */
+            return primeiroNo.getObject();
         
         }
         
@@ -66,7 +69,8 @@ public class Fila {
             
             }
             
-            return primeiroNo.getObject(); // <----------------------------------------------
+            /*  <---------------------------------------------- */
+            return primeiroNo.getObject();
         
         }
         

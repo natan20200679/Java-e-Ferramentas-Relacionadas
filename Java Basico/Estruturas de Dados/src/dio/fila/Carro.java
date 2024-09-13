@@ -12,12 +12,13 @@ public class Carro {
     
     }
 
-    public String getMarca(){
+    public String getMarca() {
     
         return marca;
     
     }
-    public void setMarca(String marca){
+    
+    public void setMarca(String marca) {
     
         this.marca = marca;
     
@@ -26,8 +27,8 @@ public class Carro {
     @Override
     public boolean equals(Object o) {
     
-    
         if (this == o) return true;
+    
         if (o == null || getClass() != o.getClass()) return false;
     
         Carro carro = (Carro) o;

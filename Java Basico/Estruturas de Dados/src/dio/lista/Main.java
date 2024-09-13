@@ -19,6 +19,7 @@ public class Main {
         System.out.println(listCarros.remove(2));
     
         System.out.println(listCarros);
+   
     }
 
 }

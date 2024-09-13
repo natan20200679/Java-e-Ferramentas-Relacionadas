@@ -14,10 +14,17 @@ import java.sql.SQLException;
 
 public class DAO {
 
-    Connection con;  // Conexao ao Banco de Dados
-    PreparedStatement stmt; // Acessa a Tabela ( insert, update, delete , select)
-    ResultSet rs; // Consulta a Tabela( select )
-    CallableStatement call; // Procedures e Function
+    /* Conexao ao Banco de Dados */
+    Connection con;
+
+    /* Acessa a Tabela ( insert, update, delete , select) */
+    PreparedStatement stmt;
+
+    /* Consulta a Tabela( select ) */
+    ResultSet rs;
+    
+    /* Procedures e Function */
+    CallableStatement call;  
 
     public void open() throws Exception {
 

@@ -13,7 +13,6 @@ import one.digitalinnovation.gof.model.Cliente;
 public interface ClientService {
 
     Iterable<Cliente> buscarTodos();
-
     Cliente buscarPorId(Long id);
 
     void inserir(Cliente cliente);

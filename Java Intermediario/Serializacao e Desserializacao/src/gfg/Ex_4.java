@@ -4,9 +4,8 @@
  */
 
 /*
-Exemplo com Serialização e Desserialização personalizadas (custom), que podem 
-ser implementadas usando os métodos writeObject() e readObject() respectivamente 
-para cada processo.
+Exemplo com Serialização e Desserialização personalizadas (custom), que podem ser implementadas
+usando os métodos writeObject() e readObject() respectivamente para cada processo.
 */
 
 package gfg;
@@ -20,28 +19,39 @@ class Ex_4 implements Serializable {
 
     private void writeObject(ObjectOutputStream oos) throws Exception {
 
-        // Serialização do objeto conta
+        /* Serialização do objeto conta */
+
         oos.defaultWriteObject();
 
-        // epwd (encrypted password) -> Senha encriptada 
+        /* epwd (encrypted password) -> Senha encriptada */
+
         String epwd = "123" + pwd;
 
-        // Escrevendo a senha encriptada no arquivo
+        /* Escrevendo a senha encriptada no arquivo */
+
         oos.writeObject(epwd);
+
     }
 
     private void readObject(ObjectInputStream ois) throws Exception {
 
-        // Desserialização do objeto conta
+        /* Desserialização do objeto conta */
+
         ois.defaultReadObject();
 
-        // Desserializando a senha encriptada do arquivo
+        /* Desserializando a senha encriptada do arquivo */
+
         String epwd = (String) ois.readObject();
 
-        // Descriptografando-o e salvando-o com a senha original. 
-        // String iniciando do 3º índice até o último índice
+        /*
+        Descriptografando-o e salvando-o com a senha original. String iniciando do 3º índice até o
+        último índice
+         */
+
         pwd = epwd.substring(3);
+
     }
+
 }
 
 class CustomizedSerializationDemo {
@@ -50,8 +60,7 @@ class CustomizedSerializationDemo {
         
         Ex_4 gfg_g1 = new Ex_4();
 
-        System.out.println("Username :" + gfg_g1.username + "	 Password :" + 
-                gfg_g1.pwd);
+        System.out.println("Username :" + gfg_g1.username + "	 Password :" + gfg_g1.pwd);
 
         FileOutputStream fos = new FileOutputStream("abc.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -63,7 +72,8 @@ class CustomizedSerializationDemo {
 
         Ex_4 gfg_g2 = (Ex_4) ois.readObject();
 
-        System.out.println("Username :" + gfg_g2.username + "	 Password :" + 
-                gfg_g2.pwd);
+        System.out.println("Username :" + gfg_g2.username + "	 Password :" + gfg_g2.pwd);
+
     }
+
 }

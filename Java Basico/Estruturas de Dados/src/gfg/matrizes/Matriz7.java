@@ -1,6 +1,6 @@
 /*
- * Dada a matriz arr = {1, 3, 5, 7, 9} de tamanho n e vários valores em torno dos quais precisamos 
- * girar a matriz à esquerda. Como imprimir rapidamente várias rotações à esquerda?
+Dada a matriz arr = {1, 3, 5, 7, 9} de tamanho n e vários valores em torno dos quais precisamos girar a 
+matriz à esquerda. Como imprimir rapidamente várias rotações à esquerda?
  */
 
 package gfg.matrizes;
@@ -28,7 +28,6 @@ public class Matriz7 {
         for (int i = pos; i < t.length; i++) {
         
             t[indice] = arr[i];
-        
             indice++;
         
         }
@@ -36,9 +35,8 @@ public class Matriz7 {
         for (int i = 0; i < pos; i++) {
         
             t[indice] = arr[i];
-        
-            indice++;
-        
+            indice++;    
+            
         }
         
         for (int i = 0; i < t.length; i++) {
@@ -49,9 +47,9 @@ public class Matriz7 {
         
         System.out.println("Matriz após o giro, em torno dos seus elementos, a partir de uma posição "
         + "arbitrada, à esquerda = " + Arrays.toString(arr));
-        
         leitor.close();
-    
+        
     }
-
+    
 }
+

@@ -17,8 +17,7 @@ public class CadastrarUsuarioTeste {
     @Before
     public void inicializa() {
 
-        System.setProperty("webdriver.chrome.driver",
-                "src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         
         driver = new ChromeDriver();
     
@@ -30,9 +29,7 @@ public class CadastrarUsuarioTeste {
         WebDriverWait wait = new WebDriverWait(driver, 5);
     
         driver.get("http://automationpractice.com/index.php");
-        driver.findElement(By
-                .cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a"))
-                .click();
+        driver.findElement(By.cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a")).click();
         driver.findElement(By.id("email_create")).sendKeys("everisbootcamp@qabeginner.com");
         driver.findElement(By.cssSelector("button[id='SubmitCreate'] span")).click();
         
@@ -55,8 +52,7 @@ public class CadastrarUsuarioTeste {
         driver.findElement(By.id("alias")).sendKeys("Address 1");
         driver.findElement(By.id("submitAccount")).click();
         
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
-                .cssSelector("a[title='Orders'] span")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[title='Orders'] span")));
         
         WebElement validaTexto = driver.findElement(By.cssSelector("a[title='Orders'] span"));
         

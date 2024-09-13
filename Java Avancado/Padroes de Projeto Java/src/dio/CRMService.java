@@ -7,9 +7,7 @@ package dio;
 
 public class CRMService {
 
-    private CRMService() {
-
-    }
+    private CRMService() {}
 
     public static void gravarCliente(String nome, String cep, String cidade, String estado) {
 

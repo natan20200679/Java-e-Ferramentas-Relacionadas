@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package gfg.exemplos_praticos;
+
+ package gfg.exemplos_praticos;
 
 interface In1 {
 
@@ -19,7 +20,6 @@ public class Interfaces implements In1 {
         Interfaces t = new Interfaces();
 
         t.display();
-
         System.out.println(a);
 
     }

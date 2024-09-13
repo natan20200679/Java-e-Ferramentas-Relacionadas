@@ -26,38 +26,63 @@ public class Arraylist_3_1 {
         while (true) {
 
             System.out.println("Telefonou para a vítima? (1-Sim 0-Não)");
+            
             p1 = scan.nextInt();
+            
             if (p1 < 0 || p1 > 1) {
+            
                 System.out.println("Opção Digitada Inválida");
+            
                 continue;
+            
             }
 
             System.out.println("Esteve no local do crime? (1-Sim 0-Não)");
+            
             p2 = scan.nextInt();
+            
             if (p2 < 0 || p2 > 1) {
+            
                 System.out.println("Opção Digitada Inválida");
+            
                 continue;
+            
             }
 
             System.out.println("Mora perto da vítima? (1-Sim 0-Não)");
+            
             p3 = scan.nextInt();
+            
             if (p3 < 0 || p3 > 1) {
+            
                 System.out.println("Opção Digitada Inválida");
+            
                 continue;
+            
             }
 
             System.out.println("Devia para a vítima? (1-Sim 0-Não)");
+            
             p4 = scan.nextInt();
+            
             if (p4 < 0 || p4 > 1) {
+            
                 System.out.println("Opção Digitada Inválida");
+            
                 continue;
+            
             }
 
             System.out.println("Já trabalhou com a vítima? (1-Sim 0-Não)");
+            
             p5 = scan.nextInt();
+            
             if (p5 < 0 || p5 > 1) {
+            
                 System.out.println("Opção Digitada Inválida");
+            
                 continue;
+            
             }
 
             int respostas = p1 + p2 + p3 + p4 + p5;

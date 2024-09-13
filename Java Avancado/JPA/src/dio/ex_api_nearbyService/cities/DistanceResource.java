@@ -29,31 +29,26 @@ public class DistanceResource {
     }
 
     @GetMapping("/by-points")
-    public Double byPoints(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to")
-            final Long city2) {
+    public Double byPoints(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to") final Long city2) {
 
         log.info("byPoints, from={}, to={}", city1, city2);
-
         return service.distanceByPointsInMiles(city1, city2);
 
     }
 
     @GetMapping("/by-cube")
-    public Double byCube(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to")
-            final Long city2) {
+    public Double byCube(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to") final Long city2) {
 
         log.info("byCube, from={}, to={}", city1, city2);
-
         return service.distanceByCubeInMeters(city1, city2);
 
     }
 
     @GetMapping("/by-math")
-    public Double byMath(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to")
-            final Long city2, @RequestParam final EarthRadius unit) {
+    public Double byMath(@RequestParam(name = "from") final Long city1, @RequestParam(name = "to") final Long city2, 
+    @RequestParam final EarthRadius unit) {
 
         log.info("byMath, from={}, to={}", city1, city2);
-
         return service.distanceUsingMath(city1, city2, unit);
 
     }

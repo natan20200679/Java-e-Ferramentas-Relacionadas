@@ -1,7 +1,8 @@
 /*
- * Dada a matriz arr = {10, 90, 49, 2, 1, 5, 23} não classificada, de inteiros, classifique-a em uma 
- * matriz de onda. Uma matriz arr[0..n-1] é classificada em forma de onda se: 
- * arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= .....
+Dada a matriz arr = {10, 90, 49, 2, 1, 5, 23} não classificada, de inteiros, classifique-a em uma matriz de 
+onda. Uma matriz arr[0..n-1] é classificada em forma de onda se: 
+
+arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= .....
  */
 
 package gfg.matrizes;

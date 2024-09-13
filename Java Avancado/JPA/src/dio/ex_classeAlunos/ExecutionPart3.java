@@ -29,8 +29,8 @@ public class ExecutionPart3 {
         entityManager.getTransaction().commit();
 
         /* 
-        2 - Vamos utilizar o método do EntityManager find(), SQL nativo, JPQL e JPA Criteria API para
-        realizar uma consulta que retornarar o mesmo valor equivalente aos seguintes SQL:  
+        2 - Vamos utilizar o método do EntityManager find(), SQL nativo, JPQL e JPA Criteria API para realizar uma consulta 
+        que retornarar o mesmo valor equivalente aos seguintes SQL:  
         */
         
         /* Equivalente ao método find do entityManager na parte 2.2 */
@@ -46,8 +46,8 @@ public class ExecutionPart3 {
         Aluno alunoEntityManager = entityManager.find(Aluno.class, 1);
 
         /* 
-        Trazendo uma lista como resultado. Nao é possivel!!! Deve utilizar um dos métodos utilizados 
-        abaixos nas partes 2.3 - 2.4 - 2.5 
+        Trazendo uma lista como resultado. Nao é possivel!!! Deve utilizar um dos métodos utilizados abaixos nas partes 
+        2.3 - 2.4 - 2.5 
         */
         
         /* Resultados das consultas acima */
@@ -111,5 +111,7 @@ public class ExecutionPart3 {
         // System.out.println("Consulta alunoAPICriteria: " + alunoAPICriteria);
         // alunoAPICriteriaList.forEach(Aluno -> System.out.println("Consulta alunoAPICriteriaList: " + 
         // Aluno));
+    
     }
+
 }

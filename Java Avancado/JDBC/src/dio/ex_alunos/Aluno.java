@@ -27,52 +27,57 @@ public class Aluno {
         this.estado = estado;
     }
 
-    public Aluno() {
-
-    }
+    public Aluno() {}
 
     public int getId() {
 
         return id;
+    
     }
 
     public void setId(int id) {
 
         this.id = id;
+    
     }
 
     public String getNome() {
 
         return nome;
+    
     }
 
     public void setNome(String nome) {
 
         this.nome = nome;
+    
     }
 
     public int getIdade() {
 
         return idade;
+    
     }
 
     public void setIdade(int idade) {
 
         this.idade = idade;
+    
     }
 
     public String getEstado() {
 
         return estado;
+    
     }
 
     public void setEstado(String estado) {
 
         this.estado = estado;
+    
     }
 
     @Override
-
     public String toString() {
 
         final StringBuilder sb = new StringBuilder("Aluno{");
@@ -84,5 +89,7 @@ public class Aluno {
         sb.append('}');
 
         return sb.toString();
+    
     }
+
 }

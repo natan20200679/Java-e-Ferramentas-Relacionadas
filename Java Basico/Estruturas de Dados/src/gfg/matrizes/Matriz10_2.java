@@ -1,6 +1,4 @@
-/*
- * Método que consiste na utilização de 2 ponteiros.
- */
+/* Método que consiste na utilização de 2 ponteiros. */
 
 package gfg.matrizes;
 

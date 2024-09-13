@@ -30,7 +30,7 @@ Para cada caso de teste imprima uma linha contendo dois inteiros C e E, indicand
 guarda-chuvas Rafael deve comprar e guardar em sua casa e escritório.
 */
 
-package dio.desafios;
+package desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -39,8 +39,7 @@ public class Chuva {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner leitor = new Scanner(System.in);
-        
+        Scanner leitor = new Scanner(System.in);       
         int N = leitor.nextInt();
         int casaComprado = 0;
         int casaSobrando = 0;

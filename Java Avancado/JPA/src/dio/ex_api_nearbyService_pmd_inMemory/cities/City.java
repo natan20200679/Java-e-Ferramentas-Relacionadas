@@ -45,8 +45,8 @@ public class City {
 
   public City() {}
 
-  public City(final Long id, final String name, final Integer uf, final Integer ibge, 
-          final String geolocation, final Point location) {
+  public City(final Long id, final String name, final Integer uf, final Integer ibge, final String geolocation, 
+  final Point location) {
     
     this.id = id;
     this.name = name;

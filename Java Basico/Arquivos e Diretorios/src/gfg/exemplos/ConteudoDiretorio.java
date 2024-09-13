@@ -38,7 +38,7 @@ public class ConteudoDiretorio {
             }
 
             System.out.println("\nNúmero de entradas neste diretório: " + n);
-        }
-        else System.out.println("Diretório não encontrado");
+        
+        } else System.out.println("Diretório não encontrado");
     }
 }

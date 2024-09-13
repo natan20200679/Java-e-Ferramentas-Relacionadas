@@ -1,12 +1,11 @@
 package dio.projetos.pilha2;
 
 public class No {
+   
     private int dado;
     private No refNo = null;
 
-    public No() {
-    
-    }
+    public No() {}
 
     public No(int dado) {
     

@@ -1,8 +1,7 @@
 /*
- * Dada a lista ligada circular 6->1->2->3->4->5, troque o primeiro e o último nó. A tarefa deve ser 
- * feita com apenas um nó extra, você não pode declarar mais de um nó extra, e também não é permitido 
- * declarar nenhuma outra variável temporária. Nota: Nó extra significa a necessidade de um nó 
- * percorrer uma lista. 
+Dada a lista ligada circular 6->1->2->3->4->5, troque o primeiro e o último nó. A tarefa deve ser feita com 
+apenas um nó extra, você não pode declarar mais de um nó extra, e também não é permitido declarar nenhuma 
+outra variável temporária. Nota: Nó extra significa a necessidade de um nó percorrer uma lista. 
  */
 
 package gfg.listaEncadeada;
@@ -18,18 +17,17 @@ public class ListaEncadeada6 {
 
 	static Node addToEmpty(Node head, int data) {
 
-		// Esta função é apenas para lista vazia
-		if (head != null)
-			return head;
+		/* Esta função é apenas para lista vazia */
+		if (head != null) return head;
 
-		// Criando um nó dinamicamente
+		/* Criando um nó dinamicamente */
 		Node temp = new Node();
 
-		// Assimilando o dado
+		/* Assimilando o dado */
 		temp.data = data;
 		head = temp;
 
-		// Criando a ligação
+		/* Criando a ligação */
 		head.next = head;
 
 		return head;
@@ -53,12 +51,12 @@ public class ListaEncadeada6 {
 	
 	}
 
-	// Função para atravessar a lista
+	/* Função para atravessar a lista */
 	static void traverse(Node head) {
 
 		Node p;
 
-		// Se a lista está vazia, retorne
+		/* Se a lista está vazia, retorne */
 		if (head == null) {
 
 			System.out.print("Lista está vazia.");
@@ -67,10 +65,10 @@ public class ListaEncadeada6 {
 		
 		}
 		
-		// Apontando para o primeiro nó da lista
+		/* Apontando para o primeiro nó da lista */
 		p = head;
 
-		// Atravessando a lista
+		/* Atravessando a lista */
 		do {
 
 			System.out.print(p.data + " ");
@@ -80,10 +78,10 @@ public class ListaEncadeada6 {
 	
 	}
 
-	// Função para permutar o primeiro e o último nó
+	/* Função para permutar o primeiro e o último nó */
 	static Node exchangeNodes(Node head) {
 
-		// Se a lista é de tamanho 2
+		/* Se a lista é de tamanho 2 */
 		if (head.next.next == head) {
 
 			head = head.next;
@@ -92,13 +90,12 @@ public class ListaEncadeada6 {
 		
 		}
 
-		// Encontra o ponteiro para prever o último nó
+		/* Encontra o ponteiro para prever o último nó */
 		Node p = head;
 
-		while (p.next.next != head)
-			p = p.next;
+		while (p.next.next != head) p = p.next;
 
-		// Troca o primeiro e o último nó usando o topo e "p"
+		/* Troca o primeiro e o último nó usando o topo e "p" */
 		p.next.next = head.next;
 		head.next = p.next;
 		p.next = head;
@@ -108,7 +105,7 @@ public class ListaEncadeada6 {
 	
 	}
 
-	// Código controlador
+	/*  Código controlador */
 	public static void main(String args[]) {
 		
 		int i;

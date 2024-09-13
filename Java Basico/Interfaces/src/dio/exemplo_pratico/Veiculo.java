@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package dio.exemplo_pratico;
+
+ package dio.exemplo_pratico;
 
 public interface Veiculo {
 
@@ -15,7 +16,11 @@ public interface Veiculo {
     }
 
     // void desligar();
-    // default void desligar() {   
+
+    // default void desligar() {  
+
     //     System.out.println("Desligando o veículo!");  
+    
     // }
+
 }

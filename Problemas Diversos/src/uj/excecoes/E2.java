@@ -15,7 +15,7 @@ ArrayIndexOutOfBoundsException -> quando o usuário informar mais que 10 valores
 
 InputMismatchException -> quando o usuário informar um valor que não é numerico.
  */
-package uj.excecoes;
+package excecoes;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;

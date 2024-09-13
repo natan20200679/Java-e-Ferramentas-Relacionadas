@@ -1,6 +1,6 @@
 /*
- * Método que consiste na inicialização do elemento médio como sendo o elemento topo e na 
- * inicialização de um contador em 0.
+ * Método que consiste na inicialização do elemento médio como sendo o elemento topo e na inicialização de 
+ * um contador em 0.
  */
 
 package gfg.listaEncadeada;
@@ -27,7 +27,7 @@ public class ListaEncadeada1_3 {
         int dado;
         No proximo;
 
-        // Construtor
+        /* Construtor */
         public No(No proximo, int dado) {
 
             this.dado = dado;
@@ -36,7 +36,7 @@ public class ListaEncadeada1_3 {
         }
     }
 
-    // Função para acessar o meio da lista encadeada
+    /*  Função para acessar o meio da lista encadeada */
     void imprimeMeio(No topo) {
 
         int cont = 0;
@@ -44,8 +44,7 @@ public class ListaEncadeada1_3 {
 
         while (topo != null) {
 
-            // Atualiza o meio, quando 'cont'
-            // é número ímpar
+            /* Atualiza o meio, quando 'cont' é número ímpar */
             if ((cont % 2) == 1) {
 
                 meio = meio.proximo;
@@ -53,12 +52,11 @@ public class ListaEncadeada1_3 {
             }
 
             ++cont;
-
             topo = topo.proximo;
 
         }
         
-        // Se a lista vazia é fornecida
+        /* Se a lista vazia é fornecida */
         if (meio != null) {
 
             System.out.println("The meiodle element is [" + meio.dado + "]\n");
@@ -68,15 +66,15 @@ public class ListaEncadeada1_3 {
 
     void push(No topo_ref, int new_dado) {
 
-        // Nó alocado
+        /* Nó alocado */
         No novoNo = new No(topo_ref, new_dado);
 
-        // Move o topo para o ponto do novo nó
+        /* Move o topo para o ponto do novo nó */
         topo = novoNo;
 
     }
 
-    // Uma função útil para imprimir a lista encadeada fornecida
+    /* Uma função útil para imprimir a lista encadeada fornecida */
     void printList(No topo) {
 
         while (topo != null) {
